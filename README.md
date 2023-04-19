@@ -3,7 +3,7 @@
 ![discord.py](https://img.shields.io/badge/discord.py-2.2.2-blue)
 ![openai](https://img.shields.io/badge/OpenAI-0.27.4-blue)
 ![stability-sdk](https://img.shields.io/badge/stability--sdk-0.5.0-blue)
-![google-cloud-texttospeech](https://img.shields.io/badge/google--cloud--texttospeech-2.14.1-blue)
+![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.4.2-blue)
 ![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
 
 ## Table of Contents
@@ -26,7 +26,7 @@
 - ### Engages in text-to-text conversations using OpenAI's GPT-3.5 Turbo, retaining the last 10 messages in the channel
 ![](./images/ttt-generation.png)
 
-- ### Generates text-to-speech audio from text-to-text conversations using the Google Cloud Text-to-Speech API
+- ### Generates text-to-speech audio from text-to-text conversations using the ElevenLabs API
 ![](./images/tts-generation.png)
 
 - ### Generates images with Stability.AI's Stable Diffusion and OpenAI's Dall-E models
@@ -71,14 +71,14 @@ supervisor
 PyNaCl
 stability-sdk
 Pillow
-google-cloud-texttospeech
+elevenlabslib
 youtube-dl (from master branch!)
 ```
 
 ## Getting Started
 1. Clone the repository or download the source code.
 2. Install the required dependencies as listed in the Dependencies section.
-3. Obtain necessary API keys and tokens for OpenAI, Stability.AI, Google Cloud Text-to-Speech, and Discord.
+3. Obtain necessary API keys and tokens for OpenAI, Stability.AI, ElevenLabs, and Discord.
 4. Update the configuration files with the obtained keys and tokens.
 5. Follow the usage instructions below to run the bot.
 
