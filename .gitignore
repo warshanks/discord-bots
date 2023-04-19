@@ -1,0 +1,4 @@
+.idea
+*.pyc
+*.mp3
+config.py
