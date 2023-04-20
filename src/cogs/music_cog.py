@@ -1,7 +1,7 @@
 import discord
-import re
 from discord.ext import commands
 from youtube_dl import YoutubeDL
+from re import match
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -30,7 +30,7 @@ class MusicCog(commands.Cog):
                 r'(?:https?://)?(?:www\.|m\.)?'
                 r'(?:youtube\.com|youtu.be)/'
                 r'(?:(?:watch)|(?:embed))?(?:(?=\\S*[?&]v=)|\/)([a-zA-Z0-9_-]{11})+')
-            return re.match(url_regex, item) is not None
+            return match(url_regex, item) is not None
 
         with YoutubeDL(self.YDL_OPTIONS) as ydl:
             if is_youtube_url(item):

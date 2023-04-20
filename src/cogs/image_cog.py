@@ -2,11 +2,11 @@ import datetime
 import io
 import os
 
-import discord
 import openai
-import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
+import discord
 from discord.ext import commands
 from stability_sdk import client
+import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 
 from config import *
 
