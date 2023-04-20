@@ -83,19 +83,22 @@ class TTSCog(commands.Cog):
             except Exception as e:
                 await message.reply(e)
 
-            tts_response = premadeVoice.generate_audio_bytes(response['choices'][0]['message']['content'])
-            save_bytes_to_path("output.mp3", tts_response)
+            try:
+                tts_response = premadeVoice.generate_audio_bytes(response['choices'][0]['message']['content'])
+                save_bytes_to_path("output.mp3", tts_response)
 
-            # Send the generated text response as a reply
-            await message.reply(response['choices'][0]['message']['content'])
+                # Send the generated text response as a reply
+                await message.reply(response['choices'][0]['message']['content'])
 
-            # Save the synthesized audio to a file
-            await run_blocking(write_audio_to_file, "output.mp3", tts_response)
-            print('Audio content written to file "output.mp3"')
-            tts_output = await FFmpegOpusAudio.from_probe("output.mp3")
+                # Save the synthesized audio to a file
+                await run_blocking(write_audio_to_file, "output.mp3", tts_response)
+                print('Audio content written to file "output.mp3"')
+                tts_output = await FFmpegOpusAudio.from_probe("output.mp3")
 
-            # Play the synthesized audio in the voice channel
-            vc.play(tts_output)
+                # Play the synthesized audio in the voice channel
+                vc.play(tts_output)
+            except Exception as e:
+                await message.reply(e)
 
     @bot.tree.command(name='join', description='Join the voice channel')
     async def join(self, ctx):
