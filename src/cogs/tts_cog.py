@@ -1,3 +1,6 @@
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+
 import discord
 import openai
 from elevenlabslib import *
@@ -15,6 +18,17 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 tts_user = ElevenLabsUser(elevenlabs_token)
 
 premadeVoice: ElevenLabsVoice = tts_user.get_voices_by_name("Rachel")[0]
+
+
+async def run_blocking(func, *args, **kwargs):
+    loop = asyncio.get_event_loop()
+    with ThreadPoolExecutor() as pool:
+        return await loop.run_in_executor(pool, lambda: func(*args, **kwargs))
+
+
+def write_audio_to_file(filename, tts_response):
+    with open(filename, "wb") as out:
+        out.write(tts_response)
 
 
 # noinspection PyShadowingNames
@@ -43,7 +57,7 @@ class TTSCog(commands.Cog):
                                  'You are a friendly secretary named KC. '
                                  'Only respond to the latest message.'}]
 
-            previous_messages = [message async for message in message.channel.history(limit=10)]
+            previous_messages = [message async for message in message.channel.history(limit=5)]
             previous_messages.reverse()
 
             for previous_message in previous_messages:
@@ -76,10 +90,9 @@ class TTSCog(commands.Cog):
             await message.reply(response['choices'][0]['message']['content'])
 
             # Save the synthesized audio to a file
-            with open("output.mp3", "wb") as out:
-                out.write(tts_response)
-                print('Audio content written to file "output.mp3"')
-                tts_output = await FFmpegOpusAudio.from_probe("output.mp3")
+            await run_blocking(write_audio_to_file, "output.mp3", tts_response)
+            print('Audio content written to file "output.mp3"')
+            tts_output = await FFmpegOpusAudio.from_probe("output.mp3")
 
             # Play the synthesized audio in the voice channel
             vc.play(tts_output)
