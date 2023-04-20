@@ -25,7 +25,8 @@ async def on_ready():
         await bot.add_cog(TTSCog(bot))
         # Sync the slash commands with Discord
         synced = await bot.tree.sync()
-        print(synced)
+        for command in synced:
+            print(command)
         # Log in the bot's name
         print('Logged in as {0.user}'.format(bot))
     except Exception as e:
