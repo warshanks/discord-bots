@@ -25,6 +25,7 @@ async def on_ready():
 
 
 # Define the "generate_strategy" command handler
+# noinspection PyUnresolvedReferences
 @bot.tree.command(name="strat", description="Generate a racing strategy")
 async def generate_strategy(interaction: discord.Interaction):
     global tire_str, total_distance_km, max_distance_km, selected_tires, distances_km
