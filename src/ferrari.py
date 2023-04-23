@@ -2,7 +2,7 @@ import datetime
 import random
 import discord
 from discord.ext import commands
-from config import Ferrari_TOKEN
+from config import *
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
 
@@ -15,10 +15,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Handle the "on_ready" event, which is triggered when the bot is connected and ready
 @bot.event
 async def on_ready():
-    print('Logged in as {0.user}'.format(bot))
     try:
-        synced = await bot.tree.sync()  # Sync the slash commands with Discord
-        print(synced)
+        await command_sync(bot)
     except Exception as e:
         print(e)
     print("Ready in:", datetime.datetime.now() - start_time)  # Calculate the time it took for the bot to start

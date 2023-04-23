@@ -24,11 +24,7 @@ async def on_ready():
     try:
         await bot.add_cog(MusicCog(bot))
         await bot.add_cog(LilithCog(bot))
-        # Sync the slash commands with Discord
-        synced = await bot.tree.sync()
-        print(synced)
-        # Log in the bot's name
-        print('Logged in as {0.user}'.format(bot))
+        await command_sync(bot)
     except Exception as e:
         print(e)
     # Calculate the time it took for the client to start

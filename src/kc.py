@@ -2,7 +2,7 @@ import datetime
 import discord
 from discord.ext import commands
 
-from config import KC_TOKEN
+from config import *
 from cogs.chat_cog import ChatCog
 from cogs.tts_cog import TTSCog
 from cogs.image_cog import ImageCog
@@ -23,12 +23,7 @@ async def on_ready():
         await bot.add_cog(ChatCog(bot))
         await bot.add_cog(ImageCog(bot))
         await bot.add_cog(TTSCog(bot))
-        # Sync the slash commands with Discord
-        synced = await bot.tree.sync()
-        for command in synced:
-            print(command)
-        # Log in the bot's name
-        print('Logged in as {0.user}'.format(bot))
+        await command_sync(bot)
     except Exception as e:
         print(e)
     # Calculate the time it took for the client to start
