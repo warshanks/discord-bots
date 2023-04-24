@@ -3,6 +3,7 @@ import random
 import discord
 from discord.ext import commands
 from config import *
+from cogs.f1_cog import F1Cog
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
 
@@ -16,6 +17,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     try:
+        await bot.add_cog(F1Cog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)
