@@ -106,9 +106,6 @@ class F1Cog(commands.Cog):
             await ctx.followup.send("Lap number must be greater than 0")
             return
 
-        print(driver1_lap)
-        print(driver2_lap)
-
         driver1_tel = driver1_lap.get_car_data().add_distance()
         driver2_tel = driver2_lap.get_car_data().add_distance()
 
