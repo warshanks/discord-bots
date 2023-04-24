@@ -158,3 +158,35 @@ class F1Cog(commands.Cog):
         await ctx.followup.send(file=discord.File('./images/driver-comparison.png'))
 
         plt.close()
+
+    # Define the "generate_strategy" command handler
+    # noinspection PyUnresolvedReferences
+    @bot.tree.command(name="strat", description="Generate a racing strategy")
+    async def generate_strategy(self, ctx):
+        global tire_str, total_distance_km, max_distance_km, selected_tires, distances_km
+        print(ctx.user, ctx.guild, ctx.channel)
+        # Generate a random racing strategy
+        tire_types = ['Soft', 'Medium', 'Hard']
+        num_tires = random.randint(1, 5)
+
+        selected_tires = random.choices(tire_types, k=num_tires)
+
+        max_distance_km = 300
+        distances_km = [random.randint(1, max_distance_km) for _ in range(num_tires)]
+        total_distance_km = sum(distances_km)
+
+        # Format the racing strategy as a string and send it as a response
+        try:
+            tire_str = "\n".join(
+                [f"Tire {i + 1}: {t} - Distance: {d} km" for i, (t, d) in enumerate(zip(selected_tires, distances_km))])
+        except UnboundLocalError:
+            pass
+
+        try:
+            if total_distance_km < max_distance_km:
+                await ctx.response.send_message(
+                    tire_str + ", then retire. \nStrategy certified by Scuderia Ferrari 🐎")
+            else:
+                await ctx.response.send_message(tire_str + "\nStrategy certified by Scuderia Ferrari 🐎")
+        except UnboundLocalError or NameError:
+            await ctx.response.send_message("We are checking...")
