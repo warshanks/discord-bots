@@ -5,6 +5,7 @@
 ![stability-sdk](https://img.shields.io/badge/stability--sdk-0.5.0-blue)
 ![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.4.2-blue)
 ![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
+![Fast-F1](https://img.shields.io/badge/Fast--F1-2.3.2-blue)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -73,6 +74,7 @@ stability-sdk
 Pillow
 elevenlabslib
 youtube-dl (from master branch!)
+Fast-F1
 ```
 
 ## Getting Started
