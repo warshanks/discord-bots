@@ -189,6 +189,30 @@ class F1Cog(commands.Cog):
         # Close the plot to free up resources
         plt.close()
 
+    # Define the "data_dump" command handler
+    @bot.tree.command(name="data-dump", description="Generate a .CSV data dump of a given session")
+    async def data_dump(self, ctx, year: int, event: str, session: str, driver: str):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        event = event.title()
+        session = session.upper()
+        driver = driver.upper()
+        # Load the specified session data and handle possible errors
+        try:
+            ff1session = fastf1.get_session(year, event, session)
+            ff1session.load(telemetry=False)
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
+        
+        laps = ff1session.laps.pick_driver(driver)
+        laps = laps.reset_index(drop=True)
+        weather_data = ff1session.laps.pick_driver(driver).get_weather_data()
+        weather_data = weather_data.reset_index(drop=True)
+        joined = pd.concat([laps, weather_data.loc[:, ~(weather_data.columns == 'Time')]], axis=1)
+
+        joined.to_csv("./csv_output/out.csv")
+        await ctx.followup.send(file=discord.File("./csv_output/out.csv"))
+
     # Define the "generate_strategy" command handler
     # noinspection PyUnresolvedReferences
     @bot.tree.command(name="strat", description="Generate a racing strategy")
