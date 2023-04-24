@@ -1,9 +1,9 @@
 import datetime
-import random
 import discord
 from discord.ext import commands
-from config import *
+
 from cogs.f1_cog import F1Cog
+from config import *
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
 

@@ -1,5 +1,6 @@
 from os import makedirs
 
+import random
 import discord
 import fastf1
 import matplotlib.pyplot as plt
