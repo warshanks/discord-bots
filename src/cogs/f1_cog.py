@@ -15,6 +15,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 makedirs('../fastf1_cache/Data', exist_ok=True)
 makedirs('./images', exist_ok=True)
+makedirs('./csv_output', exist_ok=True)
 fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
 background_color = (0.2, 0.2, 0.2)
