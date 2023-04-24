@@ -51,7 +51,7 @@ class F1Cog(commands.Cog):
 
         plt.gca().add_collection(lc_comp)
         plt.axis('equal')
-        plt.tick_params(labelleft=False, left=False, labelbottom=False, bottom=False)
+        plt.tick_params(labelleft=False, left=False, labelbottom=False, bottom=False, labelcolor='white')  # Modified
 
         plt.suptitle(
             f"Fastest Lap Gear Shift Visualization\n"
@@ -62,6 +62,8 @@ class F1Cog(commands.Cog):
         cbar = plt.colorbar(mappable=lc_comp, label='Gear', boundaries=np.arange(1, 10))
         cbar.set_ticks(np.arange(1.5, 9.5))
         cbar.set_ticklabels(np.arange(1, 9))
+        cbar.ax.yaxis.set_tick_params(color='white', labelcolor='white')  # Added
+        cbar.set_label('Gear', color='white')  # Modified
 
         plt.gcf().set_facecolor(background_color)
 
