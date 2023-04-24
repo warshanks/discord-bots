@@ -213,8 +213,8 @@ class F1Cog(commands.Cog):
         weather_data = weather_data.reset_index(drop=True)
         joined = pd.concat([laps, weather_data.loc[:, ~(weather_data.columns == 'Time')]], axis=1)
 
-        joined.to_csv("./csv_output/out.csv")
-        await ctx.followup.send(file=discord.File("./csv_output/out.csv"))
+        joined.to_csv("./csv_output/dump.csv")
+        await ctx.followup.send(file=discord.File("./csv_output/dump.csv"))
 
     # Define the "generate_strategy" command handler
     # noinspection PyUnresolvedReferences
