@@ -30,8 +30,12 @@ class F1Cog(commands.Cog):
 
         plt.rcParams['axes.facecolor'] = background_color
 
-        ff1session = fastf1.get_session(year, event, session)
-        ff1session.load()
+        try:
+            ff1session = fastf1.get_session(year, event, session)
+            ff1session.load()
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
 
         lap = ff1session.laps.pick_fastest()
         tel = lap.get_telemetry()
@@ -81,8 +85,12 @@ class F1Cog(commands.Cog):
         driver2 = driver2.upper()
         event = event.title()
         session = session.upper()
-        ff1session = fastf1.get_session(year, event, session)
-        ff1session.load()
+        try:
+            ff1session = fastf1.get_session(year, event, session)
+            ff1session.load()
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
 
         if lap is None:
             driver1_lap = ff1session.laps.pick_driver(driver1).pick_fastest()
