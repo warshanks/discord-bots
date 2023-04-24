@@ -1,5 +1,6 @@
 from os import makedirs
 
+import pandas as pd
 import random
 import discord
 import fastf1
@@ -52,7 +53,7 @@ class F1Cog(commands.Cog):
         segments = np.concatenate([points[:-1], points[1:]], axis=1)
         gear = tel['nGear'].to_numpy().astype(float)
 
-        # Setup the color map for the gear map visualization
+        # Set up the color map for the gear map visualization
         cmap = cm.get_cmap('Paired')
         lc_comp = LineCollection(segments, norm=plt.Normalize(1, cmap.N + 1), cmap=cmap)
         lc_comp.set_array(gear)
@@ -92,7 +93,7 @@ class F1Cog(commands.Cog):
     # Define a custom command for comparing two drivers' telemetry
     @bot.tree.command(name='driver-compare', description="Compare two drivers' telemetry")
     async def compare_drivers(self, ctx, year: int, event: str, session: str,
-                            driver1: str, driver2: str, lap: int = None):
+                              driver1: str, driver2: str, lap: int = None):
         # Defer the response to show that the bot is working on the request
         await ctx.response.defer(thinking=True, ephemeral=False)
         
