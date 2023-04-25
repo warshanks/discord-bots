@@ -37,6 +37,8 @@
 - ### Generates images with Stability.AI's Stable Diffusion and OpenAI's Dall-E models
 ![](./images/image-generation.png)
 
+- ### F1 telemetry analysis using Fast-F1
+![](./images/telemetry-analysis.png)
 ### And it plays music from YouTube!
 
 ## Commands
@@ -55,7 +57,6 @@
 /dall-e - Generates an image using OpenAI's Dall-E API using a given prompt
 /stable - Generates an image using Stability.AI's Stable Diffusion API using a given prompt, and 5 optional parameters
 ```
-
 ### Text-to-Speech Conversations
 ```
 /join - Joins the voice channel
@@ -65,6 +66,15 @@
 ```
 /hype - Generates a hype emojipasta about a given prompt
 ```
+### F1 Related
+```
+/driver-comparison - Compares two driver's telemetry given a year, event, session, and optionally a specific lap
+/gear-map - Generates a gear map for a given year, event, session, and optionally a specific lap
+/year-vs-year - Compares telemetry between two years for a given event and session
+/strat - Generates a meme Ferrari strategy
+/data-dump - Generates a data dump for a given year, event, session, and optionally a specific lap in .CSV format
+```
+
 
 ## Dependencies
 To run the KC Discord bot, ensure you have the following packages installed:

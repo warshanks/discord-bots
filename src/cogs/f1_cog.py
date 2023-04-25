@@ -27,7 +27,8 @@ class F1Cog(commands.Cog):
         self.bot = bot
 
     # Define a custom command for generating a gear map for a given session
-    @bot.tree.command(name='gear-map', description="Generate a gear map for a given session")
+    @bot.tree.command(name='gear-map',
+                      description="Generate a gear map for a given session")
     async def generate_gear_map(self, ctx, year: int, event: str, session: str = 'Q'):
         # Defer the response to show that the bot is working on the request
         await ctx.response.defer(thinking=True, ephemeral=False)
@@ -63,7 +64,13 @@ class F1Cog(commands.Cog):
         # Add the gear map to the plot
         plt.gca().add_collection(lc_comp)
         plt.axis('equal')
-        plt.tick_params(labelleft=False, left=False, labelbottom=False, bottom=False, labelcolor='white')
+        plt.tick_params(
+            labelleft=False,
+            left=False,
+            labelbottom=False,
+            bottom=False,
+            labelcolor='white'
+        )
 
         # Set the title for the plot
         plt.suptitle(
@@ -167,7 +174,8 @@ class F1Cog(commands.Cog):
         # Create a twin axis for the time difference plot
         twin = ax2.twinx()
         twin.plot(ref_tel['Distance'], delta_time, '--', color='white')
-        twin.set_ylabel("<-- " + driver2 + " ahead | " + driver1 + " ahead -->", color='white')
+        twin.set_ylabel("<-- " + driver2 + " ahead | " + driver1 + " ahead -->",
+                        color='white')
         twin.tick_params(axis='both', colors='white')
 
         # Format the legend for the second plot
