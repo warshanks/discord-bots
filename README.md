@@ -44,20 +44,28 @@
 ### And it plays music from YouTube!
 
 ## Commands
-### Music
+### F1 Related
 ```
-/play [url]/<search terms> - Plays music from a YouTube URL or search terms
-/skip - Skips the current song
-/queue - Displays the current queue
-/clear - Clears the current queue
-/pause - Pauses the current song
-/resume - Resumes the current song
-/leave - Leaves the voice channel
+/data-dump - Generates a data dump for a given year, event, session, and optionally a specific lap in .CSV format
+/driver-comparison - Compares two driver's telemetry given a year, event, session, and optionally a specific lap
+/gear-map - Generates a gear map for a given year, event, session, and optionally a specific lap
+/strat - Generates a meme Ferrari strategy
+/year-vs-year - Compares telemetry between two years for a given event and session
 ```
 ### Image Generation
 ```
 /dall-e - Generates an image using OpenAI's Dall-E API using a given prompt
 /stable - Generates an image using Stability.AI's Stable Diffusion API using a given prompt, and 5 optional parameters
+```
+### Music
+```
+/clear - Clears the current queue
+/leave - Leaves the voice channel
+/pause - Pauses the current song
+/play [url]/<search terms> - Plays music from a YouTube URL or search terms
+/queue - Displays the current queue
+/resume - Resumes the current song
+/skip - Skips the current song
 ```
 ### Text-to-Speech Conversations
 ```
@@ -68,32 +76,24 @@
 ```
 /hype - Generates a hype emojipasta about a given prompt
 ```
-### F1 Related
-```
-/driver-comparison - Compares two driver's telemetry given a year, event, session, and optionally a specific lap
-/gear-map - Generates a gear map for a given year, event, session, and optionally a specific lap
-/year-vs-year - Compares telemetry between two years for a given event and session
-/strat - Generates a meme Ferrari strategy
-/data-dump - Generates a data dump for a given year, event, session, and optionally a specific lap in .CSV format
-```
+
 
 
 ## Dependencies
 To run the KC Discord bot, ensure you have the following packages installed:
 
 ```
-OpenAI
 discord.py
-supervisor
+elevenlabslib
+Fast-F1
+matplotlib
+numpy
+OpenAI
+Pillow
 PyNaCl
 stability-sdk
-Pillow
-elevenlabslib
+supervisor
 youtube-dl (from master branch!)
-Fast-F1
-numpy
-pandas
-matplotlib
 ```
 
 ## Getting Started
@@ -116,8 +116,4 @@ py -3.10 kc.py
 python3.10 kc.py
 ```
 
-#### Docker
-```
-sudo docker run warshanks/discord-bots:latest
-```
 
