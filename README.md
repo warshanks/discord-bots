@@ -6,6 +6,10 @@
 ![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.4.2-blue)
 ![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
 ![Fast-F1](https://img.shields.io/badge/Fast--F1-2.3.2-blue)
+![numpy](https://img.shields.io/badge/numpy-1.23.3-blue)
+![pandas](https://img.shields.io/badge/pandas-1.5.0-blue)
+![matplotlib](https://img.shields.io/badge/matplotlib-3.6.0-blue)
+![Pillow](https://img.shields.io/badge/Pillow-9.5.0-blue)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -33,7 +37,7 @@
 - ### Generates images with Stability.AI's Stable Diffusion and OpenAI's Dall-E models
 ![](./images/image-generation.png)
 
-### And it even plays music from YouTube!
+### And it plays music from YouTube!
 
 ## Commands
 ### Music
@@ -75,6 +79,9 @@ Pillow
 elevenlabslib
 youtube-dl (from master branch!)
 Fast-F1
+numpy
+pandas
+matplotlib
 ```
 
 ## Getting Started

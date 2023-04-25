@@ -1,11 +1,11 @@
 from os import makedirs
-
-import pandas as pd
 import random
+
 import discord
 import fastf1
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from discord.ext import commands
 from fastf1 import plotting, utils
 from matplotlib import cm
@@ -18,7 +18,7 @@ makedirs('./images', exist_ok=True)
 makedirs('./csv_output', exist_ok=True)
 fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
-background_color = (0.2, 0.2, 0.2)
+background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
 
 
 # noinspection PyShadowingNames
@@ -97,10 +97,10 @@ class F1Cog(commands.Cog):
                               driver1: str, driver2: str, lap: int = None):
         # Defer the response to show that the bot is working on the request
         await ctx.response.defer(thinking=True, ephemeral=False)
-        
+
         # Set the plot background color
         plt.rcParams['axes.facecolor'] = background_color
-        
+
         # Format the driver, event, and session names
         driver1 = driver1.upper()
         driver2 = driver2.upper()
@@ -164,7 +164,7 @@ class F1Cog(commands.Cog):
         ax2.set_ylabel('Speed in km/h\nDRS (>10 = Active)', color='white')
         ax2.tick_params(axis='both', colors='white')
 
-    # Create a twin axis for the time difference plot
+        # Create a twin axis for the time difference plot
         twin = ax2.twinx()
         twin.plot(ref_tel['Distance'], delta_time, '--', color='white')
         twin.set_ylabel("<-- " + driver2 + " ahead | " + driver1 + " ahead -->", color='white')
@@ -184,10 +184,10 @@ class F1Cog(commands.Cog):
         plt.gcf().set_facecolor(background_color)
 
         # Save the plot as an image file
-        plt.savefig('./images/driver-comparison.png', facecolor=background_color)
+        plt.savefig('./images/driver_comparison.png', facecolor=background_color)
 
         # Send the image file in the follow-up message
-        await ctx.followup.send(file=discord.File('./images/driver-comparison.png'))
+        await ctx.followup.send(file=discord.File('./images/driver_comparison.png'))
 
         # Close the plot to free up resources
         plt.close()
@@ -206,7 +206,7 @@ class F1Cog(commands.Cog):
         except Exception as e:
             await ctx.followup.send(e)
             return
-        
+
         laps = ff1session.laps.pick_driver(driver)
         laps = laps.reset_index(drop=True)
         weather_data = ff1session.laps.pick_driver(driver).get_weather_data()
@@ -215,6 +215,107 @@ class F1Cog(commands.Cog):
 
         joined.to_csv("./csv_output/dump.csv")
         await ctx.followup.send(file=discord.File("./csv_output/dump.csv"))
+
+    # Define the "Year vs Year" command handler
+    @bot.tree.command(name="year-vs-year", description="Generate a comparison of two years")
+    async def year_vs_year(self, ctx, year1: int, year2: int, event: str, session: str,
+                           driver1: str = None, driver2: str = None):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+
+        # Set the plot background color
+        plt.rcParams['axes.facecolor'] = background_color
+
+        event = event.title()
+        session = session.upper()
+
+        # Load the specified session data and handle possible errors
+        try:
+            ff1year1 = fastf1.get_session(year1, event, session)
+            ff1year1.load()
+            ff1year2 = fastf1.get_session(year2, event, session)
+            ff1year2.load()
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
+
+        if driver1 is None:
+            driver1_lap = ff1year1.laps.pick_fastest()
+            driver1 = driver1_lap['Driver']
+        elif driver1 is not None:
+            driver1 = driver1.upper()
+            driver1_lap = ff1year1.laps.pick_driver(driver1).pick_fastest()
+        else:
+            await ctx.followup.send("Something went wrong, try again.")
+            return
+
+        if driver2 is None:
+            driver2_lap = ff1year2.laps.pick_fastest()
+            driver2 = driver2_lap['Driver']
+        elif driver2 is not None:
+            driver2 = driver2.upper()
+            driver2_lap = ff1year2.laps.pick_driver(driver2).pick_fastest()
+        else:
+            await ctx.followup.send("Something went wrong, try again.")
+            return
+
+        # Get car data and add distance
+        driver1_tel = driver1_lap.get_car_data().add_distance()
+        driver2_tel = driver2_lap.get_car_data().add_distance()
+
+        # Setup delta time comparisons
+        delta_time, ref_tel, compare_tel = utils.delta_time(driver1_lap, driver2_lap)
+
+        # Set driver colors
+        driver1_color = plotting.driver_color(driver1)
+        driver2_color = plotting.driver_color(driver2)
+
+        # Setup plot and pick data
+        # Assign attributes to each graph like driver name and color
+        fig, ax = plt.subplots()
+
+        # Speed over Distance with a condition for legibility when the drivers being compared are the same color
+        if driver1 == driver2:
+            ax.plot(driver1_tel['Distance'], driver1_tel['Speed'], color=driver1_color,
+                    label=driver1 + str(year1))
+            ax.plot(driver2_tel['Distance'], driver2_tel['Speed'], '--', color=driver2_color,
+                    label=driver2 + str(year2))
+
+        else:
+            ax.plot(driver1_tel['Distance'], driver1_tel['Speed'], color=driver1_color,
+                    label=driver1 + str(year1))
+            ax.plot(driver2_tel['Distance'], driver2_tel['Speed'], color=driver2_color,
+                    label=driver2 + str(year2))
+
+        # Label the plot
+        ax.set_xlabel('Distance in m', color='white')
+        ax.set_ylabel('Speed in km/h', color='white')
+        ax.tick_params(axis='both', colors='white')
+
+        # Define twin x-axis
+        twin = ax.twinx()
+        twin.plot(ref_tel['Distance'], delta_time, '--', color='white', label="Delta")
+        twin.set_ylabel("<-- " + driver2 + str(year2) + " ahead | " + driver1 + str(year1) + " ahead -->",
+                        color='white')
+        twin.tick_params(axis='both', colors='white')
+
+        leg1 = ax.legend()
+        for text in leg1.get_texts():
+            text.set_color('white')
+
+        # Set the figure background color
+        plt.gcf().set_facecolor(background_color)
+
+        # Plot subtitle with session information
+        plt.suptitle(f"Year vs Year Comparison \n "
+                     f"{ff1year1.event['EventName']} {year1} {year2} {session}", color='white')
+
+        # Save the plot to a file
+        plt.savefig("./images/year_vs_year.png")
+
+        # Send the plot to the user
+        await ctx.followup.send(file=discord.File("./images/year_vs_year.png"))
+
+        plt.close()
 
     # Define the "generate_strategy" command handler
     # noinspection PyUnresolvedReferences
