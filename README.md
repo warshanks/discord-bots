@@ -19,6 +19,7 @@
   - [Image Generation](#image-generation)
   - [Text-to-Speech Conversations](#text-to-speech-conversations)
   - [Text-to-Text Conversations](#text-to-text-conversations)
+  - [F1 Related](#f1-related)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
