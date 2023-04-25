@@ -9,7 +9,7 @@ RUN apk add --no-cache --virtual .build-deps gcc musl-dev libffi-dev \
     && apk add --no-cache ffmpeg git
 
 # Copy requirements.txt into the container
-COPY requirements.txt .
+COPY ./src/requirements.txt .
 
 # Install dependencies listed in requirements.txt and youtube_dl from GitHub
 RUN pip install --no-cache-dir -r requirements.txt \
@@ -18,11 +18,11 @@ RUN pip install --no-cache-dir -r requirements.txt \
 # Remove build dependencies
 RUN apk del .build-deps
 
+# Copy the Python scripts, config file, and the supervisord configuration file into the container
+COPY ./src .
+
 # Create logs directory inside the container
 RUN mkdir /app/logs
-
-# Copy the Python scripts, config file, and the supervisord configuration file into the container
-COPY kc.py lilith.py ferrari.py music_cog.py chat_cog.py image_cog.py config.py supervisord.conf ./
 
 # Set supervisord as the entry point, using the provided configuration file
 CMD ["supervisord", "-c", "supervisord.conf"]
