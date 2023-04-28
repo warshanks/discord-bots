@@ -40,8 +40,9 @@ class WeatherCog(commands.Cog):
 
     @bot.tree.command(name="weather",
                       description="Generate a report on current conditions in a given location.")
-    async def weather(self, ctx, *, location: str = "Tuscaloosa,US"):
+    async def weather(self, ctx, *, city: str = "Tuscaloosa", country_code: str = "US"):
         await ctx.response.defer(thinking=True, ephemeral=False)
+        location = city + "," + country_code
         try:
             observation = mgr.weather_at_place(location)
             weather = observation.weather
@@ -52,6 +53,7 @@ class WeatherCog(commands.Cog):
             wind_speed = weather.wind(unit="miles_hour")["speed"]
             wind_direction = weather.wind(unit="miles_hour")["deg"]
             humidity = weather.humidity
+            visibility = weather.visibility(unit="miles")
             rain_dict = weather.rain
             rain_1h = rain_dict["1h"] if "1h" in rain_dict else 0
             rain_3h = rain_dict["3h"] if "3h" in rain_dict else 0
@@ -60,6 +62,8 @@ class WeatherCog(commands.Cog):
             print(e)
             await ctx.followup.send("An error occurred while fetching weather data.")
             return
+
+        wind_speed = round(wind_speed, 2)
 
         if icon_name in emoji_dict:
             icon = emoji_dict[icon_name]
@@ -75,6 +79,7 @@ class WeatherCog(commands.Cog):
                                 f"**Wind Speed:** {wind_speed} mph\n"
                                 f"**Wind Direction:** {wind_direction}°\n"
                                 f"**Humidity:** {humidity}%\n"
+                                f"**Visibility:** {visibility} mi.\n"
                                 f"**Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm\n"
                                 f"**Report Generated:** {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}\n"
                                 )
