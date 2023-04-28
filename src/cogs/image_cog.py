@@ -1,6 +1,9 @@
+import base64
+
 import datetime
 import io
 import os
+from PIL import Image
 
 import openai
 import discord
@@ -46,13 +49,19 @@ class ImageCog(commands.Cog):
             response = await openai.Image.acreate(
                 prompt=img_prompt,
                 size='1024x1024',
-                n=1
+                n=1,
+                response_format='b64_json'
             )
-            img_url = response['data'][0]['url']
+            base64_img = response['data'][0]["b64_json"]
+            img_bytes = base64.b64decode(base64_img)
+            decoded_img = Image.open(io.BytesIO(img_bytes))
+            decoded_img.save("./images/dalle.png")
+
             # Send the generated image URL back to the user
-            await ctx.followup.send(f'{img_url}\n"{img_prompt}" '
-                                    f'by KC & {ctx.user} '
-                                    f'c. {datetime.datetime.now().year}')
+            await ctx.followup.send(content=f'"{img_prompt}" '
+                                            f'by KC & {ctx.user} '
+                                            f'c. {datetime.datetime.now().year}',
+                                    file=discord.File(fp="./images/dalle.png"))
         except Exception as e:
             await ctx.followup.send(e)
 

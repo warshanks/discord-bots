@@ -4,6 +4,7 @@ from discord.ext import commands
 
 from config import *
 from cogs.weather_cog import WeatherCog
+from cogs.image_cog import ImageCog
 
 # Get the start time of the program
 start_time = datetime.datetime.now()
@@ -17,6 +18,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 async def on_ready():
     try:
         await bot.add_cog(WeatherCog(bot))
+        await bot.add_cog(ImageCog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)
