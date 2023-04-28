@@ -1,15 +1,13 @@
 # KC Discord Bot
 ![python](https://img.shields.io/badge/Python-3.10-blue)
 ![discord.py](https://img.shields.io/badge/discord.py-2.2.2-blue)
-![openai](https://img.shields.io/badge/OpenAI-0.27.4-blue)
-![stability-sdk](https://img.shields.io/badge/stability--sdk-0.5.0-blue)
-![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.4.2-blue)
+![openai](https://img.shields.io/badge/OpenAI-0.27.5-blue)
+![stability-sdk](https://img.shields.io/badge/stability--sdk-0.7.0-blue)
+![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.5.2-blue)
 ![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
 ![Fast-F1](https://img.shields.io/badge/Fast--F1-2.3.2-blue)
-![numpy](https://img.shields.io/badge/numpy-1.23.3-blue)
-![pandas](https://img.shields.io/badge/pandas-1.5.0-blue)
-![matplotlib](https://img.shields.io/badge/matplotlib-3.6.0-blue)
 ![Pillow](https://img.shields.io/badge/Pillow-9.5.0-blue)
+![PyOWM](https://img.shields.io/badge/PyOWM-3.3.0-blue)
 
 ## Table of Contents
 - [Overview](#overview)
