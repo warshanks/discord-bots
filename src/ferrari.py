@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 
 from cogs.f1_cog import F1Cog
+from cogs.weather_cog import WeatherCog
 from config import *
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
@@ -15,6 +16,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 async def on_ready():
     try:
         await bot.add_cog(F1Cog(bot))
+        await bot.add_cog(WeatherCog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)

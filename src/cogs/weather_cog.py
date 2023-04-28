@@ -52,6 +52,9 @@ class WeatherCog(commands.Cog):
             wind_speed = weather.wind(unit="miles_hour")["speed"]
             wind_direction = weather.wind(unit="miles_hour")["deg"]
             humidity = weather.humidity
+            rain_dict = weather.rain
+            rain_1h = rain_dict["1h"] if "1h" in rain_dict else 0
+            rain_3h = rain_dict["3h"] if "3h" in rain_dict else 0
 
         except Exception as e:
             print(e)
@@ -72,5 +75,6 @@ class WeatherCog(commands.Cog):
                                 f"**Wind Speed:** {wind_speed} mph\n"
                                 f"**Wind Direction:** {wind_direction}°\n"
                                 f"**Humidity:** {humidity}%\n"
+                                f"**Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm\n"
                                 f"**Report Generated:** {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}\n"
                                 )
