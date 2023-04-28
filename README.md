@@ -20,6 +20,7 @@
   - [Text-to-Speech Conversations](#text-to-speech-conversations)
   - [Text-to-Text Conversations](#text-to-text-conversations)
   - [F1 Related](#f1-related)
+  - [Weather](#weather)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -76,23 +77,25 @@
 ```
 /hype - Generates a hype emojipasta about a given prompt
 ```
-
+### Weather
+```
+/weather - Displays the current weather for a given location
+```
 
 
 ## Dependencies
 To run the KC Discord bot, ensure you have the following packages installed:
 
 ```
-discord.py
-elevenlabslib
-Fast-F1
-matplotlib
-numpy
-OpenAI
-Pillow
-PyNaCl
-stability-sdk
-supervisor
+discord.py==2.2.2
+elevenlabslib==0.5.2
+fastf1==2.3.2
+openai==0.27.5
+Pillow==9.5.0
+pyowm==3.3.0
+PyNaCl==1.5.0
+stability-sdk==0.7.0
+supervisor==4.2.5
 youtube-dl (from master branch!)
 ```
 
