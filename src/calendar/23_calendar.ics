@@ -1,0 +1,4153 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Formula 1
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+DTSTART:20230223T100000Z
+DTEND:20230223T193000Z
+DTSTAMP:20230428T084424Z
+UID:63ff6fc0f4b46e43e3496acc@google.com
+CREATED:20230303T143018Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/kgHl7/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/kgHl8/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/kgHl9/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/kgHlb/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/kgHlc/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/kgHld/XhqC\n\nTwitter\nhttps://cal.f1.com/f/kgHlf/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/kgHlg/XhqC\n\nTikTok\nhttps://cal.f1.com/f/kgHlh/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143018Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO PRE-SEASON TESTING 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230224T100000Z
+DTEND:20230224T193000Z
+DTSTAMP:20230428T084424Z
+UID:63ff6fc0f4b46e43e3496acd@google.com
+CREATED:20230303T143018Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/kgHlj/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/kgHlk/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/kgHll/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/kgHlm/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/kgHln/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/kgHlp/XhqC\n\nTwitter\nhttps://cal.f1.com/f/kgHlq/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/kgHlr/XhqC\n\nTikTok\nhttps://cal.f1.com/f/kgHls/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143018Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO PRE-SEASON TESTING 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230225T100000Z
+DTEND:20230225T193000Z
+DTSTAMP:20230428T084424Z
+UID:63ff6fc0f4b46e49a969a5cf@google.com
+CREATED:20230303T143019Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/kgHlt/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/kgHlv/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/kgHlw/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/kgHlx/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/kgHly/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/kgHlz/XhqC\n\nTwitter\nhttps://cal.f1.com/f/kgHlB/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/kgHlC/XhqC\n\nTikTok\nhttps://cal.f1.com/f/kgHlF/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143019Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO PRE-SEASON TESTING 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230303T113000Z
+DTEND:20230303T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a004c410f086d2adf51@google.com
+CREATED:20230303T143027Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/kcdyH/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/kcdyM/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/kcdyP/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/kcdyT/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/kcdyY/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/kcdz4/XhqC\n\nTwitter\nhttps://cal.f1.com/f/kcdzd/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/kcdzj/XhqC\n\nTikTok\nhttps://cal.f1.com/f/kcdzn/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143027Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230303T150000Z
+DTEND:20230303T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f1de2577383@google.com
+CREATED:20230303T143028Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/k951y/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/k951F/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/k951L/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/k951P/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/k951W/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/k9521/XhqC\n\nTwitter\nhttps://cal.f1.com/f/k9528/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/k952f/XhqC\n\nTikTok\nhttps://cal.f1.com/f/k952k/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143028Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230304T113000Z
+DTEND:20230304T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a004c410f0d803fbd1a@google.com
+CREATED:20230303T143028Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/kcdzs/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/kcdzt/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/kcdzv/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/kcdzw/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/kcdzy/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/kcdzD/XhqC\n\nTwitter\nhttps://cal.f1.com/f/kcdzH/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/kcdzM/XhqC\n\nTikTok\nhttps://cal.f1.com/f/kcdzR/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143028Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230304T150000Z
+DTEND:20230304T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0d7c75f3a0@google.com
+CREATED:20230303T143029Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/k953g/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/k953l/XhqC\n\nSign up to F1 Newsletter\
+ nhttps://cal.f1.com/f/k953r/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/k953x/Xh
+ qC\n\nF1 Tickets\nhttps://cal.f1.com/f/k953D/XhqC\n\nFacebook\nhttps://cal.
+ f1.com/f/k953K/XhqC\n\nTwitter\nhttps://cal.f1.com/f/k953Q/XhqC\n\nInstagra
+ m\nhttps://cal.f1.com/f/k953X/XhqC\n\nTikTok\nhttps://cal.f1.com/f/k9544/Xh
+ qC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143029Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230305T150000Z
+DTEND:20230305T170000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c6536212a@google.com
+CREATED:20230303T143029Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nYou can also get
+  the latest F1 news and content\, direct to your inbox\, via our newsletter
+  by registering with F1.\n\nF1 TV\nhttps://cal.f1.com/f/k954c/XhqC\n\nVisit
+  the Race Hub\nhttps://cal.f1.com/f/k954g/XhqC\n\nRegister with F1 to recei
+ ve our newsletter\nhttps://cal.f1.com/f/k954l/XhqC\n\nF1 Tickets\nhttps://c
+ al.f1.com/f/k954v/XhqC\n\nF1 Store\nhttps://cal.f1.com/f/k954p/XhqC\n\nFace
+ book\nhttps://cal.f1.com/f/k954C/XhqC\n\nTwitter\nhttps://cal.f1.com/f/k954
+ G/XhqC\n\nInstagram\nhttps://cal.f1.com/f/k954L/XhqC\n\nTikTok\nhttps://cal
+ .f1.com/f/k954Q/XhqC\n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143029Z
+LOCATION:Bahrain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230303T144500Z
+DTEND:20230303T150000Z
+DTSTAMP:20230428T084424Z
+UID:64020475792e37000e12710c@google.com
+CREATED:20230303T143110Z
+DESCRIPTION:Stay up to speed with the latest information from Formula 1.\n\
+ nChanges to race dates\, times and details will be made automatically – you
+  don’t have to do anything.\n\nManage your ECAL at https://support.ecal.com
+ \n\nManage my ECAL\nhttps://support.ecal.com
+LAST-MODIFIED:20230303T143110Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Formula 1 in your calendar!
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H1M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230617T200000Z
+DTEND:20230617T210000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a4@google.com
+CREATED:20230303T143049Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95M1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Mc/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLg/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLh/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Mp/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Mt/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95MD/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95M
+ K/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95MN/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95MR/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040816Z
+LOCATION:Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230902T103000Z
+DTEND:20230902T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642a@google.com
+CREATED:20230303T143059Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96kl/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96kw/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNF/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNG/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96kL/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96kQ/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96kX/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96l
+ 3/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96l8/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96lf/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040817Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023  - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230902T140000Z
+DTEND:20230902T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642b@google.com
+CREATED:20230303T143100Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96ll/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96lG/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNH/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNJ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96lR/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96lX/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96m5/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96m
+ 8/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96mg/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96mk/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040817Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023  - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231007T133000Z
+DTEND:20231007T143000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3ad@google.com
+CREATED:20230303T143020Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96Dp/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Dv/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNP/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNQ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96DD/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96DK/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96DQ/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96D
+ V/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96DY/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96F3/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040818Z
+LOCATION:Qatar
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230505T220000Z
+DTEND:20230505T230000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c817c1afb@google.com
+CREATED:20230303T143042Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95lb/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95lh/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKt/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKv/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95lq/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95lv/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95lz/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95l
+ F/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95lK/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95lQ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040818Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230506T163000Z
+DTEND:20230506T173000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c817c1afc@google.com
+CREATED:20230303T143021Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95lX/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95m1/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKw/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKx/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95mt/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95mx/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95mG/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95m
+ L/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95mR/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95mW/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040818Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230506T200000Z
+DTEND:20230506T210000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c9b5f9fb3@google.com
+CREATED:20230303T143042Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95n3/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95n8/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJs/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJt/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95nj/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95nn/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95nr/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95n
+ x/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95nC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95nG/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040819Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230507T193000Z
+DTEND:20230507T213000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0d2f49dda5@google.com
+CREATED:20230303T143042Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95nN/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95nR/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKy/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKz/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95nZ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95p4/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95pb/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95p
+ k/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95pp/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95pv/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040819Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230519T113000Z
+DTEND:20230519T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd1e@google.com
+CREATED:20230303T143021Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdHd/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdHj/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKB/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKC/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdHp/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdHt/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdHx/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdH
+ z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdHD/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdHJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040819Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMI
+ LIA-ROMAGNA 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230519T150000Z
+DTEND:20230519T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c6536212f@google.com
+CREATED:20230303T143022Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95rf/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95rl/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKD/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKF/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95rx/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95rC/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95rG/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95r
+ K/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95rP/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95rS/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040820Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMI
+ LIA-ROMAGNA 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230527T103000Z
+DTEND:20230527T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c9b5f9fb4@google.com
+CREATED:20230303T143044Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95wZ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95x3/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKS/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKT/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95xh/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95xl/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95xt/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95x
+ z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95xF/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95xJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040820Z
+LOCATION:Monaco
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAND PRIX DE MONACO 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230602T113000Z
+DTEND:20230602T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f44@google.com
+CREATED:20230303T143045Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdJT/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdJX/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKZ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZL1/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdK3/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdK8/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdKd/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdK
+ j/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdKm/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdKr/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040820Z
+LOCATION:Spain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230602T150000Z
+DTEND:20230602T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136424@google.com
+CREATED:20230303T143045Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Df/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Dk/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZL2/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZL3/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Dt/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Dz/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95DG/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95D
+ L/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95DR/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95DV/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040821Z
+LOCATION:Spain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230604T130000Z
+DTEND:20230604T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a3@google.com
+CREATED:20230303T143047Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Bs/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Bw/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZL8/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZL9/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95BJ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95BP/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95BV/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95C
+ 2/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95C6/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Cc/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040821Z
+LOCATION:Spain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230616T210000Z
+DTEND:20230616T220000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136425@google.com
+CREATED:20230303T143048Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95F3/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95F7/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLb/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLc/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Fk/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Fp/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Fx/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95F
+ B/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95FH/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95FL/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040822Z
+LOCATION:Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230617T163000Z
+DTEND:20230617T173000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e43@google.com
+CREATED:20230303T143048Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95GK/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95GQ/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLd/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLf/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95GZ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95H5/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95H9/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95H
+ f/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Hm/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Hp/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040822Z
+LOCATION:Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230722T103000Z
+DTEND:20230722T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a5@google.com
+CREATED:20230303T143054Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Yb/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Yf/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLn/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLp/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Yq/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Yv/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95YC/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95Y
+ K/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95YP/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95YV/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040822Z
+LOCATION:Hungary
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230722T140000Z
+DTEND:20230722T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d55@google.com
+CREATED:20230303T143024Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k962L/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k962Q/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLq/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLr/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k962Y/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k9634/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k963b/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k963
+ h/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k963m/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k963q/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040823Z
+LOCATION:Hungary
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231021T180000Z
+DTEND:20231021T190000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e4a@google.com
+CREATED:20230303T143033Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96GX/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96H4/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLx/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLy/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Hg/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Hk/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Hm/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96H
+ s/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96HH/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96HM/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040823Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231028T173000Z
+DTEND:20231028T183000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4d@google.com
+CREATED:20230303T143104Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96MD/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96MK/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLK/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLL/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96MX/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96N6/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Nf/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96N
+ l/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Ns/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Nw/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040823Z
+LOCATION:Mexico
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231028T210000Z
+DTEND:20231028T220000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e4b@google.com
+CREATED:20230303T143105Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96NH/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96NN/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLM/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLN/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96NX/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96P2/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Pc/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96P
+ g/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Pn/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Pr/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040824Z
+LOCATION:Mexico
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231103T143000Z
+DTEND:20231103T153000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f4a@google.com
+CREATED:20230303T143105Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdVj/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdVm/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLR/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLS/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdVy/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdVz/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdVB/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdV
+ G/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdVK/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdVP/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040824Z
+LOCATION:Brazil
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231105T170000Z
+DTEND:20231105T190000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e4e@google.com
+CREATED:20230303T143107Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96R9/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Rd/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLY/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLZ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Rn/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Rr/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96RD/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96R
+ L/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96RT/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96S1/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040825Z
+LOCATION:Brazil
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231104T183000Z
+DTEND:20231104T193000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4e@google.com
+CREATED:20230303T143107Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96S8/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Sd/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZM1/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZM2/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96St/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Sp/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96SD/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96S
+ H/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96SN/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96SS/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040825Z
+LOCATION:Brazil
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230728T113000Z
+DTEND:20230728T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f46@google.com
+CREATED:20230303T143054Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdPg/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdPj/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZM3/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZM4/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdPp/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdPs/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdPB/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdP
+ D/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdPG/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdPJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040825Z
+LOCATION:Belgium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 BELGIAN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230728T150000Z
+DTEND:20230728T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b46@google.com
+CREATED:20230303T143055Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Xh/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Xm/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZM7/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZM8/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Xz/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95XF/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95XM/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95X
+ S/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95XY/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Y4/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040826Z
+LOCATION:Belgium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 BELGIAN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230730T130000Z
+DTEND:20230730T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a6@google.com
+CREATED:20230303T143055Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k967l/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k967q/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZM9/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMb/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k967B/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k967J/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k967R/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k967
+ V/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k9681/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k9685/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040826Z
+LOCATION:Belgium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 BELGIAN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230826T130000Z
+DTEND:20230826T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4a@google.com
+CREATED:20230303T143057Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96dK/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96dP/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMm/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMn/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96f6/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96f9/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96fj/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96f
+ n/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96fv/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96fz/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040826Z
+LOCATION:Netherlands
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230827T130000Z
+DTEND:20230827T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4b@google.com
+CREATED:20230303T143058Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96fJ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96fN/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMp/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMq/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96fY/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96g3/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96gg/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96g
+ m/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96gn/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96gt/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040827Z
+LOCATION:Netherlands
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230630T113000Z
+DTEND:20230630T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd21@google.com
+CREATED:20230303T143050Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdLR/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdLW/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMr/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMs/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdM4/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdM6/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdM8/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdM
+ c/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdMg/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdMk/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040827Z
+LOCATION:Austria
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230701T103000Z
+DTEND:20230701T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d51@google.com
+CREATED:20230303T143050Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95PM/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95PQ/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMt/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMv/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95PZ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Q9/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Qp/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95Q
+ t/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Qy/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95QB/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040828Z
+LOCATION:Austria
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230924T050000Z
+DTEND:20230924T070000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3ac@google.com
+CREATED:20230303T143032Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96Cz/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96CF/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMN/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMP/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96CR/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96CY/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96D3/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96D
+ 6/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Db/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Dg/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040828Z
+LOCATION:Japan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023  - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231117T080000Z
+DTEND:20231117T090000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c65362133@google.com
+CREATED:20230303T143107Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96VF/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96VJ/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJv/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJw/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96VW/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96W2/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96W8/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96W
+ d/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Wk/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Wp/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040828Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231118T043000Z
+DTEND:20231118T053000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c65362134@google.com
+CREATED:20230303T143108Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96Ww/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Wz/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMS/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMT/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96WK/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96WQ/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96WX/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96X
+ 1/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96X6/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Xc/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040829Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230331T013000Z
+DTEND:20230331T023000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd1c@google.com
+CREATED:20230303T143037Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdDM/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdDQ/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKf/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKg/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdDV/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdDY/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdF4/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdF
+ 8/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdFb/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdFd/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040829Z
+LOCATION:Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230331T050000Z
+DTEND:20230331T060000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c6536212d@google.com
+CREATED:20230303T143038Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95b4/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95b8/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKh/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKj/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95bh/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95bn/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95bt/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95b
+ z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95bG/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95bK/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040830Z
+LOCATION:Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230401T013000Z
+DTEND:20230401T023000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0d565a4b41@google.com
+CREATED:20230303T143037Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95bS/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95bW/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKk/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKl/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95c4/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95c8/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95cc/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95c
+ h/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95cp/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95ct/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040830Z
+LOCATION:Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230401T050000Z
+DTEND:20230401T060000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0d565a4b42@google.com
+CREATED:20230303T143038Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95cz/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95cD/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKm/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKn/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95cQ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95cW/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95d4/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95d
+ 7/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95dd/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95dk/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040830Z
+LOCATION:Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230505T183000Z
+DTEND:20230505T193000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd1d@google.com
+CREATED:20230303T143041Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdGp/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdGv/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKr/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKs/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdGx/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdGz/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdGD/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdG
+ G/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdGK/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdGM/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040831Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230428T093000Z
+DTEND:20230428T103000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f086d2adf54@google.com
+CREATED:20230303T143039Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdFB/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdFF/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJR/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJS/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdFV/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdFX/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdFY/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdF
+ Z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdG1/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdG2/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040831Z
+LOCATION:Azerbaijan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 AZERBAIJAN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230428T130000Z
+DTEND:20230428T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f090913641f@google.com
+CREATED:20230303T143039Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95h7/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95hb/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJW/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJX/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95hm/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95hs/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95hC/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95h
+ K/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95hP/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95hT/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040832Z
+LOCATION:Azerbaijan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 AZERBAIJAN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230430T110000Z
+DTEND:20230430T130000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0909136420@google.com
+CREATED:20230303T143040Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95hZ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95j4/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJY/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJZ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95jc/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95jf/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95jm/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95j
+ q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95jv/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95jz/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040833Z
+LOCATION:Azerbaijan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 AZERBAIJAN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230317T133000Z
+DTEND:20230317T143000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f086d2adf53@google.com
+CREATED:20230303T143034Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdCZ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdD3/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZK3/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZK4/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdD6/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdD7/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdDc/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdD
+ g/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdDj/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdDl/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040834Z
+LOCATION:Saudi Arabia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230317T170000Z
+DTEND:20230317T180000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c6536212b@google.com
+CREATED:20230303T143035Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k954X/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k9552/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZK5/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZK6/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k955k/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k955p/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k955t/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k955
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k955D/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k955J/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040834Z
+LOCATION:Saudi Arabia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230318T133000Z
+DTEND:20230318T143000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c6536212c@google.com
+CREATED:20230303T143035Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k956v/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k956z/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZK7/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZK8/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k956N/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k956W/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k9573/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k957
+ 8/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k957d/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k957j/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040834Z
+LOCATION:Saudi Arabia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230318T170000Z
+DTEND:20230318T180000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c9b5f9faf@google.com
+CREATED:20230303T143036Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k957p/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k957v/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZK9/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKb/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k957H/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k957P/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k957W/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k957
+ Z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k9586/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k958g/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040835Z
+LOCATION:Saudi Arabia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230319T170000Z
+DTEND:20230319T190000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c9b5f9fb0@google.com
+CREATED:20230303T143036Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k958p/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k958v/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKc/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKd/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k958G/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k958J/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k958R/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k958
+ X/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k9592/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k9597/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040835Z
+LOCATION:Saudi Arabia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230520T103000Z
+DTEND:20230520T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0909136421@google.com
+CREATED:20230303T143022Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95rY/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95s2/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKG/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKH/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95sc/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95sk/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95sp/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95s
+ t/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95sx/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95sC/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040836Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMI
+ LIA-ROMAGNA 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230520T140000Z
+DTEND:20230520T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0909136422@google.com
+CREATED:20230303T143023Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95sL/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95sR/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKJ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKK/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95t1/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95t5/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95tc/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95t
+ h/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95tl/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95tq/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040836Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMI
+ LIA-ROMAGNA 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230521T130000Z
+DTEND:20230521T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0d565a4b43@google.com
+CREATED:20230303T143023Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95tx/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95tC/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKL/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKM/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95tL/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95tN/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95tS/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95v
+ 2/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95v6/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95vb/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040836Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMI
+ LIA-ROMAGNA 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230526T113000Z
+DTEND:20230526T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd1f@google.com
+CREATED:20230303T143043Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdHZ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdJ3/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKN/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKP/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdJb/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdJf/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdJl/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdJ
+ q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdJs/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdJy/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040837Z
+LOCATION:Monaco
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAND PRIX DE MONACO 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230526T150000Z
+DTEND:20230526T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f1de2577385@google.com
+CREATED:20230303T143043Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95wb/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95wd/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKQ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKR/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95wq/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95wv/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95wF/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95w
+ J/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95wN/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95wS/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040837Z
+LOCATION:Monaco
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAND PRIX DE MONACO 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230527T140000Z
+DTEND:20230527T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a1@google.com
+CREATED:20230303T143044Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95yN/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95yV/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKV/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKW/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95z6/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95zb/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95zj/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95z
+ n/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95zs/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95zx/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040838Z
+LOCATION:Monaco
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 GRAND PRIX DE MONACO 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230528T130000Z
+DTEND:20230528T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a2@google.com
+CREATED:20230303T143045Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95zH/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95zL/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKX/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKY/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95zT/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95zX/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95B5/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95B
+ b/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Bh/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Bl/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040838Z
+LOCATION:Monaco
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 GRAND PRIX DE MONACO 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230603T103000Z
+DTEND:20230603T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e42@google.com
+CREATED:20230303T143046Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95FW/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95G2/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZL4/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZL5/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95G8/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Gg/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Gm/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95G
+ q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Gw/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95GB/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040838Z
+LOCATION:Spain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230603T140000Z
+DTEND:20230603T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c65362130@google.com
+CREATED:20230303T143047Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Hy/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95HF/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZL6/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZL7/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95HR/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95HY/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95J5/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95J
+ b/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Jh/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Jn/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040839Z
+LOCATION:Spain
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230616T173000Z
+DTEND:20230616T183000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd20@google.com
+CREATED:20230303T143048Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdKS/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdKZ/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJq/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJr/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdL7/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdLc/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdLh/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdL
+ m/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdLq/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdLt/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040839Z
+LOCATION:Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230618T180000Z
+DTEND:20230618T200000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136426@google.com
+CREATED:20230303T143049Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95N1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95N5/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJn/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJp/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Ng/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Nk/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Nr/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95N
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95ND/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95NK/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040839Z
+LOCATION:Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230721T113000Z
+DTEND:20230721T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f0d803fbd22@google.com
+CREATED:20230303T143024Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdNt/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdNy/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLj/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLk/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdNH/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdNM/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdNR/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdN
+ V/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdNX/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdNZ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040840Z
+LOCATION:Hungary
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230721T150000Z
+DTEND:20230721T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e46@google.com
+CREATED:20230303T143024Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k961K/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k961N/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLl/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLm/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k9621/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k9627/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k962m/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k962
+ v/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k962B/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k962J/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040840Z
+LOCATION:Hungary
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230723T130000Z
+DTEND:20230723T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d56@google.com
+CREATED:20230303T143025Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k963D/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k963J/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLs/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLt/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k963T/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k963Z/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k9649/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k964
+ d/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k964k/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k964n/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040841Z
+LOCATION:Hungary
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231020T173000Z
+DTEND:20231020T183000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a004c410f0d803fbd1b@google.com
+CREATED:20230303T143032Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdC4/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdC6/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLv/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLw/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdCf/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdCh/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdCk/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdC
+ l/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdCm/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdCp/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040841Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231020T210000Z
+DTEND:20231020T220000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c817c1b01@google.com
+CREATED:20230303T143033Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96HT/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96J1/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLz/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLB/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Jb/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Jh/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Jq/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96J
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96JC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96JH/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040841Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231022T190000Z
+DTEND:20231022T210000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d5a@google.com
+CREATED:20230303T143034Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96JR/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96K1/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLC/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLD/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96K9/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Kg/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Kq/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96K
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96KB/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96KJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040842Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231021T220000Z
+DTEND:20231021T230000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136430@google.com
+CREATED:20230303T143034Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96KS/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96L1/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLF/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLG/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Lj/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96L8/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Lr/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96L
+ t/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Ly/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96LD/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040842Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231027T183000Z
+DTEND:20231027T193000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f49@google.com
+CREATED:20230303T143104Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdTz/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdTD/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZJl/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZJm/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdTJ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdTK/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdTN/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdT
+ Q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdTS/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdTV/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040843Z
+LOCATION:Mexico
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231027T220000Z
+DTEND:20231027T233000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4c@google.com
+CREATED:20230303T143104Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96gG/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96gK/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLH/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLJ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96gV/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96gZ/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96h5/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96h
+ 9/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96hf/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96hk/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040843Z
+LOCATION:Mexico
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231029T200000Z
+DTEND:20231029T220000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e4c@google.com
+CREATED:20230303T143058Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96PB/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96PF/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLP/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLQ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96PP/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96PS/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96PY/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96Q
+ 3/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Q5/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Q8/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040843Z
+LOCATION:Mexico
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231103T180000Z
+DTEND:20231103T190000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d2f49dda6@google.com
+CREATED:20230303T143106Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95pD/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95pK/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZLW/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZLX/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95pW/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95q1/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95q5/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95q
+ 9/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95qg/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95ql/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040843Z
+LOCATION:Brazil
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230729T103000Z
+DTEND:20230729T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d58@google.com
+CREATED:20230303T143055Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k965w/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k965D/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZM5/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZM6/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k965N/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k965Q/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k965Z/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k966
+ 8/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k966f/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k966l/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040844Z
+LOCATION:Belgium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 BELGIAN GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230729T143000Z
+DTEND:20230729T153000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a7@google.com
+CREATED:20230303T143056Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k968c/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k968h/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMc/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMd/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k968w/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k968r/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k968F/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k968
+ K/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k968P/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k968W/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040844Z
+LOCATION:Belgium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 BELGIAN GRAND PRIX 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230825T103000Z
+DTEND:20230825T113000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f47@google.com
+CREATED:20230303T143057Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdQ1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdQ4/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMf/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMg/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdQb/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdQf/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdQk/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdQ
+ q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdQs/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdQw/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040844Z
+LOCATION:Netherlands
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230825T140000Z
+DTEND:20230825T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b48@google.com
+CREATED:20230303T143056Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96bV/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96bY/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMh/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMj/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96cb/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96cj/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96ct/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96c
+ x/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96cD/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96cJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040845Z
+LOCATION:Netherlands
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230826T093000Z
+DTEND:20230826T103000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b49@google.com
+CREATED:20230303T143058Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96cQ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96cX/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMk/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMl/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96d7/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96db/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96dl/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96d
+ p/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96ds/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96dD/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040845Z
+LOCATION:Netherlands
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230630T150000Z
+DTEND:20230630T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136428@google.com
+CREATED:20230303T143050Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95QM/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95QR/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMw/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMx/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95R2/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95R4/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Rd/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95R
+ k/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Rn/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Rt/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040845Z
+LOCATION:Austria
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230702T130000Z
+DTEND:20230702T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b44@google.com
+CREATED:20230303T143051Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Rz/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95RF/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMy/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMz/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95RS/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95RY/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95S4/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95S
+ 7/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95Sc/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Sj/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040846Z
+LOCATION:Austria
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230701T143000Z
+DTEND:20230701T153000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d52@google.com
+CREATED:20230303T143051Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Sr/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Sw/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMB/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMC/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95SR/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95SF/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95SX/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95T
+ 3/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95T7/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95Td/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040846Z
+LOCATION:Austria
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230922T023000Z
+DTEND:20230922T033000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a004c410f086d2adf52@google.com
+CREATED:20230303T143029Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdBc/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdBg/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMD/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMF/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdBm/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdBp/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdBr/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdB
+ s/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdBt/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdBw/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040846Z
+LOCATION:Japan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023  - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230922T060000Z
+DTEND:20230922T073000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d59@google.com
+CREATED:20230303T143030Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k966s/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k966w/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMG/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMH/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k966F/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k966L/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k9671/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k967
+ 4/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k9677/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k967c/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040847Z
+LOCATION:Japan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023  - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230923T023000Z
+DTEND:20230923T033000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642d@google.com
+CREATED:20230303T143030Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96x6/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96xb/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMJ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMK/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96xl/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96xs/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96xy/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96x
+ F/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96xK/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96xP/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040847Z
+LOCATION:Japan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023  - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230923T060000Z
+DTEND:20230923T070000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642e@google.com
+CREATED:20230303T143031Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96y1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96y5/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZML/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMM/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96yf/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96yj/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96yq/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96y
+ z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96yC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96yG/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040848Z
+LOCATION:Japan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023  - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231117T043000Z
+DTEND:20231117T053000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f4b@google.com
+CREATED:20230303T143025Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdW9/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdWf/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMQ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMR/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdWm/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdWq/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdWt/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdW
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdWC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdWG/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040848Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231118T080000Z
+DTEND:20231118T090000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b4f@google.com
+CREATED:20230303T143026Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96T1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96T4/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMV/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMW/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Td/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Tj/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Tr/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96T
+ v/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96TC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96TH/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040848Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231119T060000Z
+DTEND:20231119T080000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b50@google.com
+CREATED:20230303T143026Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96TM/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96TR/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMX/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZMY/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96V2/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96V7/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Vf/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96V
+ k/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Vr/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Vx/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040849Z
+LOCATION:United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230707T113000Z
+DTEND:20230707T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f45@google.com
+CREATED:20230303T143052Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdMB/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdMG/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZMZ/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZN1/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdMN/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdMR/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdMW/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdM
+ Y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdMZ/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdN4/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040849Z
+LOCATION:United Kingdom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230707T150000Z
+DTEND:20230707T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d565a4b45@google.com
+CREATED:20230303T143052Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Wh/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Wm/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZN2/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZN3/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95WF/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95WK/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95WS/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95W
+ W/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95X2/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95X8/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040849Z
+LOCATION:United Kingdom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230708T103000Z
+DTEND:20230708T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d54@google.com
+CREATED:20230303T143053Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Vn/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Vt/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZN4/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZN5/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95VF/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95VH/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95VN/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95V
+ R/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95VV/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95W4/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040850Z
+LOCATION:United Kingdom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023 - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230708T140000Z
+DTEND:20230708T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e44@google.com
+CREATED:20230303T143053Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95Z1/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95Z6/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZN6/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZN7/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95Zg/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95Zn/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95Zv/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95Z
+ z/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95ZD/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95ZJ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040850Z
+LOCATION:United Kingdom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230709T140000Z
+DTEND:20230709T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e45@google.com
+CREATED:20230303T143053Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95ZQ/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95ZW/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZN8/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZN9/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k9613/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k9617/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k961h/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k961
+ n/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k961s/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k961x/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040850Z
+LOCATION:United Kingdom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230915T093000Z
+DTEND:20230915T103000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f086d2adf55@google.com
+CREATED:20230303T143101Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdRz/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdRD/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNb/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNc/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdRL/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdRN/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdRR/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdR
+ V/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdRZ/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdSc/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040851Z
+LOCATION:Singapore
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023  - Practi
+ ce 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230915T130000Z
+DTEND:20230915T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3a9@google.com
+CREATED:20230303T143101Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96qq/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96qC/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNd/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNf/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96sS/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96t2/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96t8/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96t
+ c/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96tk/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96tp/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040851Z
+LOCATION:Singapore
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023  - Practi
+ ce 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230916T093000Z
+DTEND:20230916T103000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3aa@google.com
+CREATED:20230303T143102Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96tx/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96tB/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNg/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNh/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96tJ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96tP/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96tW/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96v
+ 2/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96v6/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96vc/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040851Z
+LOCATION:Singapore
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023  - Practi
+ ce 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230916T130000Z
+DTEND:20230916T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c817c1afe@google.com
+CREATED:20230303T143102Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96vj/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96vn/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNj/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNk/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96vx/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96vF/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96vL/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96v
+ W/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96w2/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96w8/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040852Z
+LOCATION:Singapore
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023  - Qualif
+ ying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230917T120000Z
+DTEND:20230917T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642c@google.com
+CREATED:20230303T143102Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96wk/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96wn/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNl/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNm/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96wx/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96wC/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96wL/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96w
+ N/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96wV/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96wZ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040852Z
+LOCATION:Singapore
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023  - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231124T093000Z
+DTEND:20231124T103000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f086d2adf57@google.com
+CREATED:20230303T143108Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdXd/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdXg/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNn/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNp/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdXl/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdXp/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdXt/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdX
+ y/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdXC/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdXG/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040853Z
+LOCATION:United Arab Emirates
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023  - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231124T130000Z
+DTEND:20231124T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3af@google.com
+CREATED:20230303T143109Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96ZV/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96ZY/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNq/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNr/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k9717/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k971b/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k971l/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k971
+ p/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k971w/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k971z/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040853Z
+LOCATION:United Arab Emirates
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023  - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231125T103000Z
+DTEND:20231125T113000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c65362135@google.com
+CREATED:20230303T143027Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96Xj/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Xq/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNs/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNt/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Xw/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96XJ/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96XQ/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96X
+ V/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Y1/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Y3/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040854Z
+LOCATION:United Arab Emirates
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023  - Practice 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231125T140000Z
+DTEND:20231125T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d3c778d5b@google.com
+CREATED:20230303T143109Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96Yc/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Yj/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNv/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNw/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Yt/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Yz/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96YK/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96Y
+ Q/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96YV/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96YZ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040854Z
+LOCATION:United Arab Emirates
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023  - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231126T130000Z
+DTEND:20231126T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c65362136@google.com
+CREATED:20230303T143027Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k971L/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k971R/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNx/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNy/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k971Z/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k9725/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k972f/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k972
+ k/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k972p/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k972w/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040854Z
+LOCATION:United Arab Emirates
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023  - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230901T113000Z
+DTEND:20230901T123000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f1e20584f48@google.com
+CREATED:20230303T143059Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdQS/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdQW/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNz/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNB/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdR2/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdR6/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdRb/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdR
+ f/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdRj/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdRl/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040855Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023  - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230901T150000Z
+DTEND:20230901T160000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0909136429@google.com
+CREATED:20230303T143059Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96jl/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96jp/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNC/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZND/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96jF/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96jL/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96jW/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96k
+ 1/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96k6/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96kb/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040855Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023  - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230903T130000Z
+DTEND:20230903T150000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d70162e48@google.com
+CREATED:20230303T143100Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96mq/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96mw/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNK/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNL/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96mJ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96mM/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96mT/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96m
+ X/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96n2/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96n6/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040855Z
+LOCATION:Italy
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023  - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231006T133000Z
+DTEND:20231006T143000Z
+DTSTAMP:20230428T084424Z
+UID:63f40a014c410f086d2adf56@google.com
+CREATED:20230303T143019Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kcdSG/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kcdSL/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNM/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNN/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kcdSP/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kcdST/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kcdSX/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kcdT
+ 2/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kcdT5/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kcdT8/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040856Z
+LOCATION:Qatar
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023 - Practice 1
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231006T170000Z
+DTEND:20231006T180000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0d7c75f3ae@google.com
+CREATED:20230303T143020Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96F7/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96Fd/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNR/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNS/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Fq/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Ft/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96FD/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96F
+ J/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96FP/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96FV/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040856Z
+LOCATION:Qatar
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023 - Qualifying
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231008T170000Z
+DTEND:20231008T190000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f090913642f@google.com
+CREATED:20230303T143103Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96BK/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96BP/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNT/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNV/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96BY/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96C4/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Cb/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96C
+ g/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96Cl/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96Cq/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040857Z
+LOCATION:Qatar
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231007T173000Z
+DTEND:20231007T183000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad14c410f0c817c1b00@google.com
+CREATED:20230303T143020Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k96G2/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k96G6/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZNW/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZNX/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k96Gr/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k96Gm/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k96Gx/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k96G
+ D/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k96GK/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k96GQ/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230330T040857Z
+LOCATION:Qatar
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230402T050000Z
+DTEND:20230402T070000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c817c1af9@google.com
+CREATED:20230303T143038Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95dr/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95dy/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZKp/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZKq/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95dN/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95dQ/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95dX/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95f
+ 4/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95f9/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95fc/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230406T170312Z
+LOCATION:Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023 - Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+BEGIN:VALARM
+ACTION:NONE
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+X-WR-ALARMUID:1052DD00-2F08-4EC9-8A41-F22BEBDA9CD3
+UID:1052DD00-2F08-4EC9-8A41-F22BEBDA9CD3
+ACKNOWLEDGED:20230402T043001Z
+X-APPLE-DEFAULT-ALARM:TRUE
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230429T133000Z
+DTEND:20230429T140000Z
+DTSTAMP:20230428T084424Z
+UID:63ed7ad04c410f0c9b5f9fb2@google.com
+CREATED:20230303T143041Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/k95jF/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/k95jK/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/knZK1/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/knZK2/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/k95jZ/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/k95jW/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/k95k7/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/k95k
+ b/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/k95kf/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/k95kl/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230427T000135Z
+LOCATION:Azerbaijan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏁 FORMULA 1 AZERBAIJAN GRAND PRIX 2023 - Sprint Race
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231104T143000Z
+DTEND:20231104T153000Z
+DTSTAMP:20230428T084424Z
+UID:6449b495f4b46e0f6833ef3a@google.com
+CREATED:20230427T000136Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kDNFW/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kDNFX/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/kDNFY/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/kDNFZ/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kDNG1/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kDNG2/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kDNG3/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kDNG
+ 4/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kDNG5/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kDNG6/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230427T000136Z
+LOCATION:Brazil
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏎 FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023 - Practice 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230429T083000Z
+DTEND:20230429T091400Z
+DTSTAMP:20230428T084424Z
+UID:6449b495f4b46e0f6833ef39@google.com
+CREATED:20230427T000136Z
+DESCRIPTION:Follow all the action on F1 TV and F1.com. \n\nUnlock the insid
+ e world of F1 by signing up to F1 Unlocked at F1.com/F1Unlocked\n\nFollow o
+ n the go with F1 TV\nhttps://cal.f1.com/f/kDNFl/XhqC\n\nVisit the Race Hub\
+ nhttps://cal.f1.com/f/kDNFm/XhqC\n\nFree sign up to F1 Unlocked\nhttps://ca
+ l.f1.com/f/kDNFn/XhqC\n\nDownload the Official F1 Race Programme App\nhttps
+ ://cal.f1.com/f/kDNFp/XhqC\n\nWear your favourite teams colours with F1 sto
+ re\nhttps://cal.f1.com/f/kDNFq/XhqC\n\nChoose where to watch a race with F1
+  Tickets\nhttps://cal.f1.com/f/kDNFr/XhqC\n\nFollow us on Facebook\nhttps:/
+ /cal.f1.com/f/kDNFs/XhqC\n\nFollow us on Twitter\nhttps://cal.f1.com/f/kDNF
+ t/XhqC\n\nFollow us on Instagram\nhttps://cal.f1.com/f/kDNFv/XhqC\n\nFollow
+  us on TikTok\nhttps://cal.f1.com/f/kDNFw/XhqC\n\nManage my ECAL\nhttps://s
+ upport.ecal.com
+LAST-MODIFIED:20230427T065804Z
+LOCATION:Azerbaijan
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:⏱️ FORMULA 1 AZERBAIJAN GRAND PRIX 2023 - Sprint Shootout
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H5M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H30M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -2,7 +2,8 @@ import urllib.request
 import discord
 from discord.ext import commands
 from pyowm import OWM
-from datetime import datetime, timedelta
+from datetime import datetime
+import pytz
 
 from config import owm_token
 
@@ -43,6 +44,8 @@ class WeatherCog(commands.Cog):
                       description="Generate a report on current conditions in a given location.")
     async def weather(self, ctx, *, city: str = "Tuscaloosa", country_code: str = "US"):
         await ctx.response.defer(thinking=True, ephemeral=False)
+        city = city.title()
+        country_code = country_code.upper()
         location = city + "," + country_code
         try:
             observation = mgr.weather_at_place(location)
@@ -60,9 +63,15 @@ class WeatherCog(commands.Cog):
             rain_3h = rain_dict["3h"] if "3h" in rain_dict else 0
 
         except Exception as e:
-            print(e)
-            await ctx.followup.send("An error occurred while fetching weather data.")
+            await ctx.followup.send(e)
             return
+
+        # Current date and time in UTC
+        now_utc = datetime.utcnow()
+
+        # Convert UTC timezone to US/Central timezone
+        us_central_time_zone = pytz.timezone('US/Central')
+        now_cst = now_utc.replace(tzinfo=pytz.utc).astimezone(us_central_time_zone)
 
         wind_speed = round(wind_speed, 2)
 
@@ -82,7 +91,7 @@ class WeatherCog(commands.Cog):
                                 f"**Humidity:** {humidity}%\n"
                                 f"**Visibility:** {visibility} mi.\n"
                                 f"**Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm\n"
-                                f"**Report Generated:** {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}\n"
+                                f"**Report Generated:** {now_cst.strftime('%m/%d/%Y %I:%M:%S %p')} CST\n"
                                 )
 
     @bot.tree.command(name="outlook", description="Retrieve the latest convective outlook from the SPC at NOAA.")

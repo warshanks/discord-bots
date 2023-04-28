@@ -1,5 +1,6 @@
 from os import makedirs
 import random
+import pytz
 
 import discord
 import fastf1
@@ -10,6 +11,8 @@ from discord.ext import commands
 from fastf1 import plotting, utils
 from matplotlib import cm
 from matplotlib.collections import LineCollection
+from icalendar import Calendar
+from datetime import datetime
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -19,6 +22,10 @@ makedirs('../csv_output', exist_ok=True)
 fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
 background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
+
+
+def is_weekend(date):
+    return date.weekday() >= 4
 
 
 # noinspection PyShadowingNames
@@ -361,3 +368,49 @@ class F1Cog(commands.Cog):
                 await ctx.response.send_message(tire_str + "\nStrategy certified by Scuderia Ferrari 🐎")
         except UnboundLocalError or NameError:
             await ctx.response.send_message("We are checking...")  # Send a message in case of errors
+
+    @bot.tree.command(name="next", description="List upcoming F1 events")
+    async def next(self, ctx):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        cal_path = "./calendar/23_calendar.ics"
+        with open(cal_path, "r", encoding="utf-8") as calendar_file:
+            calendar_data = calendar_file.read()
+
+        calendar = Calendar.from_ical(calendar_data)
+        now = datetime.now(pytz.utc)
+        cst = pytz.timezone('America/Chicago')
+
+        events = []
+        for component in calendar.walk():
+            if component.name == "VEVENT":
+                event_start = component.get('dtstart').dt
+                event_end = component.get('dtend').dt
+                event_name = component.get('summary')
+
+                if event_start.tzinfo:
+                    event_start = event_start.astimezone(pytz.utc)
+
+                events.append((event_start, event_end, event_name))
+
+        events.sort(key=lambda x: x[0])
+
+        # Initialize an empty string to store the output
+        output = ""
+
+        # Iterate through the sorted events and store the output in the variable
+        for event_start, event_end, event_name in events:
+            if event_start > now and is_weekend(event_start):
+                # Convert the event start and end times to CST
+                event_start_cst = event_start.astimezone(cst)
+                event_end_cst = event_end.astimezone(cst)
+
+                event_output = f"{event_name}: {event_start_cst.strftime('%m-%d %I:%M %p')} - " \
+                               f"{event_end_cst.strftime('%I:%M %p')}"
+
+                output += event_output + "\n"
+
+                if str(event_name).endswith("- Race"):
+                    break
+
+        # Send the output to the user
+        await ctx.followup.send(output)
