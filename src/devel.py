@@ -1,16 +1,12 @@
 import datetime
-
 import discord
 from discord.ext import commands
 
-from cogs.chat_cog import ChatCog
 from config import *
-from cogs.image_cog import ImageCog
-from cogs.music_cog import MusicCog
+from cogs.weather_cog import WeatherCog
 
 # Get the start time of the program
 start_time = datetime.datetime.now()
-
 
 # Initialize a new Discord bot instance
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
@@ -20,14 +16,8 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     try:
-        await bot.add_cog(MusicCog(bot))
-        await bot.add_cog(ChatCog(bot))
-        await bot.add_cog(ImageCog(bot))
-        # Sync the slash commands with Discord
-        synced = await bot.tree.sync()
-        print(synced)
-        # Log in the bot's name
-        print('Logged in as {0.user}'.format(bot))
+        await bot.add_cog(WeatherCog(bot))
+        await command_sync(bot)
     except Exception as e:
         print(e)
     # Calculate the time it took for the client to start
