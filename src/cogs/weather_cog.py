@@ -1,7 +1,8 @@
+import urllib.request
 import discord
 from discord.ext import commands
 from pyowm import OWM
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from config import owm_token
 
@@ -83,3 +84,38 @@ class WeatherCog(commands.Cog):
                                 f"**Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm\n"
                                 f"**Report Generated:** {datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}\n"
                                 )
+
+    @bot.tree.command(name="outlook", description="Retrieve the latest convective outlook from the SPC at NOAA.")
+    async def outlook(self, ctx):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        now = datetime.now()
+
+        time_strings = ["0100", "1200", "1300", "1630", "2000"]
+        times = [datetime.strptime(x, '%H%M').replace(
+            year=now.year,
+            month=now.month,
+            day=(now.day + 1 if x < now.strftime('%H%M') else now.day)) for x in time_strings]
+        closest_time_index = min(range(len(times)), key=lambda i: abs(times[i] - now))
+        print(time_strings[closest_time_index])
+
+        try:
+            url = f"https://www.spc.noaa.gov/products/outlook/day1otlk_{time_strings[closest_time_index]}.gif"
+            urllib.request.urlretrieve(url, "./images/outlook.gif")
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
+
+        await ctx.followup.send(file=discord.File("./images/outlook.gif"))
+
+    @bot.tree.command(name="radar-loop", description="Retrieve a radar loop from the SPC at NOAA.")
+    async def radar_loop(self, ctx):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+
+        try:
+            url = f"https://www.spc.noaa.gov/products/activity_loop.gif"
+            urllib.request.urlretrieve(url, "./images/activity_loop.gif")
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
+
+        await ctx.followup.send(file=discord.File("./images/activity_loop.gif"))

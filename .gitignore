@@ -1,6 +1,21 @@
-.idea
+# ignore IDE files
+.idea/
+
+# ignore compiled Python files
 *.pyc
+
+# ignore audio files
 *.mp3
-config.py
-fastf1_cache
+
+# ignore configuration file if it contains sensitive information with similar filename 
+config*
+
+# fastf1_cache is specific to my local setup and should not be shared on GitHub.
+fastf1_cache/
+
+# CSV related files:
+*.csv~
 *.csv
+
+# Ignore .gif images (optional)
+*.gif

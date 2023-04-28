@@ -24,7 +24,7 @@
 - [Usage](#usage)
 
 ## Overview
-#### This repository hosts the source code for the KC Discord bot, alongside the Lilith variant and a Ferrari strategy generator bot. KC is developed using Python 3.10 and integrates several libraries and APIs to provide an engaging and feature-rich experience.
+#### This repository hosts the source code for the KC Discord bot, alongside the Lilith variant and a Ferrari-themed F1 data bot. KC is developed using Python 3.10 and integrates several libraries and APIs to provide an engaging and feature-rich experience.
 
 ## Features
 
