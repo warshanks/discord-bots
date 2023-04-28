@@ -13,10 +13,10 @@ from matplotlib.collections import LineCollection
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
-makedirs('./fastf1_cache/Data', exist_ok=True)
+makedirs('../fastf1_cache/Data', exist_ok=True)
 makedirs('./images', exist_ok=True)
-makedirs('./csv_output', exist_ok=True)
-fastf1.Cache.enable_cache('./fastf1_cache/Data')
+makedirs('../csv_output', exist_ok=True)
+fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
 background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
 
@@ -221,8 +221,8 @@ class F1Cog(commands.Cog):
         weather_data = weather_data.reset_index(drop=True)
         joined = pd.concat([laps, weather_data.loc[:, ~(weather_data.columns == 'Time')]], axis=1)
 
-        joined.to_csv("./csv_output/dump.csv")
-        await ctx.followup.send(file=discord.File("./csv_output/dump.csv"))
+        joined.to_csv("../csv_output/dump.csv")
+        await ctx.followup.send(file=discord.File("../csv_output/dump.csv"))
 
     # Define the "Year vs Year" command handler
     @bot.tree.command(name="year-vs-year", description="Generate a comparison of two years")
