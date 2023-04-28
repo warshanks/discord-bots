@@ -2,9 +2,9 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 
 import discord
+import elevenlabslib.helpers
 import openai
 from elevenlabslib import *
-from elevenlabslib.helpers import *
 from discord import FFmpegOpusAudio
 from discord.ext import commands
 from config import *
@@ -74,7 +74,7 @@ class TTSCog(commands.Cog):
 
             # Send the conversation log to OpenAI to generate a response
             try:
-                response = openai.ChatCompletion.create(
+                response = await openai.ChatCompletion.acreate(
                     model='gpt-3.5-turbo',
                     messages=conversation_log,
                     max_tokens=1024,
@@ -85,7 +85,7 @@ class TTSCog(commands.Cog):
 
             try:
                 tts_response = premadeVoice.generate_audio_bytes(response['choices'][0]['message']['content'])
-                save_bytes_to_path("output.mp3", tts_response)
+                elevenlabslib.helpers.save_audio_bytes(tts_response, "output.mp3", "mp3")
 
                 # Send the generated text response as a reply
                 await message.reply(response['choices'][0]['message']['content'])

@@ -43,7 +43,7 @@ class ImageCog(commands.Cog):
         print(ctx.user, ctx.guild, ctx.channel, img_prompt)
         try:
             # Generate an image using OpenAI API from the prompt provided by the user
-            response = openai.Image.create(
+            response = await openai.Image.acreate(
                 prompt=img_prompt,
                 size='1024x1024',
                 n=1

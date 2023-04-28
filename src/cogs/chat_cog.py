@@ -55,7 +55,7 @@ class ChatCog(commands.Cog):
 
             # Send the conversation log to OpenAI to generate a response
             try:
-                response = openai.ChatCompletion.create(
+                response = await openai.ChatCompletion.acreate(
                     model='gpt-3.5-turbo',
                     messages=conversation_log,
                     max_tokens=1024,
@@ -82,7 +82,7 @@ class ChatCog(commands.Cog):
         print(ctx.user, ctx.guild, ctx.channel, about)
         try:
             # Generate a response using OpenAI API from the prompt provided by the user
-            response = openai.ChatCompletion.create(
+            response = await openai.ChatCompletion.acreate(
                 model='gpt-3.5-turbo',
                 messages=conversation_log,
                 frequency_penalty=2.0,
@@ -133,7 +133,7 @@ class LilithCog(commands.Cog):
 
             # Send the conversation log to OpenAI to generate a response
             try:
-                response = openai.ChatCompletion.create(
+                response = await openai.ChatCompletion.acreate(
                     model='gpt-3.5-turbo',
                     messages=conversation_log,
                     max_tokens=1024,
