@@ -86,8 +86,9 @@ To run the KC Discord bot, ensure you have the following packages installed:
 
 ```
 discord.py==2.2.2
-elevenlabslib==0.5.2
+elevenlabslib==0.5.3
 fastf1==2.3.2
+icalendar==5.0.5
 openai==0.27.5
 Pillow==9.5.0
 pyowm==3.3.0
