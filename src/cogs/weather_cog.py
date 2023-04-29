@@ -116,7 +116,7 @@ class WeatherCog(commands.Cog):
 
         await ctx.followup.send(file=discord.File("./images/outlook.gif"))
 
-    @bot.tree.command(name="radar-loop", description="Retrieve a radar loop from the SPC at NOAA.")
+    @bot.tree.command(name="radar-loop", description="Retrieve a radar loop from the NWS.")
     async def radar_loop(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
 
@@ -128,3 +128,16 @@ class WeatherCog(commands.Cog):
             return
 
         await ctx.followup.send(file=discord.File("./images/activity_loop.gif"))
+
+    @bot.tree.command(name="bmx-radar", description="Retrieve a radar loop from the NWS.")
+    async def bmx_radar(self, ctx):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+
+        try:
+            url = f"https://radar.weather.gov/ridge/standard/KBMX_loop.gif"
+            urllib.request.urlretrieve(url, "./images/bmx_radar.gif")
+        except Exception as e:
+            await ctx.followup.send(e)
+            return
+
+        await ctx.followup.send(file=discord.File("./images/bmx_radar.gif"))
