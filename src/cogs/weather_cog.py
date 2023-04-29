@@ -35,6 +35,21 @@ emoji_dict = {
 }
 
 
+def degrees_to_cardinal(degrees: int) -> str:
+    # List of cardinal directions in clockwise order.
+    directions = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+
+    # Divide the input angle (in degrees) by 22.5, which is the angular width of each cardinal direction.
+    # Then, round the result to find the nearest cardinal direction index.
+    index = round(degrees / 22.5)
+
+    # Use the modulo operation to ensure that the index stays within the bounds of the list (0-15).
+    index = index % 16
+
+    # Return the cardinal direction corresponding to the calculated index.
+    return directions[index]
+
+
 # noinspection PyShadowingNames
 class WeatherCog(commands.Cog):
     def __init__(self, bot):
@@ -64,6 +79,7 @@ class WeatherCog(commands.Cog):
             feels_like = weather.temperature("fahrenheit")["feels_like"]
             wind_speed = round(weather.wind(unit="miles_hour")["speed"], 2)
             wind_direction = weather.wind(unit="miles_hour")["deg"]
+            wind_cardinal = degrees_to_cardinal(wind_direction)
             humidity = weather.humidity
             visibility = weather.visibility(unit="miles")
             rain_dict = weather.rain
@@ -91,7 +107,7 @@ class WeatherCog(commands.Cog):
     **Temperature:** {temp}°F
     **Feels Like:** {feels_like}°F
     **Wind Speed:** {wind_speed} mph
-    **Wind Direction:** {wind_direction}°
+    **Wind Direction:** {wind_direction}° {wind_cardinal}
     **Humidity:** {humidity}%
     **Visibility:** {visibility} mi.
     **Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm
