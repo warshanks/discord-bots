@@ -9,7 +9,7 @@ from discord import FFmpegOpusAudio
 from discord.ext import commands
 from config import openai_token, openai_org, elevenlabs_token, vcs
 
-makedirs("../speech", exist_ok=True)
+makedirs("./speech", exist_ok=True)
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token
@@ -87,15 +87,15 @@ class TTSCog(commands.Cog):
 
             try:
                 tts_response = premadeVoice.generate_audio_bytes(response['choices'][0]['message']['content'])
-                elevenlabslib.helpers.save_audio_bytes(tts_response, "../speech/output.mp3", "mp3")
+                elevenlabslib.helpers.save_audio_bytes(tts_response, "./speech/output.mp3", "mp3")
 
                 # Send the generated text response as a reply
                 await message.reply(response['choices'][0]['message']['content'])
 
                 # Save the synthesized audio to a file
-                await run_blocking(write_audio_to_file, "../speech/output.mp3", tts_response)
-                print('Audio content written to file "../speech/output.mp3"')
-                tts_output = await FFmpegOpusAudio.from_probe("../speech/output.mp3")
+                await run_blocking(write_audio_to_file, "./speech/output.mp3", tts_response)
+                print('Audio content written to file "./speech/output.mp3"')
+                tts_output = await FFmpegOpusAudio.from_probe("./speech/output.mp3")
 
                 # Play the synthesized audio in the voice channel
                 vc.play(tts_output)
