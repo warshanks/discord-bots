@@ -7,6 +7,9 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends ffmpeg git libportaudio2 python3-pyaudio && \
     rm -rf /var/lib/apt/lists/*
 
+# create the directory in the container
+RUN mkdir -p /app/ff1_cache/Data
+
 COPY ./src/requirements.txt .
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt && \

@@ -19,3 +19,5 @@ fastf1_cache/
 
 # Ignore .gif images (optional)
 *.gif
+
+line_count.py
