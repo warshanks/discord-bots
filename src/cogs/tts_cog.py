@@ -7,7 +7,7 @@ import openai
 from elevenlabslib import *
 from discord import FFmpegOpusAudio
 from discord.ext import commands
-from config import *
+from config import openai_token, openai_org, elevenlabs_token, vcs
 
 makedirs("../speech", exist_ok=True)
 

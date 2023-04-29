@@ -10,7 +10,7 @@ from discord.ext import commands
 from stability_sdk import client
 import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 
-from config import *
+from config import openai_token, openai_org, stability_host, stability_token
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 

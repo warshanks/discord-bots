@@ -1,7 +1,7 @@
 import openai
 import discord
 from discord.ext import commands
-from config import *
+from config import openai_token, openai_org, channel_ids, lilith_channel
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token
