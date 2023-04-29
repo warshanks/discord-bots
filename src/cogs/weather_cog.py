@@ -121,7 +121,7 @@ class WeatherCog(commands.Cog):
         await ctx.response.defer(thinking=True, ephemeral=False)
 
         try:
-            url = f"https://www.spc.noaa.gov/products/activity_loop.gif"
+            url = f"https://radar.weather.gov/ridge/standard/SOUTHMISSVLY_loop.gif"
             urllib.request.urlretrieve(url, "./images/activity_loop.gif")
         except Exception as e:
             await ctx.followup.send(e)
