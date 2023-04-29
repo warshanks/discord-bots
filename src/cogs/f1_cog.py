@@ -16,10 +16,10 @@ from datetime import datetime
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
-makedirs('./fastf1_cache/Data', exist_ok=True)
+makedirs('../fastf1_cache/Data', exist_ok=True)
 makedirs('./images', exist_ok=True)
 makedirs('../csv_output', exist_ok=True)
-fastf1.Cache.enable_cache('./fastf1_cache/Data')
+fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
 background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
 
@@ -34,48 +34,38 @@ class CacheCog(commands.Cog):
         self.bot = bot
 
     @bot.tree.command(name='cache', description='Cache data for a given event weekend')
-    async def cache(self, ctx, year: int, event: str = None):
-        event = event.title()
-
+    async def cache(self, ctx, year: int, event: str):
         # Defer the response to indicate that the command is working
         await ctx.response.defer(thinking=True, ephemeral=True)
-
-        # List of all sessions
-        session_list = ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
-
-        # List of all events
-        event_list = ["Bahrain", "Saudi Arabia", "Australia", "Emilia Romagna", "Miami", "Spain", "Monaco",
-                      "Azerbaijan", "Canada", "Britain", "Austria", "French", "Hungary", "Belgium", "Netherlands",
-                      "Italy", "Singapore", "Japan", "United States", "Mexico", "Brazil", "Abu Dhabi"]
-
-        # Check if event is not specified
-        if event is None:
-            # Loop through all events
-            for event_name in event_list:
-                # Loop through all sessions
-                for session in session_list:
-                    # Get session data for the current event and session
-                    try:
-                        ff1_session = fastf1.get_session(year, event_name, session)
-                        ff1_session.load()
-                    except Exception as e:
-                        print(e)
-                        continue
-
-        # Event is specified
+        if ctx.user.id != 141333182367793162:
+            await ctx.followup.send('You do not have permission to use this command')
+            return
         else:
+            # List of all sessions
+            session_list = [1, 2, 3, 4, 5]
+            cached = ''
+            not_cached = ''
+            event = event.title()
             # Loop through all sessions
             for session in session_list:
                 # Get session data for the specified event and current session
                 try:
                     ff1_session = fastf1.get_session(year, event, session)
                     ff1_session.load()
+                    cached += str(session) + ' '
                 except Exception as e:
-                    print(e)
+                    not_cached = str(session) + ' '
+                    ctx.response.send_message(e)
                     continue
 
-        # Send a success message after all sessions have been loaded
-        await ctx.followup.send('Data cached successfully')
+            # Send a success message after all sessions have been loaded
+            if not_cached == '':
+                await ctx.followup.send(f"Data for {event} {cached} cached successfully")
+            else:
+                await ctx.followup.send(f""
+                                        f"Data for {event} {cached} cached successfully\n"
+                                        f"Data for {event} {not_cached} not cached"
+                                        )
 
 
 # noinspection PyShadowingNames
