@@ -43,13 +43,15 @@ class WeatherCog(commands.Cog):
     # This is the main weather command that generates a weather report for a specified location
     @bot.tree.command(name="weather",
                       description="Generate a report on current conditions in a given location.")
-    async def weather(self, ctx, *, city: str = "Tuscaloosa", country_code: str = "US"):
+    async def weather(self, ctx, *,
+                      city: str = "Tuscaloosa",
+                      country_code: str = "US"):
         # Defer response to give time to fetch data
         await ctx.response.defer(thinking=True, ephemeral=False)
         # Format input data
         city = city.title()
         country_code = country_code.upper()
-        location = city + "," + country_code
+        location = f"{city},{country_code}"
         try:
             # Fetch weather data for the location
             observation = mgr.weather_at_place(location)
@@ -60,13 +62,13 @@ class WeatherCog(commands.Cog):
             icon_name = weather.weather_icon_name
             temp = weather.temperature("fahrenheit")["temp"]
             feels_like = weather.temperature("fahrenheit")["feels_like"]
-            wind_speed = weather.wind(unit="miles_hour")["speed"]
+            wind_speed = round(weather.wind(unit="miles_hour")["speed"], 2)
             wind_direction = weather.wind(unit="miles_hour")["deg"]
             humidity = weather.humidity
             visibility = weather.visibility(unit="miles")
             rain_dict = weather.rain
-            rain_1h = rain_dict["1h"] if "1h" in rain_dict else 0
-            rain_3h = rain_dict["3h"] if "3h" in rain_dict else 0
+            rain_1h = rain_dict.get("1h", 0)
+            rain_3h = rain_dict.get("3h", 0)
 
         except Exception as e:
             await ctx.followup.send(e)
@@ -79,27 +81,22 @@ class WeatherCog(commands.Cog):
         us_central_time_zone = pytz.timezone('US/Central')
         now_cst = now_utc.replace(tzinfo=pytz.utc).astimezone(us_central_time_zone)
 
-        wind_speed = round(wind_speed, 2)
-
-        if icon_name in emoji_dict:
-            icon = emoji_dict[icon_name]
-        else:
-            icon = ""
+        icon = emoji_dict.get(icon_name, "")
 
         # Send formatted weather report
-        await ctx.followup.send(""
-                                "**Weather Report**\n"
-                                f"**Location:** {location}\n"
-                                f"**Status:** {status} {icon}\n"
-                                f"**Temperature:** {temp}°F\n"
-                                f"**Feels Like:** {feels_like}°F\n"
-                                f"**Wind Speed:** {wind_speed} mph\n"
-                                f"**Wind Direction:** {wind_direction}°\n"
-                                f"**Humidity:** {humidity}%\n"
-                                f"**Visibility:** {visibility} mi.\n"
-                                f"**Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm\n"
-                                f"**Report Generated:** {now_cst.strftime('%m/%d/%Y %I:%M:%S %p')} CST\n"
-                                )
+        await ctx.followup.send(f"""
+    **Weather Report**
+    **Location:** {location}
+    **Status:** {status} {icon}
+    **Temperature:** {temp}°F
+    **Feels Like:** {feels_like}°F
+    **Wind Speed:** {wind_speed} mph
+    **Wind Direction:** {wind_direction}°
+    **Humidity:** {humidity}%
+    **Visibility:** {visibility} mi.
+    **Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm
+    **Report Generated:** {now_cst.strftime('%m/%d/%Y %I:%M:%S %p')} CST
+    """)
 
     # Command to retrieve the latest convective outlook from the SPC at NOAA
     @bot.tree.command(name="outlook", description="Retrieve the latest convective outlook from the SPC at NOAA.")
