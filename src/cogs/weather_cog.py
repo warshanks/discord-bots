@@ -40,16 +40,22 @@ class WeatherCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    # This is the main weather command that generates a weather report for a specified location
     @bot.tree.command(name="weather",
                       description="Generate a report on current conditions in a given location.")
     async def weather(self, ctx, *, city: str = "Tuscaloosa", country_code: str = "US"):
+        # Defer response to give time to fetch data
         await ctx.response.defer(thinking=True, ephemeral=False)
+        # Format input data
         city = city.title()
         country_code = country_code.upper()
         location = city + "," + country_code
         try:
+            # Fetch weather data for the location
             observation = mgr.weather_at_place(location)
             weather = observation.weather
+            
+            # Process and format weather data
             status = weather.detailed_status.title()
             icon_name = weather.weather_icon_name
             temp = weather.temperature("fahrenheit")["temp"]
@@ -66,7 +72,7 @@ class WeatherCog(commands.Cog):
             await ctx.followup.send(e)
             return
 
-        # Current date and time in UTC
+        # Get the current date and time in UTC
         now_utc = datetime.utcnow()
 
         # Convert UTC timezone to US/Central timezone
@@ -80,6 +86,7 @@ class WeatherCog(commands.Cog):
         else:
             icon = ""
 
+        # Send formatted weather report
         await ctx.followup.send(""
                                 "**Weather Report**\n"
                                 f"**Location:** {location}\n"
@@ -94,11 +101,13 @@ class WeatherCog(commands.Cog):
                                 f"**Report Generated:** {now_cst.strftime('%m/%d/%Y %I:%M:%S %p')} CST\n"
                                 )
 
+    # Command to retrieve the latest convective outlook from the SPC at NOAA
     @bot.tree.command(name="outlook", description="Retrieve the latest convective outlook from the SPC at NOAA.")
     async def outlook(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
         now = datetime.now()
 
+        # Determine the closest time for the outlook image
         time_strings = ["0100", "1200", "1300", "1630", "2000"]
         times = [datetime.strptime(x, '%H%M').replace(
             year=now.year,
@@ -108,36 +117,45 @@ class WeatherCog(commands.Cog):
         print(time_strings[closest_time_index])
 
         try:
+            # Retrieve the outlook image
             url = f"https://www.spc.noaa.gov/products/outlook/day1otlk_{time_strings[closest_time_index]}.gif"
             urllib.request.urlretrieve(url, "./images/outlook.gif")
         except Exception as e:
             await ctx.followup.send(e)
             return
 
+        # Send the outlook image
         await ctx.followup.send(file=discord.File("./images/outlook.gif"))
+
+        # Command to retrieve a radar loop from the NWS
 
     @bot.tree.command(name="radar-loop", description="Retrieve a radar loop from the NWS.")
     async def radar_loop(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
 
         try:
+            # Retrieve the radar loop image
             url = f"https://radar.weather.gov/ridge/standard/SOUTHMISSVLY_loop.gif"
             urllib.request.urlretrieve(url, "./images/activity_loop.gif")
         except Exception as e:
             await ctx.followup.send(e)
             return
 
+        # Send the radar loop image
         await ctx.followup.send(file=discord.File("./images/activity_loop.gif"))
 
+    # Command to retrieve a radar loop from the NWS for a specific region (BMX)
     @bot.tree.command(name="bmx-radar", description="Retrieve a radar loop from the NWS.")
     async def bmx_radar(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
 
         try:
+            # Retrieve the BMX radar loop image
             url = f"https://radar.weather.gov/ridge/standard/KBMX_loop.gif"
             urllib.request.urlretrieve(url, "./images/bmx_radar.gif")
         except Exception as e:
             await ctx.followup.send(e)
             return
 
+        # Send the BMX radar loop image
         await ctx.followup.send(file=discord.File("./images/bmx_radar.gif"))
