@@ -29,6 +29,28 @@ def is_weekend(date):
 
 
 # noinspection PyShadowingNames
+class CacheCog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @bot.tree.command(name='cache', description='Cache data for a given event weekend')
+    async def cache(self, ctx, year: int, event: str):
+        event = event.title()
+        await ctx.response.defer(thinking=True, ephemeral=True)
+
+        session_list = ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
+        for session in session_list:
+            try:
+                ff1_session = fastf1.get_session(year, event, session)
+                ff1_session.load()
+            except Exception as e:
+                print(e)
+                continue
+
+        await ctx.followup.send('Data cached successfully')
+
+
+# noinspection PyShadowingNames
 class F1Cog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
