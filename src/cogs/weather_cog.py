@@ -54,7 +54,7 @@ class WeatherCog(commands.Cog):
             # Fetch weather data for the location
             observation = mgr.weather_at_place(location)
             weather = observation.weather
-            
+
             # Process and format weather data
             status = weather.detailed_status.title()
             icon_name = weather.weather_icon_name
