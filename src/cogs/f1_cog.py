@@ -34,19 +34,47 @@ class CacheCog(commands.Cog):
         self.bot = bot
 
     @bot.tree.command(name='cache', description='Cache data for a given event weekend')
-    async def cache(self, ctx, year: int, event: str):
+    async def cache(self, ctx, year: int, event: str = None):
         event = event.title()
+
+        # Defer the response to indicate that the command is working
         await ctx.response.defer(thinking=True, ephemeral=True)
 
+        # List of all sessions
         session_list = ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
-        for session in session_list:
-            try:
-                ff1_session = fastf1.get_session(year, event, session)
-                ff1_session.load()
-            except Exception as e:
-                print(e)
-                continue
 
+        # List of all events
+        event_list = ["Bahrain", "Saudi Arabia", "Australia", "Emilia Romagna", "Miami", "Spain", "Monaco",
+                      "Azerbaijan", "Canada", "Britain", "Austria", "French", "Hungary", "Belgium", "Netherlands",
+                      "Italy", "Singapore", "Japan", "United States", "Mexico", "Brazil", "Abu Dhabi"]
+
+        # Check if event is not specified
+        if event is None:
+            # Loop through all events
+            for event_name in event_list:
+                # Loop through all sessions
+                for session in session_list:
+                    # Get session data for the current event and session
+                    try:
+                        ff1_session = fastf1.get_session(year, event_name, session)
+                        ff1_session.load()
+                    except Exception as e:
+                        print(e)
+                        continue
+
+        # Event is specified
+        else:
+            # Loop through all sessions
+            for session in session_list:
+                # Get session data for the specified event and current session
+                try:
+                    ff1_session = fastf1.get_session(year, event, session)
+                    ff1_session.load()
+                except Exception as e:
+                    print(e)
+                    continue
+
+        # Send a success message after all sessions have been loaded
         await ctx.followup.send('Data cached successfully')
 
 
