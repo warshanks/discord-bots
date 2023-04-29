@@ -3,7 +3,7 @@ import discord
 import openai
 from discord.ext import commands
 
-from config import *
+from config import Lilith_TOKEN, command_sync, openai_token, openai_org
 from cogs.chat_cog import LilithCog
 from cogs.music_cog import MusicCog
 

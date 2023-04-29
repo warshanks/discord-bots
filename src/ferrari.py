@@ -4,7 +4,7 @@ from discord.ext import commands
 
 from cogs.f1_cog import F1Cog, CacheCog
 from cogs.weather_cog import WeatherCog
-from config import *
+from config import Ferrari_TOKEN, command_sync
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
 

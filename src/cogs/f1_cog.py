@@ -42,7 +42,7 @@ class CacheCog(commands.Cog):
             return
         else:
             # List of all sessions
-            session_list = [1, 2, 3, 4, 5]
+            session_list = ["FP1", "FP2", "FP3", "Q", "SS", "S", "R"]
             cached = ''
             not_cached = ''
             event = event.title()
@@ -52,9 +52,9 @@ class CacheCog(commands.Cog):
                 try:
                     ff1_session = fastf1.get_session(year, event, session)
                     ff1_session.load()
-                    cached += str(session) + ' '
+                    cached += session + ' '
                 except Exception as e:
-                    not_cached = str(session) + ' '
+                    not_cached = session + ' '
                     ctx.response.send_message(e)
                     continue
 
@@ -169,21 +169,24 @@ class F1Cog(commands.Cog):
             await ctx.followup.send(e)
             return
 
-        # Retrieve the drivers' lap data, either the fastest lap or a specific lap
-        if lap is None:
-            driver1_lap = ff1session.laps.pick_driver(driver1).pick_fastest()
-            driver2_lap = ff1session.laps.pick_driver(driver2).pick_fastest()
+        try:
+            # Retrieve the drivers' lap data, either the fastest lap or a specific lap
+            if lap is None:
+                driver1_lap = ff1session.laps.pick_driver(driver1).pick_fastest()
+                driver2_lap = ff1session.laps.pick_driver(driver2).pick_fastest()
 
-        elif lap > 0:
-            driver1_laps = ff1session.laps.pick_driver(driver1)
-            driver1_lap = driver1_laps[driver1_laps['LapNumber'] == lap].iloc[0]
+            elif lap > 0:
+                driver1_laps = ff1session.laps.pick_driver(driver1)
+                driver1_lap = driver1_laps[driver1_laps['LapNumber'] == lap].iloc[0]
 
-            driver2_laps = ff1session.laps.pick_driver(driver2)
-            driver2_lap = driver2_laps[driver2_laps['LapNumber'] == lap].iloc[0]
-        else:
-            await ctx.followup.send("Lap number must be greater than 0")
+                driver2_laps = ff1session.laps.pick_driver(driver2)
+                driver2_lap = driver2_laps[driver2_laps['LapNumber'] == lap].iloc[0]
+            else:
+                await ctx.followup.send("Lap number must be greater than 0")
+                return
+        except Exception as e:
+            await ctx.followup.send(e)
             return
-
         # Get telemetry data for both drivers
         driver1_tel = driver1_lap.get_car_data().add_distance()
         driver2_tel = driver2_lap.get_car_data().add_distance()

@@ -2,7 +2,7 @@ import datetime
 import discord
 from discord.ext import commands
 
-from config import *
+from config import KC_TOKEN, command_sync
 from cogs.chat_cog import ChatCog
 from cogs.tts_cog import TTSCog
 from cogs.image_cog import ImageCog

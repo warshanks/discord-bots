@@ -2,9 +2,13 @@ import datetime
 import discord
 from discord.ext import commands
 
-from config import *
-from cogs.weather_cog import WeatherCog
-from cogs.image_cog import ImageCog
+from config import Devel_TOKEN, command_sync
+# from cogs.weather_cog import WeatherCog
+# from cogs.image_cog import ImageCog
+# from cogs.chat_cog import ChatCog
+# from cogs.music_cog import MusicCog
+# from cogs.tts_cog import TTSCog
+# from cogs.f1_cog import F1Cog
 from cogs.f1_cog import CacheCog
 
 # Get the start time of the program
