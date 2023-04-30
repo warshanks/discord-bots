@@ -2,7 +2,7 @@ import urllib.request
 import discord
 from discord.ext import commands
 from pyowm import OWM
-from datetime import datetime
+from datetime import datetime, timedelta
 import pytz
 
 from config import owm_token
@@ -124,7 +124,7 @@ class WeatherCog(commands.Cog):
         times = [datetime.strptime(x, '%H%M').replace(
             year=now.year,
             month=now.month,
-            day=(now.day + 1 if x < now.strftime('%H%M') else now.day)) for x in time_strings]
+            day=(now + timedelta(days=1)).day if x < now.strftime('%H%M') else now.day) for x in time_strings]
         closest_time_index = min(range(len(times)), key=lambda i: abs(times[i] - now))
         print(time_strings[closest_time_index])
 
