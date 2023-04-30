@@ -37,7 +37,8 @@ emoji_dict = {
 
 def degrees_to_cardinal(degrees: int) -> str:
     # List of cardinal directions in clockwise order.
-    directions = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+    directions = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+                  "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
 
     # Divide the input angle (in degrees) by 22.5, which is the angular width of each cardinal direction.
     # Then, round the result to find the nearest cardinal direction index.
@@ -116,31 +117,46 @@ class WeatherCog(commands.Cog):
     # Command to retrieve the latest convective outlook from the SPC at NOAA
     @bot.tree.command(name="outlook", description="Retrieve the latest convective outlook from the SPC at NOAA.")
     async def outlook(self, ctx):
+        # Defer the response to indicate the bot is thinking
         await ctx.response.defer(thinking=True, ephemeral=False)
+
+        # Get the current datetime
         now = datetime.now()
 
-        # Determine the closest time for the outlook image
+        # Define the possible time strings for the outlook images
         time_strings = ["0100", "1200", "1300", "1630", "2000"]
+
+        # Calculate the datetimes corresponding to the time_strings,
+        # with the correct year, month, and day
         times = [datetime.strptime(x, '%H%M').replace(
             year=now.year,
             month=now.month,
+            # Add 1 day to the current date
+            # if the time_string is less than the current time,
+            # otherwise keep the current day
             day=(now + timedelta(days=1)).day if x < now.strftime('%H%M') else now.day) for x in time_strings]
+
+        # Find the index of the closest datetime in the times list to the current datetime
         closest_time_index = min(range(len(times)), key=lambda i: abs(times[i] - now))
+
+        # Print the corresponding time string for the closest datetime
         print(time_strings[closest_time_index])
 
         try:
-            # Retrieve the outlook image
+            # Construct the URL for the outlook image using the closest time string
             url = f"https://www.spc.noaa.gov/products/outlook/day1otlk_{time_strings[closest_time_index]}.gif"
+
+            # Retrieve the outlook image and save it to the local "images" folder
             urllib.request.urlretrieve(url, "./images/outlook.gif")
         except Exception as e:
+            # If there is an error, send the error message as a follow-up message and return
             await ctx.followup.send(e)
             return
 
-        # Send the outlook image
+        # Send the outlook image as a follow-up message
         await ctx.followup.send(file=discord.File("./images/outlook.gif"))
 
-        # Command to retrieve a radar loop from the NWS
-
+    # Command to retrieve a radar loop from the NWS
     @bot.tree.command(name="radar-loop", description="Retrieve a radar loop from the NWS.")
     async def radar_loop(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
