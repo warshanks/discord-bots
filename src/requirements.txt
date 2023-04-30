@@ -1,5 +1,5 @@
 discord.py==2.2.2
-elevenlabslib==0.5.3
+elevenlabslib==0.6.0
 fastf1==2.3.3
 icalendar==5.0.5
 openai==0.27.5
