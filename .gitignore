@@ -20,4 +20,6 @@ fastf1_cache/
 # Ignore .gif images (optional)
 *.gif
 
+# Scratch files
 line_count.py
+*.ipynb

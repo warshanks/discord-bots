@@ -1,11 +1,13 @@
 import urllib.request
+import aiohttp
+import asyncio
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from pyowm import OWM
 from datetime import datetime, timedelta
 import pytz
 
-from config import owm_token
+from config import owm_token, weather_alert_channel
 
 
 owm = OWM(owm_token)
@@ -33,6 +35,66 @@ emoji_dict = {
     "50d": ":fog:",
     "50n": ":fog:",
 }
+
+wait_time = 300
+
+
+def api_timestamp_to_cst(api_timestamp):
+    dt = datetime.fromisoformat(api_timestamp)
+    cst = pytz.timezone('America/Chicago')
+    dt_cst = dt.astimezone(cst)
+    return dt_cst.strftime('%Y-%m-%d %I:%M %p')
+
+
+def build_output(alert):
+    properties = ["headline", "description", "instruction", "areaDesc", "urgency", "severity"]
+    time_properties = ["effective", "onset", "expires"]
+    output = ""
+    for prop in properties:
+        try:
+            output += "\n" + alert["properties"][prop]
+        except TypeError:
+            pass
+    for time_prop in time_properties:
+        try:
+            api_timestamp = alert["properties"][time_prop]
+            cst_time = api_timestamp_to_cst(api_timestamp)
+            output += f"\n{time_prop.capitalize()}: {cst_time}"
+        except TypeError:
+            pass
+    return output
+
+
+# noinspection PyShadowingNames
+async def fetch_api_data(bot, url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            data = await response.json()
+            alerts = data["features"]
+            # Process the data as needed
+            if len(alerts) == 0:
+                print('No alerts found')
+                return
+
+            for alert in alerts:
+                output = build_output(alert)
+                channel = bot.get_channel(weather_alert_channel)
+                await channel.send(output)
+
+
+# noinspection PyShadowingNames
+async def fetch_loop(bot):
+    api_urls = [
+        "https://api.weather.gov/alerts/active?zone=ALC125",
+        "https://api.weather.gov/alerts/active?zone=ALC089",
+        "https://api.weather.gov/alerts/active?zone=ALC049",
+        # Add more URLs as needed
+    ]
+
+    while True:
+        for county in api_urls:
+            await fetch_api_data(bot, county)
+        await asyncio.sleep(wait_time)
 
 
 def degrees_to_cardinal(degrees: int) -> str:
@@ -187,3 +249,15 @@ class WeatherCog(commands.Cog):
 
         # Send the BMX radar loop image
         await ctx.followup.send(file=discord.File("./images/bmx_radar.gif"))
+
+
+# noinspection PyShadowingNames
+class NWSAlertsCog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.nws_alerts.start()
+
+    @tasks.loop(minutes=1)
+    async def nws_alerts(self):
+        print("Fetching NWS Alerts")
+        await fetch_loop(self.bot)

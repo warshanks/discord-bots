@@ -7,7 +7,7 @@ from cogs.chat_cog import ChatCog
 from cogs.tts_cog import TTSCog
 from cogs.image_cog import ImageCog
 from cogs.music_cog import MusicCog
-from cogs.weather_cog import WeatherCog
+from cogs.weather_cog import WeatherCog, NWSAlertsCog
 
 # Get the start time of the program
 start_time = datetime.datetime.now()
@@ -25,6 +25,7 @@ async def on_ready():
         await bot.add_cog(ImageCog(bot))
         await bot.add_cog(TTSCog(bot))
         await bot.add_cog(WeatherCog(bot))
+        await bot.add_cog(NWSAlertsCog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)
