@@ -93,10 +93,8 @@ async def fetch_loop(bot):
         # Add more URLs as needed
     ]
 
-    while True:
-        for county in api_urls:
-            await fetch_api_data(bot, county)
-        await asyncio.sleep(wait_time)
+    for county in api_urls:
+        await fetch_api_data(bot, county)
 
 
 def degrees_to_cardinal(degrees: int) -> str:
@@ -264,3 +262,4 @@ class NWSAlertsCog(commands.Cog):
         channel = self.bot.get_channel(bt_img)
         await channel.send("Fetching NWS Alerts")
         await fetch_loop(self.bot)
+        await asyncio.sleep(wait_time)
