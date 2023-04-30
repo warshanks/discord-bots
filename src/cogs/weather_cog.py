@@ -25,7 +25,7 @@ emoji_dict = {
     "09d": ":cloud_rain:",
     "09n": ":cloud_rain:",
     "10d": ":white_sun_rain_cloud:",
-    "10n": ":white_sun_rain_cloud:",
+    "10n": ":cloud_rain:",
     "11d": ":thunder_cloud_rain:",
     "11n": ":thunder_cloud_rain:",
     "13d": ":cloud_snow:",
