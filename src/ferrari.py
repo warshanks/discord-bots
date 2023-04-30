@@ -2,7 +2,7 @@ import datetime
 import discord
 from discord.ext import commands
 
-from cogs.f1_cog import F1Cog, CacheCog
+from cogs.f1_cog import F1Cog, CacheCog, EventsCog
 from cogs.weather_cog import WeatherCog
 from config import Ferrari_TOKEN, command_sync
 
@@ -17,6 +17,7 @@ async def on_ready():
     try:
         await bot.add_cog(F1Cog(bot))
         await bot.add_cog(CacheCog(bot))
+        await bot.add_cog(EventsCog(bot))
         await bot.add_cog(WeatherCog(bot))
         await command_sync(bot)
     except Exception as e:

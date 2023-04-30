@@ -62,6 +62,7 @@ def build_output(alert):
             output += f"\n{time_prop.capitalize()}: {cst_time}"
         except TypeError:
             pass
+    output += f"\n@here"
     return output
 
 

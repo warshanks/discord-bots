@@ -1,19 +1,19 @@
 from os import makedirs
-import random
-import pytz
-import asyncio
 
+import asyncio
 import discord
 import fastf1
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import pytz
+import random
+from datetime import datetime
 from discord.ext import commands
 from fastf1 import plotting, utils
+from icalendar import Calendar
 from matplotlib import cm
 from matplotlib.collections import LineCollection
-from icalendar import Calendar
-from datetime import datetime
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -76,6 +76,77 @@ async def filter_and_format_events(events, now, timezone):
                 break
     await asyncio.sleep(0)  # Yield control back to the event loop
     return output
+
+
+# Define the asynchronous event_creator function
+async def event_creator(ctx, event_name, event_start_cst, event_end_cst):
+    # Get the current event loop to run synchronous tasks in an asynchronous manner
+    loop = asyncio.get_event_loop()
+
+    # Define a synchronous function for reading the image file
+    def read_image_sync():
+        # Open the image file in binary mode for reading
+        with open('./images/red-bull-miami-crop.jpg', mode='rb') as file:
+            # Read the contents of the file and return the bytes
+            return file.read()
+
+    # Run the synchronous function (read_image_sync) in a non-blocking manner using the event loop
+    # This ensures that the file reading doesn't block other tasks running in the event loop
+    image_bytes = await loop.run_in_executor(None, read_image_sync)
+
+    # Create a scheduled event on the Discord server using the create_scheduled_event method
+    await discord.Guild.create_scheduled_event(
+        self=ctx.guild,  # The guild (server) where the event is being created
+        name=event_name,  # The name of the event
+        image=image_bytes,  # The image to use for the event (in bytes)
+        channel=ctx.channel,  # The channel where the event is being created
+        start_time=event_start_cst,  # The start time of the event (in Central Standard Time)
+        end_time=event_end_cst  # The end time of the event (in Central Standard Time)
+    )
+
+
+# noinspection PyShadowingNames
+class EventsCog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @bot.tree.command(name='create-events', description='Create events for the upcoming weekend')
+    async def create_events(self, ctx):
+        # Defer the response to indicate that the command is working
+        await ctx.response.defer(thinking=True, ephemeral=True)
+        if ctx.user.id != 141333182367793162:
+            await ctx.followup.send('You do not have permission to use this command')
+            return
+
+        # Read the calendar data from the file
+        calendar_data = await read_calendar_data("./calendar/23_calendar.ics")
+
+        # Parse the calendar data
+        calendar = await parse_calendar_data(calendar_data)
+
+        # Extract the events from the calendar
+        events = await extract_events(calendar)
+
+        # Get the current time
+        now = datetime.now(pytz.utc)
+
+        # Get the timezone for the events
+        timezone = pytz.timezone("US/Central")
+
+        try:
+            # Create a Discord event for each event in the calendar
+            for event_start, event_end, event_name in events:
+                if event_start > now and is_weekend(event_start):
+                    event_start_cst = event_start.astimezone(timezone)
+                    event_end_cst = event_end.astimezone(timezone)
+
+                    await event_creator(ctx, event_name, event_start_cst, event_end_cst)
+                    if str(event_name).endswith("- Race"):
+                        break
+
+            await ctx.followup.send('Events created successfully')
+        except Exception as e:
+            await ctx.followup.send(e)
 
 
 # noinspection PyShadowingNames

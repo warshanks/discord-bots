@@ -8,8 +8,9 @@ from config import Devel_TOKEN, command_sync
 # from cogs.chat_cog import ChatCog
 # from cogs.music_cog import MusicCog
 # from cogs.tts_cog import TTSCog
-from cogs.f1_cog import F1Cog
+from cogs.f1_cog import F1Cog, EventsCog
 from cogs.f1_cog import CacheCog
+from cogs.weather_cog import NWSAlertsCog
 
 # Get the start time of the program
 start_time = datetime.datetime.now()
@@ -22,8 +23,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     try:
-        await bot.add_cog(CacheCog(bot))
-        await bot.add_cog(F1Cog(bot))
+        await bot.add_cog(EventsCog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)
