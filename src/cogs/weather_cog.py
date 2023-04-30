@@ -7,7 +7,7 @@ from pyowm import OWM
 from datetime import datetime, timedelta
 import pytz
 
-from config import owm_token, weather_alert_channel
+from config import owm_token, weather_alert_channel, bt_img
 
 
 owm = OWM(owm_token)
@@ -43,7 +43,7 @@ def api_timestamp_to_cst(api_timestamp):
     dt = datetime.fromisoformat(api_timestamp)
     cst = pytz.timezone('America/Chicago')
     dt_cst = dt.astimezone(cst)
-    return dt_cst.strftime('%Y-%m-%d %I:%M %p')
+    return dt_cst.strftime('%m-%d-%Y %I:%M %p')
 
 
 def build_output(alert):
@@ -73,13 +73,15 @@ async def fetch_api_data(bot, url):
             alerts = data["features"]
             # Process the data as needed
             if len(alerts) == 0:
-                print('No alerts found')
+                channel = bot.get_channel(bt_img)
+                await channel.send('No active alerts found')
                 return
 
-            for alert in alerts:
-                output = build_output(alert)
-                channel = bot.get_channel(weather_alert_channel)
-                await channel.send(output)
+            else:
+                for alert in alerts:
+                    output = build_output(alert)
+                    channel = bot.get_channel(weather_alert_channel)
+                    await channel.send(output)
 
 
 # noinspection PyShadowingNames
@@ -259,5 +261,6 @@ class NWSAlertsCog(commands.Cog):
 
     @tasks.loop(minutes=1)
     async def nws_alerts(self):
-        print("Fetching NWS Alerts")
+        channel = self.bot.get_channel(bt_img)
+        await channel.send("Fetching NWS Alerts")
         await fetch_loop(self.bot)
