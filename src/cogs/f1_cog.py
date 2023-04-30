@@ -42,7 +42,7 @@ class CacheCog(commands.Cog):
             return
         else:
             # List of all sessions
-            session_list = ["FP1", "FP2", "FP3", "Q", "SS", "S", "R"]
+            session_list = ["FP1", "FP2", "FP3", "Q", "SS", "SQ", "S", "R"]
             cached = ''
             not_cached = ''
             event = event.title()
