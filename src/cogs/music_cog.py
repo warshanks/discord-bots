@@ -162,8 +162,12 @@ class MusicCog(commands.Cog):
 
     @bot.tree.command(name="leave", description="Kick KC from VC")
     async def dc(self, ctx):
-        await ctx.response.defer(thinking=True)
+        await ctx.response.defer(thinking=True, ephemeral=True)
         self.is_playing = False
         self.is_paused = False
-        await self.vc.disconnect()
-        await ctx.followup.send("Left the voice channel!")
+
+        try:
+            await self.vc.disconnect()
+            await ctx.followup.send("Left the voice channel!")
+        except AttributeError:
+            await ctx.followup.send("I'm not in a voice channel! (Try /tts-kick)")
