@@ -1,6 +1,7 @@
 from os import makedirs
 import random
 import pytz
+import asyncio
 
 import discord
 import fastf1
@@ -26,6 +27,55 @@ background_color = (0.212, 0.224, 0.243)  # Set the background color for the plo
 
 def is_weekend(date):
     return date.weekday() >= 4
+
+
+async def read_calendar_data(file_path):
+    with open(file_path, "r", encoding="utf-8") as calendar_file:
+        calendar_data = calendar_file.read()
+    await asyncio.sleep(0)  # Yield control back to the event loop
+    return calendar_data
+
+
+async def parse_calendar_data(calendar_data):
+    calendar = Calendar.from_ical(calendar_data)
+    await asyncio.sleep(0)  # Yield control back to the event loop
+    return calendar
+
+
+async def extract_events(calendar):
+    events = []
+    for component in calendar.walk():
+        if component.name == "VEVENT":
+            event_start = component.get('dtstart').dt
+            event_end = component.get('dtend').dt
+            event_name = component.get('summary')
+
+            if event_start.tzinfo:
+                event_start = event_start.astimezone(pytz.utc)
+
+            events.append((event_start, event_end, event_name))
+    events.sort(key=lambda x: x[0])
+    await asyncio.sleep(0)  # Yield control back to the event loop
+    return events
+
+
+async def filter_and_format_events(events, now, timezone):
+    output = ""
+    for event_start, event_end, event_name in events:
+        if event_start > now and is_weekend(event_start):
+            event_start_cst = event_start.astimezone(timezone)
+            event_end_cst = event_end.astimezone(timezone)
+
+            event_output = f"{event_name}: {event_start_cst.strftime('%m-%d %I:%M %p')} - " \
+                           f"{event_end_cst.strftime('%I:%M %p')}"
+
+            output += event_output + "\n"
+
+            if str(event_name).endswith("- Race") \
+                    or str(event_name).__contains__("FEATURE"):
+                break
+    await asyncio.sleep(0)  # Yield control back to the event loop
+    return output
 
 
 # noinspection PyShadowingNames
@@ -416,44 +466,30 @@ class F1Cog(commands.Cog):
     async def next(self, ctx):
         await ctx.response.defer(thinking=True, ephemeral=False)
         cal_path = "./calendar/23_calendar.ics"
-        with open(cal_path, "r", encoding="utf-8") as calendar_file:
-            calendar_data = calendar_file.read()
 
-        calendar = Calendar.from_ical(calendar_data)
+        calendar_data = await read_calendar_data(cal_path)
+        calendar = await parse_calendar_data(calendar_data)
         now = datetime.now(pytz.utc)
         cst = pytz.timezone('America/Chicago')
 
-        events = []
-        for component in calendar.walk():
-            if component.name == "VEVENT":
-                event_start = component.get('dtstart').dt
-                event_end = component.get('dtend').dt
-                event_name = component.get('summary')
+        events = await extract_events(calendar)
+        output = await filter_and_format_events(events, now, cst)
 
-                if event_start.tzinfo:
-                    event_start = event_start.astimezone(pytz.utc)
+        # Send the output to the user
+        await ctx.followup.send(output)
 
-                events.append((event_start, event_end, event_name))
+    @bot.tree.command(name="next-f2", description="List upcoming F2 events")
+    async def next_f2(self, ctx):
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        cal_path = "./calendar/f2-calendar_q_sprint_feature.ics"
 
-        events.sort(key=lambda x: x[0])
+        calendar_data = await read_calendar_data(cal_path)
+        calendar = await parse_calendar_data(calendar_data)
+        now = datetime.now(pytz.utc)
+        cst = pytz.timezone('America/Chicago')
 
-        # Initialize an empty string to store the output
-        output = ""
-
-        # Iterate through the sorted events and store the output in the variable
-        for event_start, event_end, event_name in events:
-            if event_start > now and is_weekend(event_start):
-                # Convert the event start and end times to CST
-                event_start_cst = event_start.astimezone(cst)
-                event_end_cst = event_end.astimezone(cst)
-
-                event_output = f"{event_name}: {event_start_cst.strftime('%m-%d %I:%M %p')} - " \
-                               f"{event_end_cst.strftime('%I:%M %p')}"
-
-                output += event_output + "\n"
-
-                if str(event_name).endswith("- Race"):
-                    break
+        events = await extract_events(calendar)
+        output = await filter_and_format_events(events, now, cst)
 
         # Send the output to the user
         await ctx.followup.send(output)
