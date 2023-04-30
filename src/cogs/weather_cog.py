@@ -73,8 +73,6 @@ async def fetch_api_data(bot, url):
             alerts = data["features"]
             # Process the data as needed
             if len(alerts) == 0:
-                channel = bot.get_channel(bt_img)
-                await channel.send('No active alerts found')
                 return
 
             else:
@@ -259,7 +257,6 @@ class NWSAlertsCog(commands.Cog):
 
     @tasks.loop(minutes=1)
     async def nws_alerts(self):
-        channel = self.bot.get_channel(bt_img)
-        await channel.send("Fetching NWS Alerts")
+        print("Fetching NWS Alerts")
         await fetch_loop(self.bot)
         await asyncio.sleep(wait_time)
