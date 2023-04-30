@@ -1,13 +1,16 @@
 # KC Discord Bot
 ![python](https://img.shields.io/badge/Python-3.10-blue)
 ![discord.py](https://img.shields.io/badge/discord.py-2.2.2-blue)
-![openai](https://img.shields.io/badge/OpenAI-0.27.5-blue)
-![stability-sdk](https://img.shields.io/badge/stability--sdk-0.7.0-blue)
-![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.5.2-blue)
-![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
-![Fast-F1](https://img.shields.io/badge/Fast--F1-2.3.2-blue)
+![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.5.3-blue)
+![fastf1](https://img.shields.io/badge/fastf1-2.3.2-blue)
+![icalendar](https://img.shields.io/badge/icalendar-5.0.5-blue)
+![openai](https://img.shields.io/badge/openai-0.27.5-blue)
 ![Pillow](https://img.shields.io/badge/Pillow-9.5.0-blue)
-![PyOWM](https://img.shields.io/badge/PyOWM-3.3.0-blue)
+![pyowm](https://img.shields.io/badge/pyowm-3.3.0-blue)
+![PyNaCl](https://img.shields.io/badge/PyNaCl-1.5.0-blue)
+![stability-sdk](https://img.shields.io/badge/stability_sdk-0.7.0-blue)
+![supervisor](https://img.shields.io/badge/supervisor-4.2.5-blue)
+
 
 ## Table of Contents
 - [Overview](#overview)
