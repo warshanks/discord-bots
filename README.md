@@ -40,7 +40,7 @@
 - ### F1 telemetry analysis using Fast-F1
 ![](./images/telemetry-analysis.png)
 
-### And it plays music from YouTube!
+### KC also features a music player, weather information, and more!
 
 ## Commands
 ### F1 Related
@@ -78,6 +78,9 @@
 ### Weather
 ```
 /weather - Displays the current weather for a given location
+/outlook - Pulls the Day 1 convective outlook from the Storm Prediction Center
+/radar-loop - Pulls the latest radar loop for the Mississippi Valley from the National Weather Service
+/bmx-radar - Pulls the latest loop from the BMX radar from the National Weather Service
 ```
 
 
