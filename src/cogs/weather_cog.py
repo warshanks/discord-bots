@@ -84,7 +84,6 @@ class WeatherCog(commands.Cog):
             visibility = weather.visibility(unit="miles")
             rain_dict = weather.rain
             rain_1h = rain_dict.get("1h", 0)
-            rain_3h = rain_dict.get("3h", 0)
 
         except Exception as e:
             await ctx.followup.send(e)
@@ -110,7 +109,7 @@ class WeatherCog(commands.Cog):
     **Wind Direction:** {wind_direction}° {wind_cardinal}
     **Humidity:** {humidity}%
     **Visibility:** {visibility} mi.
-    **Rainfall:** Last hour: {rain_1h}mm, Last 3 hours: {rain_3h}mm
+    **Rainfall:** Last hour: {rain_1h}mm
     **Report Generated:** {now_cst.strftime('%m/%d/%Y %I:%M:%S %p')} CST
     """)
 
