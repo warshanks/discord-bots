@@ -1,3 +1,4 @@
+import os
 import urllib.request
 import aiohttp
 import asyncio
@@ -7,8 +8,7 @@ from pyowm import OWM
 from datetime import datetime, timedelta
 import pytz
 
-from config import owm_token, weather_alert_channel, bt_img
-
+from config import owm_token, weather_alert_channel
 
 owm = OWM(owm_token)
 mgr = owm.weather_manager()
@@ -38,6 +38,8 @@ emoji_dict = {
 
 wait_time = 300
 
+SENT_ALERTS_FILE = "./logs/sent_alerts.txt"
+
 
 def log_time():
     # Create a timezone object for the CST timezone
@@ -54,6 +56,7 @@ def log_time():
         f.write("\nFetching NWS Alerts @ " + time_str + "\n")
 
 
+# Convert API timestamp to CST timezone
 def api_timestamp_to_cst(api_timestamp):
     dt = datetime.fromisoformat(api_timestamp)
     cst = pytz.timezone('America/Chicago')
@@ -61,6 +64,7 @@ def api_timestamp_to_cst(api_timestamp):
     return dt_cst.strftime('%m-%d-%Y %I:%M %p')
 
 
+# Build the output string for an alert
 def build_output(alert):
     properties = ["headline", "description", "instruction", "areaDesc", "urgency", "severity"]
     time_properties = ["effective", "onset", "expires"]
@@ -81,24 +85,41 @@ def build_output(alert):
     return output
 
 
-# noinspection PyShadowingNames
+# Save sent alert IDs to a file
+def save_sent_alerts(alert_id):
+    with open(SENT_ALERTS_FILE, "a") as file:
+        file.write(alert_id + "\n")
+
+
+# Load sent alert IDs from a file
+def load_sent_alerts():
+    if not os.path.exists(SENT_ALERTS_FILE):
+        return set()
+
+    with open(SENT_ALERTS_FILE, "r") as file:
+        return set(line.strip() for line in file.readlines())
+
+
+# Fetch API data, send alerts if not already sent
 async def fetch_api_data(bot, url):
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
             data = await response.json()
             alerts = data["features"]
-            # Process the data as needed
             if len(alerts) == 0:
                 return
 
-            else:
-                for alert in alerts:
+            sent_alerts = load_sent_alerts()
+            for alert in alerts:
+                alert_id = alert["properties"]["id"]
+                if alert_id not in sent_alerts:
                     output = build_output(alert)
                     channel = bot.get_channel(weather_alert_channel)
                     await channel.send(output)
+                    save_sent_alerts(alert_id)
 
 
-# noinspection PyShadowingNames
+# Fetch alerts for multiple locations in a loop
 async def fetch_loop(bot):
     api_urls = [
         "https://api.weather.gov/alerts/active?zone=ALC125",  # Tuscaloosa

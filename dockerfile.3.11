@@ -14,6 +14,4 @@ RUN pip install --upgrade pip && \
 
 COPY ./src .
 
-RUN mkdir /app/logs
-
 CMD ["supervisord", "-c", "/app/supervisord.conf"]

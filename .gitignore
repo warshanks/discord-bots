@@ -23,3 +23,9 @@ fastf1_cache/
 # Scratch files
 line_count.py
 *.ipynb
+
+# Ignore .DS_Store file
+.DS_Store
+
+# Ignore logs
+*.log
