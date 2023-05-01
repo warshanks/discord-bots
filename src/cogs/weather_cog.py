@@ -39,6 +39,21 @@ emoji_dict = {
 wait_time = 300
 
 
+def log_time():
+    # Create a timezone object for the CST timezone
+    tz = pytz.timezone("US/Central")
+
+    # Get the current time in the CST timezone
+    now = datetime.now(tz)
+
+    # Format the time as a string
+    time_str = now.strftime("%I:%M:%S %p")
+
+    # Write the message to the log file
+    with open("./logs/kc_stdout.log", "a") as f:
+        f.write("\nFetching NWS Alerts @ " + time_str + "\n")
+
+
 def api_timestamp_to_cst(api_timestamp):
     dt = datetime.fromisoformat(api_timestamp)
     cst = pytz.timezone('America/Chicago')
@@ -258,6 +273,6 @@ class NWSAlertsCog(commands.Cog):
 
     @tasks.loop(minutes=1)
     async def nws_alerts(self):
-        print("Fetching NWS Alerts")
+        log_time()
         await fetch_loop(self.bot)
         await asyncio.sleep(wait_time)
