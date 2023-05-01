@@ -86,9 +86,9 @@ async def fetch_api_data(bot, url):
 # noinspection PyShadowingNames
 async def fetch_loop(bot):
     api_urls = [
-        "https://api.weather.gov/alerts/active?zone=ALC125",
-        "https://api.weather.gov/alerts/active?zone=ALC089",
-        "https://api.weather.gov/alerts/active?zone=ALC049",
+        "https://api.weather.gov/alerts/active?zone=ALC125",  # Tuscaloosa
+        "https://api.weather.gov/alerts/active?zone=ALC089",  # Huntsville
+        "https://api.weather.gov/alerts/active?zone=ALC049",  # Henagar
         # Add more URLs as needed
     ]
 
