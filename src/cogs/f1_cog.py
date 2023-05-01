@@ -545,7 +545,7 @@ class F1Cog(commands.Cog):
 
         events = await extract_events(calendar)
         output = await filter_and_format_events(events, now, cst)
-
+        output += "\n*All times are in Central Standard Time (CST)*"
         # Send the output to the user
         await ctx.followup.send(output)
 
@@ -561,6 +561,6 @@ class F1Cog(commands.Cog):
 
         events = await extract_events(calendar)
         output = await filter_and_format_events(events, now, cst)
-
+        output += "\n*All times are in Central Standard Time (CST)*"
         # Send the output to the user
         await ctx.followup.send(output)
