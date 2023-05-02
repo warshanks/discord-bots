@@ -53,7 +53,7 @@ def log_time():
 
     # Write the message to the log file
     with open("./logs/kc_stdout.log", "a") as f:
-        f.write("\nFetching NWS Alerts @ " + time_str + "\n")
+        f.write("Fetching NWS Alerts @ " + time_str + "\n")
 
 
 # Convert API timestamp to CST timezone
