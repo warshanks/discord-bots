@@ -23,8 +23,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     try:
-        await bot.add_cog(EventsCog(bot))
-        await bot.add_cog(NWSAlertsCog(bot))
+        await bot.add_cog(F1Cog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)

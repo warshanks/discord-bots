@@ -74,8 +74,25 @@ async def filter_and_format_events(events, now, timezone):
             if str(event_name).endswith("- Race") \
                     or str(event_name).__contains__("FEATURE"):
                 break
+
+    output += "\n*All times are in Central Standard Time (CST)*"
+
     await asyncio.sleep(0)  # Yield control back to the event loop
     return output
+
+
+async def list_upcoming_events(ctx, cal_path):
+    await ctx.response.defer(thinking=True, ephemeral=False)
+
+    calendar_data = await read_calendar_data(cal_path)
+    calendar = await parse_calendar_data(calendar_data)
+    now = datetime.now(pytz.utc)
+    cst = pytz.timezone('America/Chicago')
+
+    events = await extract_events(calendar)
+    output = await filter_and_format_events(events, now, cst)
+    # Send the output to the user
+    await ctx.followup.send(output)
 
 
 # Define the asynchronous event_creator function
@@ -103,6 +120,25 @@ async def event_creator(ctx, event_name, event_start_cst, event_end_cst):
         start_time=event_start_cst,  # The start time of the event (in Central Standard Time)
         end_time=event_end_cst  # The end time of the event (in Central Standard Time)
     )
+
+
+# Function to get the fastest lap of a driver, or the fastest lap overall if the driver is not specified
+async def get_driver_lap(driver, ff1year, ctx):
+    # If the driver is not specified, get the fastest lap and the driver who set it
+    if driver is None:
+        driver_lap = ff1year.laps.pick_fastest()
+        driver = driver_lap['Driver']
+    # If the driver is specified, get the fastest lap for that driver
+    elif driver is not None:
+        driver = driver.upper()
+        driver_lap = ff1year.laps.pick_driver(driver).pick_fastest()
+    # If there's an unexpected case, send an error message and return None values
+    else:
+        await ctx.followup.send("Something went wrong, try again.")
+        return None, None
+
+    # Return the driver and their fastest lap
+    return driver, driver_lap
 
 
 # noinspection PyShadowingNames
@@ -417,24 +453,16 @@ class F1Cog(commands.Cog):
             await ctx.followup.send(e)
             return
 
+        # Get the driver1 and their fastest lap
+        driver1, driver1_lap = await get_driver_lap(driver1, ff1year1, ctx)
+        # If an error occurred, exit the function
         if driver1 is None:
-            driver1_lap = ff1year1.laps.pick_fastest()
-            driver1 = driver1_lap['Driver']
-        elif driver1 is not None:
-            driver1 = driver1.upper()
-            driver1_lap = ff1year1.laps.pick_driver(driver1).pick_fastest()
-        else:
-            await ctx.followup.send("Something went wrong, try again.")
             return
 
+        # Get the driver2 and their fastest lap
+        driver2, driver2_lap = await get_driver_lap(driver2, ff1year2, ctx)
+        # If an error occurred, exit the function
         if driver2 is None:
-            driver2_lap = ff1year2.laps.pick_fastest()
-            driver2 = driver2_lap['Driver']
-        elif driver2 is not None:
-            driver2 = driver2.upper()
-            driver2_lap = ff1year2.laps.pick_driver(driver2).pick_fastest()
-        else:
-            await ctx.followup.send("Something went wrong, try again.")
             return
 
         # Get car data and add distance
@@ -535,32 +563,10 @@ class F1Cog(commands.Cog):
 
     @bot.tree.command(name="next", description="List upcoming F1 events")
     async def next(self, ctx):
-        await ctx.response.defer(thinking=True, ephemeral=False)
         cal_path = "./calendar/23_calendar.ics"
-
-        calendar_data = await read_calendar_data(cal_path)
-        calendar = await parse_calendar_data(calendar_data)
-        now = datetime.now(pytz.utc)
-        cst = pytz.timezone('America/Chicago')
-
-        events = await extract_events(calendar)
-        output = await filter_and_format_events(events, now, cst)
-        output += "\n*All times are in Central Standard Time (CST)*"
-        # Send the output to the user
-        await ctx.followup.send(output)
+        await list_upcoming_events(ctx, cal_path)
 
     @bot.tree.command(name="next-f2", description="List upcoming F2 events")
     async def next_f2(self, ctx):
-        await ctx.response.defer(thinking=True, ephemeral=False)
         cal_path = "./calendar/f2-calendar_q_sprint_feature.ics"
-
-        calendar_data = await read_calendar_data(cal_path)
-        calendar = await parse_calendar_data(calendar_data)
-        now = datetime.now(pytz.utc)
-        cst = pytz.timezone('America/Chicago')
-
-        events = await extract_events(calendar)
-        output = await filter_and_format_events(events, now, cst)
-        output += "\n*All times are in Central Standard Time (CST)*"
-        # Send the output to the user
-        await ctx.followup.send(output)
+        await list_upcoming_events(ctx, cal_path)
