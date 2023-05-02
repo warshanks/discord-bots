@@ -1,5 +1,5 @@
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
-discord.py==2.2.2
+discord.py==2.2.3
 elevenlabslib==0.6.0
 fastf1==2.3.3
 icalendar==5.0.5
