@@ -1,10 +1,10 @@
 # KC Discord Bot
-![python](https://img.shields.io/badge/Python-3.10-blue)
-![discord.py](https://img.shields.io/badge/discord.py-2.2.2-blue)
-![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.5.3-blue)
-![fastf1](https://img.shields.io/badge/fastf1-2.3.2-blue)
+![python](https://img.shields.io/badge/Python-3.11-blue)
+![discord.py](https://img.shields.io/badge/discord.py-2.2.3-blue)
+![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.6.0-blue)
+![fastf1](https://img.shields.io/badge/fastf1-3.0.0-blue)
 ![icalendar](https://img.shields.io/badge/icalendar-5.0.5-blue)
-![openai](https://img.shields.io/badge/openai-0.27.5-blue)
+![openai](https://img.shields.io/badge/openai-0.27.6-blue)
 ![Pillow](https://img.shields.io/badge/Pillow-9.5.0-blue)
 ![pyowm](https://img.shields.io/badge/pyowm-3.3.0-blue)
 ![PyNaCl](https://img.shields.io/badge/PyNaCl-1.5.0-blue)
@@ -27,7 +27,7 @@
 - [Usage](#usage)
 
 ## Overview
-#### This repository hosts the source code for the KC Discord bot, alongside the Lilith variant and a Ferrari-themed F1 data bot. KC is developed using Python 3.10 and integrates several libraries and APIs to provide an engaging and feature-rich experience.
+#### This repository hosts the source code for the KC Discord bot, alongside the Lilith variant and a Ferrari-themed F1 data bot. KC is developed using Python 3.11 and integrates several libraries and APIs to provide an engaging and feature-rich experience.
 
 ## Features
 
@@ -91,37 +91,17 @@
 To run the KC Discord bot, ensure you have the following packages installed:
 
 ```
-discord.py==2.2.2
-elevenlabslib==0.5.3
-fastf1==2.3.2
+setuptools==65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+discord.py==2.2.3
+elevenlabslib==0.6.0
+fastf1==3.0.0
 icalendar==5.0.5
-openai==0.27.5
+openai==0.27.6
 Pillow==9.5.0
 pyowm==3.3.0
 PyNaCl==1.5.0
-stability-sdk==0.7.0
+stability_sdk==0.7.0
 supervisor==4.2.5
-youtube-dl (from master branch!)
-```
-
-## Getting Started
-1. Clone the repository or download the source code.
-2. Install the required dependencies as listed in the Dependencies section.
-3. Obtain necessary API keys and tokens for OpenAI, Stability.AI, ElevenLabs, and Discord.
-4. Update the configuration files with the obtained keys and tokens.
-5. Follow the usage instructions below to run the bot.
-
-## Usage
-To run the KC Discord bot, simply run the following command:
-
-#### Windows
-```
-py -3.10 kc.py
-```
-
-#### Linux
-```
-python3.10 kc.py
 ```
 
 

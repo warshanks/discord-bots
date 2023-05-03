@@ -22,6 +22,7 @@ fastf1_cache/
 
 # Scratch files
 line_count.py
+update_readme.py
 *.ipynb
 
 # Ignore .DS_Store file
