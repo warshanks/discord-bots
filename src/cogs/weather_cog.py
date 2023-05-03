@@ -101,6 +101,7 @@ def load_sent_alerts():
 
 
 # Fetch API data, send alerts if not already sent
+# noinspection PyShadowingNames
 async def fetch_api_data(bot, url):
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
@@ -120,6 +121,7 @@ async def fetch_api_data(bot, url):
 
 
 # Fetch alerts for multiple locations in a loop
+# noinspection PyShadowingNames
 async def fetch_loop(bot):
     api_urls = [
         "https://api.weather.gov/alerts/active?zone=ALC125",  # Tuscaloosa

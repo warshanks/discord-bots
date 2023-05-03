@@ -1,13 +1,48 @@
 import openai
 import discord
 from discord.ext import commands
-from config import openai_token, openai_org, channel_ids, lilith_channel
+from config import *
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token
 openai.organization = openai_org
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+
+
+async def generate_response(message, conversation_log):
+    previous_messages = [msg async for msg in message.channel.history(limit=10)]
+    previous_messages.reverse()
+
+    for previous_message in previous_messages:
+        # Ignore any message that starts with '!'
+        if not previous_message.content.startswith('!'):
+            # Determine the role based on whether the
+            # author of the message is a bot or not
+            role = 'assistant' if previous_message.author.bot else 'user'
+
+            # Add log item to conversation_log
+            conversation_log.append({
+                'role': role,
+                'content': previous_message.content
+            })
+
+    # Send the conversation log to OpenAI to generate a response
+    try:
+        response = await openai.ChatCompletion.acreate(
+            model='gpt-3.5-turbo',
+            messages=conversation_log,
+            max_tokens=1024,
+            frequency_penalty=2.0
+        )
+    except Exception as e:
+        return str(e)
+
+    # Return the response content
+    try:
+        return response['choices'][0]['message']['content']
+    except discord.errors.HTTPException:
+        return "I have too much to say, please try again."
 
 
 # noinspection PyShadowingNames
@@ -36,39 +71,8 @@ class ChatCog(commands.Cog):
                                  'You are a friendly secretary named KC. '
                                  'Only respond to the latest message.'}]
 
-            previous_messages = [message async for message in
-                                 message.channel.history(limit=10)]
-            previous_messages.reverse()
-
-            for previous_message in previous_messages:
-                # Ignore any message that starts with '!'
-                if not previous_message.content.startswith('!'):
-                    # Determine the role based on whether the
-                    # author of the message is a bot or not
-                    role = 'assistant' if previous_message.author.bot else 'user'
-
-                    # Add log item to conversation_log
-                    conversation_log.append({
-                        'role': role,
-                        'content': previous_message.content
-                    })
-
-            # Send the conversation log to OpenAI to generate a response
-            try:
-                response = await openai.ChatCompletion.acreate(
-                    model='gpt-3.5-turbo',
-                    messages=conversation_log,
-                    max_tokens=1024,
-                    frequency_penalty=2.0
-                )
-            except Exception as e:
-                await message.reply(e)
-
-            # Send the response back to the user in the same channel
-            try:
-                await message.reply(response['choices'][0]['message']['content'])
-            except discord.errors.HTTPException:
-                await message.reply("I have too much to say, please try again.")
+            response_content = await generate_response(message, conversation_log)
+            await message.reply(response_content)
 
     # Hype emojipasta command
     @bot.tree.command(name='hype', description='Generate hype emojipasta')
@@ -115,35 +119,5 @@ class LilithCog(commands.Cog):
             conversation_log = [{'role': 'system', 'content':
                                 'Roleplay as Lilith, daughter of Hatred, from the Diablo universe.'}]
 
-            previous_messages = [message async for message in message.channel.history(limit=10)]
-            previous_messages.reverse()
-            # print(previous_messages)
-
-            for previous_message in previous_messages:
-                # Ignore any message that starts with '!'
-                if not previous_message.content.startswith('!'):
-                    # Determine the role based on whether the author of the message is a bot or not
-                    role = 'assistant' if previous_message.author.bot else 'user'
-
-                    # Add log item to conversation_log
-                    conversation_log.append({
-                        'role': role,
-                        'content': previous_message.content
-                    })
-
-            # Send the conversation log to OpenAI to generate a response
-            try:
-                response = await openai.ChatCompletion.acreate(
-                    model='gpt-3.5-turbo',
-                    messages=conversation_log,
-                    max_tokens=1024,
-                    frequency_penalty=2.0
-                )
-            except Exception as e:
-                await message.reply(e)
-
-            # Send the response back to the user in the same channel
-            try:
-                await message.reply(response['choices'][0]['message']['content'])
-            except discord.errors.HTTPException:
-                await message.reply("I have too much to say, please try again.")
+            response_content = await generate_response(message, conversation_log)
+            await message.reply(response_content)

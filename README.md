@@ -102,6 +102,23 @@ pyowm==3.3.0
 PyNaCl==1.5.0
 stability_sdk==0.7.0
 supervisor==4.2.5
+youtube-dl (from master branch!)
 ```
 
+## Getting Started
+1. Clone the repository or download the source code.
+2. Install the required dependencies as listed in the Dependencies section.
+3. Obtain necessary API keys and tokens for OpenAI, Stability.AI, ElevenLabs, and Discord.
+4. Update the configuration files with the obtained keys and tokens.
+5. Follow the usage instructions below to run the bot.
 
+## Usage
+To run the KC Discord bot, simply run the following command:
+#### Windows
+```
+py -3.10 kc.py
+```
+#### Linux
+```
+python3.10 kc.py
+```
