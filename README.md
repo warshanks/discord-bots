@@ -91,15 +91,16 @@
 To run the KC Discord bot, ensure you have the following packages installed:
 
 ```
-setuptools==65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+aiohttp==3.8.4
 discord.py==2.2.3
 elevenlabslib==0.6.0
 fastf1==3.0.0
 icalendar==5.0.5
 openai==0.27.6
 Pillow==9.5.0
-pyowm==3.3.0
 PyNaCl==1.5.0
+pyowm==3.3.0
+setuptools==65.5.1
 stability_sdk==0.7.0
 supervisor==4.2.5
 youtube-dl (from master branch!)
