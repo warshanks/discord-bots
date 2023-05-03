@@ -10,7 +10,7 @@
 ![PyNaCl](https://img.shields.io/badge/PyNaCl-1.5.0-blue)
 ![stability-sdk](https://img.shields.io/badge/stability_sdk-0.7.0-blue)
 ![supervisor](https://img.shields.io/badge/supervisor-4.2.5-blue)
-![youtube-dl](https://img.shields.io/badge/youtube_dl-master-blue)
+![youtube-dl](https://img.shields.io/badge/youtube--dl-master-blue)
 
 ## Table of Contents
 - [Overview](#overview)
