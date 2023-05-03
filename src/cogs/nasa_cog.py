@@ -8,10 +8,12 @@ import pytz
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 local_timezone = pytz.timezone("America/Chicago")
-now = datetime.datetime.now(local_timezone)
 
 
 async def fetch_apod(ctx, year, month, day):
+
+    now = datetime.datetime.now(local_timezone)
+    
     apod_url = "https://api.nasa.gov/planetary/apod"
     if year is None:
         year = datetime.datetime.now().year
