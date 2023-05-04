@@ -31,7 +31,7 @@
 
 ## Features
 
-- ### Engages in text-to-text conversations using OpenAI's GPT-3.5 Turbo, retaining the last 10 messages in the channel
+- ### Engages in text-to-text conversations using OpenAI's GPT-4, retaining the last 15 messages in the channel
 ![](./images/ttt-generation.png)
 
 - ### Generates text-to-speech audio from text-to-text conversations using the ElevenLabs API
@@ -85,6 +85,10 @@
 /radar-loop - Pulls the latest radar loop for the Mississippi Valley from the National Weather Service
 /bmx-radar - Pulls the latest loop from the BMX radar from the National Weather Service
 ```
+### Astronomy
+```
+/apod - Pulls the Astronomy Picture of the Day from NASA
+```
 
 
 ## Dependencies
@@ -108,7 +112,10 @@ youtube-dl (from master branch!)
 
 ## Getting Started
 1. Clone the repository or download the source code.
-2. Install the required dependencies as listed in the Dependencies section.
+2. Install the required dependencies as listed in the Dependencies section:
+```
+pip install -r requirements.txt
+```
 3. Obtain necessary API keys and tokens for OpenAI, Stability.AI, ElevenLabs, and Discord.
 4. Update the configuration files with the obtained keys and tokens.
 5. Follow the usage instructions below to run the bot.
@@ -117,9 +124,9 @@ youtube-dl (from master branch!)
 To run the KC Discord bot, simply run the following command:
 #### Windows
 ```
-py -3.10 kc.py
+./docker.ps1
 ```
 #### Linux
 ```
-python3.10 kc.py
+python3.11 kc.py
 ```

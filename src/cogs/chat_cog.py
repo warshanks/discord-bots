@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
 async def generate_response(message, conversation_log):
-    previous_messages = [msg async for msg in message.channel.history(limit=10)]
+    previous_messages = [msg async for msg in message.channel.history(limit=15)]
     previous_messages.reverse()
 
     for previous_message in previous_messages:
@@ -30,10 +30,9 @@ async def generate_response(message, conversation_log):
     # Send the conversation log to OpenAI to generate a response
     try:
         response = await openai.ChatCompletion.acreate(
-            model='gpt-3.5-turbo',
+            model='gpt-4',
             messages=conversation_log,
-            max_tokens=1024,
-            frequency_penalty=2.0
+            max_tokens=1024
         )
     except Exception as e:
         return str(e)
@@ -49,9 +48,6 @@ async def generate_response(message, conversation_log):
 class ChatCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
-                               'options': '-vn'}
-        self.vc = None
 
     @commands.Cog.listener()
     async def on_message(self, message):
