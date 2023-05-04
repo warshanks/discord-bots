@@ -22,6 +22,7 @@
   - [Text-to-Text Conversations](#text-to-text-conversations)
   - [F1 Related](#f1-related)
   - [Weather](#weather)
+  - [Astronomy](#astronomy)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
