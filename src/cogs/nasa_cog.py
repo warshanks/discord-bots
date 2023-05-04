@@ -33,7 +33,8 @@ async def fetch_apod(ctx, year, month, day):
         async with aiohttp.ClientSession() as session:
             async with session.get(apod_url, params=params) as response:
                 if response.status != 200:
-                    return f"Error: Unable to fetch APOD for date {date}. Please try again. {response.status}\n" \
+                    return f"Error: Unable to fetch APOD for date {date}. " \
+                           f"Please try again. {response.status}\n" \
                            f"{params} {nasa_token}"
                 data = await response.json()
     except Exception as e:
