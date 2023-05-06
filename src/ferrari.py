@@ -9,7 +9,7 @@ from config import Ferrari_TOKEN, command_sync
 
 start_time = datetime.datetime.now()  # Save the start time of the bot
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
 # Handle the "on_ready" event, which is triggered when the bot is connected and ready

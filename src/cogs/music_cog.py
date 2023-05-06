@@ -3,7 +3,7 @@ from discord.ext import commands
 from youtube_dl import YoutubeDL
 from re import match
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
 # noinspection PyShadowingNames

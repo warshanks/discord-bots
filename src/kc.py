@@ -15,7 +15,7 @@ from cogs.nasa_cog import NASACog
 start_time = datetime.datetime.now()
 
 # Initialize a new Discord bot instance
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
 # Event handler for when the bot is ready to use

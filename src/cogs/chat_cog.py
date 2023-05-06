@@ -8,7 +8,7 @@ from config import *
 openai.api_key = openai_token
 openai.organization = openai_org
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
 async def generate_response(message, conversation_log, openai_model):

@@ -5,7 +5,7 @@ import aiohttp
 import datetime
 import pytz
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 local_timezone = pytz.timezone("America/Chicago")
 

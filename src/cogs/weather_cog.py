@@ -13,7 +13,7 @@ from config import owm_token, weather_alert_channel
 owm = OWM(owm_token)
 mgr = owm.weather_manager()
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 emoji_dict = {
     "01d": ":sunny:",

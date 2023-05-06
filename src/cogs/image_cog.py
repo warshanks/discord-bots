@@ -12,7 +12,7 @@ import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 
 from config import openai_token, openai_org, stability_host, stability_token
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token

@@ -15,7 +15,7 @@ makedirs("./speech", exist_ok=True)
 openai.api_key = openai_token
 openai.organization = openai_org
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 tts_user = ElevenLabsUser(elevenlabs_token)
 

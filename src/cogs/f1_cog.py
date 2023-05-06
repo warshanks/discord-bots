@@ -15,7 +15,7 @@ from icalendar import Calendar
 from matplotlib import cm
 from matplotlib.collections import LineCollection
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 makedirs('../fastf1_cache/Data', exist_ok=True)
 makedirs('./images', exist_ok=True)
