@@ -74,8 +74,10 @@ async def send_sectioned_response(message, response_content, max_length=2000):
 async def kc_conversation(message, openai_model):
     try:
         # Create a log of the user's message and the bot's response
+        # send the typing animation while the bot is thinking
         async with message.channel.typing():
-            conversation_log = [{'role': 'system', 'content':
+            conversation_log = [{'role': 'system',
+                                 'content':
                                  'You are a friendly secretary named KC. '
                                  'Only respond to the latest message.'}]
 
