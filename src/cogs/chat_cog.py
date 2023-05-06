@@ -11,15 +11,20 @@ openai.organization = openai_org
 bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
+# Define an asynchronous function to generate a response
 async def generate_response(message, conversation_log, openai_model):
+    # Get the last 10 messages from the channel and reverse the order
     previous_messages = [msg async for msg in message.channel.history(limit=10)]
     previous_messages.reverse()
 
+    # Iterate through the previous messages
     for previous_message in previous_messages:
         # Ignore any message that starts with '!'
         if not previous_message.content.startswith('!'):
             # Determine the role based on whether the
-            # author of the message is a bot or not
+            # author of the message is a bot or not.
+            # This lets the AI know which of the previous messages it sent
+            # and which were sent by the user.
             role = 'assistant' if previous_message.author.bot else 'user'
 
             # Add log item to conversation_log
@@ -67,6 +72,7 @@ async def send_sectioned_response(message, response_content, max_length=2000):
         await message.reply(section.strip())
 
 
+# Define an asynchronous function to handle the conversation as KC
 # noinspection PyShadowingNames
 async def kc_conversation(message, openai_model):
     try:
@@ -75,8 +81,7 @@ async def kc_conversation(message, openai_model):
         async with message.channel.typing():
             conversation_log = [{'role': 'system',
                                  'content':
-                                 'You are a friendly secretary named KC. '
-                                 'Only respond to the latest message.'}]
+                                     'You are a friendly secretary named KC. '}]
 
             response_content = await generate_response(message, conversation_log, openai_model)
             await send_sectioned_response(message, response_content)
@@ -89,6 +94,7 @@ class ChatCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    # Event handler for when a message is sent in a channel
     @commands.Cog.listener()
     async def on_message(self, message):
         # Ignore messages from the bot itself,
@@ -104,14 +110,13 @@ class ChatCog(commands.Cog):
         # set the model to use
         openai_model = 'gpt-3.5-turbo'
 
+        # Generate a response as KC
         await kc_conversation(message, openai_model)
 
     # Hype emojipasta command
     @bot.tree.command(name='hype', description='Generate hype emojipasta')
     async def hype(self, ctx, about: str):
         # Defer the response to let the user know that the bot is working on the request
-        # noinspection PyUnresolvedReferences
-
         await ctx.response.defer(thinking=True, ephemeral=False)
         conversation_log = [{'role': 'system', 'content': 'Generate really hype emojipasta about'},
                             {'role': 'user', 'content': about}]
@@ -128,6 +133,30 @@ class ChatCog(commands.Cog):
             await ctx.followup.send(response['choices'][0]['message']['content'])
         except discord.errors.HTTPException:
             await ctx.followup.send("I have too much to say, please try again.")
+
+
+# noinspection PyShadowingNames
+class GPT4Cog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    # Event handler for when the bot receives a message
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        # Ignore messages from the bot itself,
+        # or from channels other than the designated one,
+        # or that start with '!'
+        if (message.author.bot or
+                message.author.system or
+                message.channel.id != gpt4_channel or
+                message.content.startswith('!')):
+            return
+
+        # set the model to use
+        openai_model = 'gpt-4'
+
+        # Generate a response as KC
+        await kc_conversation(message, openai_model)
 
 
 # noinspection PyShadowingNames
@@ -157,26 +186,3 @@ class LilithCog(commands.Cog):
                 await message.reply(response_content)
         except Exception as e:
             await message.reply(f"Error: {e}")
-
-
-# noinspection PyShadowingNames
-class GPT4Cog(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot
-
-    # Event handler for when the bot receives a message
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        # Ignore messages from the bot itself,
-        # or from channels other than the designated one,
-        # or that start with '!'
-        if (message.author.bot or
-                message.author.system or
-                message.channel.id != gpt4_channel or
-                message.content.startswith('!')):
-            return
-
-        # set the model to use
-        openai_model = 'gpt-4'
-
-        await kc_conversation(message, openai_model)
