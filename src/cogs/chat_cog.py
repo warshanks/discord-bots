@@ -36,13 +36,10 @@ async def generate_response(message, conversation_log, openai_model):
             max_tokens=1024,
         )
     except Exception as e:
-        return str(e)
+        return e
 
     # Return the response content
-    try:
-        return response['choices'][0]['message']['content']
-    except discord.errors.HTTPException:
-        return "I have too much to say, please try again."
+    return response['choices'][0]['message']['content']
 
 
 # Define an asynchronous function to send the response in sections
