@@ -4,12 +4,12 @@ import discord
 from discord.ext import commands
 
 from config import *
-from cogs.chat_cog import ChatCog
+from cogs.chat_cog import ChatCog, GPT4Cog
 from cogs.tts_cog import TTSCog
 from cogs.image_cog import ImageCog
 from cogs.music_cog import MusicCog
 from cogs.weather_cog import WeatherCog, NWSAlertsCog
-from cogs.nasa_cog import NasaCog
+from cogs.nasa_cog import NASACog
 
 # Get the start time of the program
 start_time = datetime.datetime.now()
@@ -24,11 +24,12 @@ async def on_ready():
     try:
         await bot.add_cog(MusicCog(bot))
         await bot.add_cog(ChatCog(bot))
-        await bot.add_cog(ImageCog(bot))
+        await bot.add_cog(GPT4Cog(bot))
         await bot.add_cog(TTSCog(bot))
+        await bot.add_cog(ImageCog(bot))
         await bot.add_cog(WeatherCog(bot))
         await bot.add_cog(NWSAlertsCog(bot))
-        await bot.add_cog(NasaCog(bot))
+        await bot.add_cog(NASACog(bot))
         await command_sync(bot)
     except Exception as e:
         print(e)

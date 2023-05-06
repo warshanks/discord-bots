@@ -59,7 +59,7 @@ async def fetch_apod(ctx, year, month, day):
 
 
 # noinspection PyShadowingNames
-class NasaCog(commands.Cog):
+class NASACog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

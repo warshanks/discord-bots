@@ -1,3 +1,4 @@
+import re
 import openai
 import discord
 from discord.ext import commands
@@ -10,8 +11,8 @@ openai.organization = openai_org
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
-async def generate_response(message, conversation_log):
-    previous_messages = [msg async for msg in message.channel.history(limit=15)]
+async def generate_response(message, conversation_log, openai_model):
+    previous_messages = [msg async for msg in message.channel.history(limit=10)]
     previous_messages.reverse()
 
     for previous_message in previous_messages:
@@ -30,9 +31,9 @@ async def generate_response(message, conversation_log):
     # Send the conversation log to OpenAI to generate a response
     try:
         response = await openai.ChatCompletion.acreate(
-            model='gpt-4',
+            model=openai_model,
             messages=conversation_log,
-            max_tokens=1024
+            max_tokens=1024,
         )
     except Exception as e:
         return str(e)
@@ -42,6 +43,46 @@ async def generate_response(message, conversation_log):
         return response['choices'][0]['message']['content']
     except discord.errors.HTTPException:
         return "I have too much to say, please try again."
+
+
+# Define an asynchronous function to send the response in sections
+async def send_sectioned_response(message, response_content, max_length=2000):
+    # Split the response_content into sentences using regular expression
+    # The regex pattern looks for sentence-ending punctuation followed by a whitespace character
+    sentences = re.split(r'(?<=[.!?])\s+', response_content)
+
+    # Initialize an empty section
+    section = ""
+
+    # Iterate through the sentences
+    for sentence in sentences:
+        # If the current section plus the next sentence exceeds the max_length,
+        # send the current section as a message and clear the section
+        if len(section) + len(sentence) + 1 > max_length:
+            await message.reply(section.strip())
+            section = ""
+
+        # Add the sentence to the section
+        section += " " + sentence
+
+    # If there's any content left in the section, send it as a message
+    if section:
+        await message.reply(section.strip())
+
+
+# noinspection PyShadowingNames
+async def kc_conversation(message, openai_model):
+    try:
+        # Create a log of the user's message and the bot's response
+        async with message.channel.typing():
+            conversation_log = [{'role': 'system', 'content':
+                                 'You are a friendly secretary named KC. '
+                                 'Only respond to the latest message.'}]
+
+            response_content = await generate_response(message, conversation_log, openai_model)
+            await send_sectioned_response(message, response_content)
+    except Exception as e:
+        await message.reply(f"Error: {e}")
 
 
 # noinspection PyShadowingNames
@@ -61,29 +102,25 @@ class ChatCog(commands.Cog):
                 message.content.startswith('!')):
             return
 
-        # Create a log of the user's message and the bot's response
-        async with message.channel.typing():
-            conversation_log = [{'role': 'system', 'content':
-                                 'You are a friendly secretary named KC. '
-                                 'Only respond to the latest message.'}]
+        openai_model = 'gpt-3.5-turbo'
 
-            response_content = await generate_response(message, conversation_log)
-            await message.reply(response_content)
+        await kc_conversation(message, openai_model)
 
     # Hype emojipasta command
     @bot.tree.command(name='hype', description='Generate hype emojipasta')
     async def hype(self, ctx, about: str):
         # Defer the response to let the user know that the bot is working on the request
         # noinspection PyUnresolvedReferences
+
         await ctx.response.defer(thinking=True, ephemeral=False)
         conversation_log = [{'role': 'system', 'content': 'Generate really hype emojipasta about'},
                             {'role': 'user', 'content': about}]
         # Print information about the user, guild and channel where the command was invoked
-        print(ctx.user, ctx.guild, ctx.channel, about)
+        openai_model = 'gpt-3.5-turbo'
         try:
             # Generate a response using OpenAI API from the prompt provided by the user
             response = await openai.ChatCompletion.acreate(
-                model='gpt-3.5-turbo',
+                model=openai_model,
                 messages=conversation_log,
                 frequency_penalty=2.0,
                 max_tokens=1024,
@@ -109,11 +146,36 @@ class LilithCog(commands.Cog):
                 message.channel.id != lilith_channel or
                 message.content.startswith('!')):
             return
+        openai_model = 'gpt-3.5-turbo'
+        try:
+            # Create a log of the user's message and the bot's response
+            async with message.channel.typing():
+                conversation_log = [{'role': 'system', 'content':
+                                    'Roleplay as Lilith, daughter of Hatred, from the Diablo universe.'}]
 
-        # Create a log of the user's message and the bot's response
-        async with message.channel.typing():
-            conversation_log = [{'role': 'system', 'content':
-                                'Roleplay as Lilith, daughter of Hatred, from the Diablo universe.'}]
+                response_content = await generate_response(message, conversation_log, openai_model)
+                await message.reply(response_content)
+        except Exception as e:
+            await message.reply(f"Error: {e}")
 
-            response_content = await generate_response(message, conversation_log)
-            await message.reply(response_content)
+
+# noinspection PyShadowingNames
+class GPT4Cog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    # Event handler for when the bot receives a message
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        # Ignore messages from the bot itself,
+        # or from channels other than the designated one,
+        # or that start with '!'
+        if (message.author.bot or
+                message.author.system or
+                message.channel.id != gpt4_channel or
+                message.content.startswith('!')):
+            return
+
+        openai_model = 'gpt-4'
+
+        await kc_conversation(message, openai_model)
