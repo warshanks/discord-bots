@@ -82,7 +82,7 @@ async def kc_conversation(message, openai_model):
             response_content = await generate_response(message, conversation_log, openai_model)
             await send_sectioned_response(message, response_content)
     except Exception as e:
-        await message.reply(f"Error: {e}")
+        await message.reply(f"Error: {e} @Shanks#1955")
 
 
 # noinspection PyShadowingNames
@@ -102,6 +102,7 @@ class ChatCog(commands.Cog):
                 message.content.startswith('!')):
             return
 
+        # set the model to use
         openai_model = 'gpt-3.5-turbo'
 
         await kc_conversation(message, openai_model)
@@ -176,6 +177,7 @@ class GPT4Cog(commands.Cog):
                 message.content.startswith('!')):
             return
 
+        # set the model to use
         openai_model = 'gpt-4'
 
         await kc_conversation(message, openai_model)
