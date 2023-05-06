@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set the name of your Docker image
-ImageName="warshanks/discord-bots:latest"
+ImageName="warshanks/discord-bots:slim"
 
 # Build the Docker image
 docker build -t $ImageName -f dockerfile .
