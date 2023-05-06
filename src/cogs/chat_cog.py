@@ -49,8 +49,10 @@ async def generate_response(message, conversation_log, openai_model):
 
 # Define an asynchronous function to send the response in sections
 async def send_sectioned_response(message, response_content, max_length=2000):
-    # Split the response_content into sentences using regular expression
-    # The regex pattern looks for sentence-ending punctuation followed by a whitespace character
+    # Split the response_content into
+    # sentences using regular expression
+    # The regex pattern looks for sentence-ending punctuation
+    # followed by a whitespace character
     sentences = re.split(r'(?<=[.!?])\s+', response_content)
 
     # Initialize an empty section
@@ -81,12 +83,39 @@ async def kc_conversation(message, openai_model):
         async with message.channel.typing():
             conversation_log = [{'role': 'system',
                                  'content':
-                                     'You are a friendly secretary named KC. '}]
+                                 'You are a friendly secretary named KC. '}]
 
-            response_content = await generate_response(message, conversation_log, openai_model)
+            response_content = await generate_response(
+                message,
+                conversation_log,
+                openai_model)
             await send_sectioned_response(message, response_content)
     except Exception as e:
         await message.reply(f"Error: {e} @Shanks#1955")
+
+
+# noinspection PyShadowingNames
+class GPT4Cog(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    # Event handler for when the bot receives a message
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        # Ignore messages from the bot itself,
+        # or from channels other than the designated one,
+        # or that start with '!'
+        if (message.author.bot or
+                message.author.system or
+                message.channel.id != gpt4_channel or
+                message.content.startswith('!')):
+            return
+
+        # set the model to use
+        openai_model = 'gpt-4'
+
+        # Generate a response as KC
+        await kc_conversation(message, openai_model)
 
 
 # noinspection PyShadowingNames
@@ -136,30 +165,6 @@ class ChatCog(commands.Cog):
 
 
 # noinspection PyShadowingNames
-class GPT4Cog(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot
-
-    # Event handler for when the bot receives a message
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        # Ignore messages from the bot itself,
-        # or from channels other than the designated one,
-        # or that start with '!'
-        if (message.author.bot or
-                message.author.system or
-                message.channel.id != gpt4_channel or
-                message.content.startswith('!')):
-            return
-
-        # set the model to use
-        openai_model = 'gpt-4'
-
-        # Generate a response as KC
-        await kc_conversation(message, openai_model)
-
-
-# noinspection PyShadowingNames
 class LilithCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -179,8 +184,10 @@ class LilithCog(commands.Cog):
         try:
             # Create a log of the user's message and the bot's response
             async with message.channel.typing():
-                conversation_log = [{'role': 'system', 'content':
-                                    'Roleplay as Lilith, daughter of Hatred, from the Diablo universe.'}]
+                conversation_log = [{'role': 'system',
+                                     'content':
+                                     'Roleplay as Lilith, daughter of Hatred, '
+                                     'from the Diablo universe.'}]
 
                 response_content = await generate_response(message, conversation_log, openai_model)
                 await message.reply(response_content)
