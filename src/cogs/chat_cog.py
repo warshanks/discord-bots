@@ -1,8 +1,23 @@
+"""
+This module imports the necessary libraries for a Discord bot that interacts
+with the OpenAI API to generate responses using the GPT-4 model. The bot can
+process messages in specific channels and reply with generated content.
+
+Libraries:
+    - re: Used for regular expressions to split text and match patterns.
+    - openai: Provides an interface to interact with the OpenAI API.
+    - discord: A library for creating Discord bots and interacting with the Discord API.
+    - discord.ext.commands: Provides a framework for creating commands for the Discord bot.
+    - config: A custom module that contains configuration settings, such as API tokens,
+              organization ID, and channel IDs for the Discord bot.
+"""
+
 import re
 import openai
 import discord
 from discord.ext import commands
-from config import *
+from config import openai_token, openai_org, channel_ids, gpt4_channel, lilith_channel
+
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token
