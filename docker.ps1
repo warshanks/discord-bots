@@ -1,8 +1,8 @@
 # Set the name of your Docker image
-$ImageName = "warshanks/discord-bots:3.11"
+$ImageName = "warshanks/discord-bots:latest"
 
 # Build the Docker image
-docker build -t $ImageName -f dockerfile.3.11 .
+docker build -t $ImageName -f dockerfile .
 
 # Set the paths to the directories you want to mount
 $LocalDir1 = "C:\Users\Ben\Documents\GitHub\discord-bots\fastf1_cache"
