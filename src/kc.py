@@ -43,9 +43,23 @@ start_time = datetime.datetime.now()
 bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
-# Event handler for when the bot is ready to use
 @bot.event
 async def on_ready():
+    """
+    Event handler for when the bot is ready to use.
+    This function adds various Cogs to the bot and
+    attempts to synchronize the commands.
+    It also calculates the time taken for the bot to start.
+
+    Usage:
+        This function is used as an event listener within the Discord bot.
+        When the bot is ready to use, it adds various Cogs for
+        music, chat, GPT-4, TTS, image, weather, NWS alerts, and NASA,
+        and attempts to synchronize the commands.
+        If an exception occurs, it prints the error message.
+        The function also calculates and prints the time taken for the bot to start.
+    """
+
     try:
         await bot.add_cog(MusicCog(bot))
         await bot.add_cog(ChatCog(bot))
@@ -56,8 +70,8 @@ async def on_ready():
         await bot.add_cog(NWSAlertsCog(bot))
         await bot.add_cog(NASACog(bot))
         await command_sync(bot)
-    except Exception as e:
-        print(e)
+    except Exception as error_message:
+        print(error_message)
     # Calculate the time it took for the client to start
     print("Ready in:", datetime.datetime.now() - start_time)
 
