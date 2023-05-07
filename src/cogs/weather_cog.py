@@ -1,5 +1,5 @@
 """
-This module contains a Discord bot that provides weather-related functionality,
+This module contains a Discord cog that provides weather-related functionality,
 including fetching current weather conditions, forecasts, and weather alerts.
 It uses the OpenWeatherMap API to retrieve weather data and
 posts updates to a specified Discord channel.
