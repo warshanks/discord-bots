@@ -1,5 +1,5 @@
 """
-This module imports the necessary libraries for a Discord bot that interacts
+This module imports the necessary libraries for a Discord bot cog that interacts
 with the OpenAI API to generate responses using the GPT-4 model. The bot can
 process messages in specific channels and reply with generated content.
 
