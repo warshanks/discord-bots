@@ -15,10 +15,8 @@ Imports:
 """
 
 import datetime
-
 import discord
 from discord.ext import commands
-
 from cogs.f1_cog import F1Cog, CacheCog, EventsCog
 from cogs.weather_cog import WeatherCog
 from config import Ferrari_TOKEN, command_sync
