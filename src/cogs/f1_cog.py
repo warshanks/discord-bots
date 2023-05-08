@@ -46,6 +46,20 @@ fastf1.Cache.enable_cache('../fastf1_cache/Data')
 
 background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
 
+emoji_dict = {
+'Red Bull': '<:team_redbull:1104918421235306566>',
+'Mercedes': '<:team_mercedes:1104918388876251276>',
+'Ferrari': '<:team_ferrari:1104918385126539335>',
+'McLaren': '<:team_mclaren:1104918387869622302>',
+'Alpine F1 Team': '<:team_alpine:1104918382974877801>',
+'AlphaTauri': '<:team_alphatauri:1104918382102446120>',
+'Alfa Romeo': '<:team_alfaromeo:1104918380621873262>',
+'Haas F1 Team': '<:team_haas:1104918386300944384>',
+'Williams': '<:team_williams:1104918392202342472>',
+'Aston Martin': '<:team_astonmartin:1104918384212181032>',
+}
+
+
 
 def is_weekend(date):
     """
@@ -518,6 +532,33 @@ def get_drivers_standings(year: int = None):
     return standings.content[0]
 
 
+def format_standings(standings):
+    """
+    Format the standings into a string.
+
+    Args:
+        standings (DataFrame): The standings to format.
+
+    Returns:
+        str: The formatted standings.
+    """
+    output = ""
+    for index, row in standings.iterrows():
+        position = row["position"]
+        driver_name = f"{row['givenName']} {row['familyName']}"
+        constructor = row["constructorNames"][0]
+        constructor_emoji = emoji_dict.get(constructor, "")
+        points = row["points"]
+        wins = row["wins"]
+
+        line = f"{position}. {driver_name} - {constructor_emoji} {constructor} - {points} points"
+        if wins > 0:
+            line += f", {wins} wins"
+        output += line + "\n"
+
+    return output
+
+
 def calculate_max_points_for_remaining_season():
     """
     Calculate the maximum number of points a driver can get for the rest of the season.
@@ -859,6 +900,23 @@ class F1Cog(commands.Cog):
                       description="Generate a comparison of two years")
     async def year_vs_year(self, ctx, year1: int, year2: int, event: str, session: str,
                            driver1: str = None, driver2: str = None):
+        """
+        Asynchronously generates a plot comparing the fastest laps
+        of two drivers from two different years in a
+        specified F1 event and session.
+
+        Args:
+            ctx: The context in which the command was called.
+            year1: The first year to be compared.
+            year2: The second year to be compared.
+            event: The name of the event (e.g., "Monaco").
+            session: The name of the session (e.g., "RACE").
+            driver1: The first driver's name/code (default: None).
+            driver2: The second driver's name/code (default: None).
+
+        Returns:
+            None
+        """
         await ctx.response.defer(thinking=True, ephemeral=False)
 
         # Set the plot background color
@@ -1054,6 +1112,27 @@ class F1Cog(commands.Cog):
         """
         cal_path = "./calendar/f2-calendar_q_sprint_feature.ics"
         await list_upcoming_events(ctx, cal_path)
+
+    @bot.tree.command(name="wdc-standings",
+                      description="List the WDC standings")
+    async def wdc_standings(self, ctx):
+        """
+        List the current World Drivers' Championship standings
+        by sending a message to the user with the standings.
+        This method retrieves the current drivers' standings and
+        delegates the listing to the 'list_standings' function.
+
+        Args:
+            ctx (context): The command context from the Discord bot.
+        """
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        year = datetime.now().year
+        # Get the current drivers standings
+        driver_standings = get_drivers_standings(year)
+
+        # Print the standings
+        formatted_standings = format_standings(driver_standings)
+        await ctx.followup.send(formatted_standings)
 
     @bot.tree.command(name="can-win-wdc",
                       description="List drivers who can still win the WDC")
