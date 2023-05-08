@@ -47,18 +47,17 @@ fastf1.Cache.enable_cache('../fastf1_cache/Data')
 background_color = (0.212, 0.224, 0.243)  # Set the background color for the plots
 
 emoji_dict = {
-'Red Bull': '<:team_redbull:1104918421235306566>',
-'Mercedes': '<:team_mercedes:1104918388876251276>',
-'Ferrari': '<:team_ferrari:1104918385126539335>',
-'McLaren': '<:team_mclaren:1104918387869622302>',
-'Alpine F1 Team': '<:team_alpine:1104918382974877801>',
-'AlphaTauri': '<:team_alphatauri:1104918382102446120>',
-'Alfa Romeo': '<:team_alfaromeo:1104918380621873262>',
-'Haas F1 Team': '<:team_haas:1104918386300944384>',
-'Williams': '<:team_williams:1104918392202342472>',
-'Aston Martin': '<:team_astonmartin:1104918384212181032>',
+    'Red Bull': '<:team_redbull:1104918421235306566>',
+    'Mercedes': '<:team_mercedes:1104918388876251276>',
+    'Ferrari': '<:team_ferrari:1104918385126539335>',
+    'McLaren': '<:team_mclaren:1104918387869622302>',
+    'Alpine F1 Team': '<:team_alpine:1104918382974877801>',
+    'AlphaTauri': '<:team_alphatauri:1104918382102446120>',
+    'Alfa Romeo': '<:team_alfaromeo:1104918380621873262>',
+    'Haas F1 Team': '<:team_haas:1104918386300944384>',
+    'Williams': '<:team_williams:1104918392202342472>',
+    'Aston Martin': '<:team_astonmartin:1104918384212181032>',
 }
-
 
 
 def is_weekend(date):
@@ -532,7 +531,21 @@ def get_drivers_standings(year: int = None):
     return standings.content[0]
 
 
-def format_standings(standings):
+def get_constructor_standings(year: int = None):
+    """
+    Get the current constructor standings from Ergast.
+
+    Args:
+        year (int): The year to get the standings for. Defaults to the current year.
+    """
+    if year is None:
+        year = datetime.now().year
+    ergast = Ergast()
+    standings = ergast.get_constructor_standings(season=year)
+    return standings.content[0]
+
+
+def format_driver_standings(standings):
     """
     Format the standings into a string.
 
@@ -552,6 +565,32 @@ def format_standings(standings):
         wins = row["wins"]
 
         line = f"{position}. {driver_name} - {constructor_emoji} {constructor} - {points} points"
+        if wins > 0:
+            line += f", {wins} wins"
+        output += line + "\n"
+
+    return output
+
+
+def format_constructors_standings(standings):
+    """
+    Format the standings into a string.
+
+    Args:
+        standings (DataFrame): The standings to format.
+
+    Returns:
+        str: The formatted standings.
+    """
+    output = ""
+    for index, row in standings.iterrows():
+        position = row["position"]
+        constructor = row["constructorName"]
+        constructor_emoji = emoji_dict.get(constructor, "")
+        points = row["points"]
+        wins = row["wins"]
+
+        line = f"{position}. {constructor_emoji} {constructor} - {points} points"
         if wins > 0:
             line += f", {wins} wins"
         output += line + "\n"
@@ -780,6 +819,7 @@ class F1Cog(commands.Cog):
         upcoming F2 race weekend by reading
         from an ical calendar.
     """
+
     def __init__(self, bot):
         self.bot = bot
 
@@ -1131,7 +1171,28 @@ class F1Cog(commands.Cog):
         driver_standings = get_drivers_standings(year)
 
         # Print the standings
-        formatted_standings = format_standings(driver_standings)
+        formatted_standings = format_driver_standings(driver_standings)
+        await ctx.followup.send(formatted_standings)
+
+    @bot.tree.command(name="wcc-standings",
+                      description="List the WCC standings")
+    async def wcc_standings(self, ctx):
+        """
+        List the current World Constructors' Championship standings
+        by sending a message to the user with the standings.
+        This method retrieves the current constructors' standings and
+        delegates the listing to the 'list_standings' function.
+
+        Args:
+            ctx (context): The command context from the Discord bot.
+        """
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        year = datetime.now().year
+        # Get the current constructors standings
+        constructor_standings = get_constructor_standings(year)
+
+        # Print the standings
+        formatted_standings = format_constructors_standings(constructor_standings)
         await ctx.followup.send(formatted_standings)
 
     @bot.tree.command(name="can-win-wdc",
