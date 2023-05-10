@@ -274,8 +274,8 @@ class WeatherCog(commands.Cog):
     **Temperature:** {weather.temperature("fahrenheit")["temp"]}°F
     **Feels Like:** {weather.temperature("fahrenheit")["feels_like"]}°F
     **Wind Speed:** {round(weather.wind(unit="miles_hour")["speed"], 2)} mph
-    **Wind Direction:** {weather.wind(unit="miles_hour")["deg"]}° 
-    {degrees_to_cardinal(weather.wind(unit="miles_hour")["deg"])}
+    **Wind Direction:** {weather.wind(unit="miles_hour")["deg"]}°{
+        degrees_to_cardinal(weather.wind(unit="miles_hour")["deg"])}
     **Humidity:** {weather.humidity}%
     **Visibility:** {weather.visibility(unit="miles")} mi.
     **Rainfall:** Last hour: {rain_1h}mm
