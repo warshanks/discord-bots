@@ -55,6 +55,15 @@ emoji_dict = {
     "50n": ":fog:",
 }
 
+radar_dict = {
+    "ALC125": "https://radar.weather.gov/ridge/standard/KBMX_loop.gif",
+    "ALC089": "https://radar.weather.gov/ridge/standard/KHTX_loop.gif",
+    "ALC049": "https://radar.weather.gov/ridge/standard/KHTX_loop.gif",
+    "ALZ010": "https://radar.weather.gov/ridge/standard/KHTX_loop.gif",
+    "ALZ006": "https://radar.weather.gov/ridge/standard/KHTX_loop.gif",
+    "ALZ023": "https://radar.weather.gov/ridge/standard/KBMX_loop.gif",
+}
+
 WAIT_TIME = 300
 
 SENT_ALERTS_FILE = "./logs/sent_alerts.txt"
@@ -123,6 +132,11 @@ def build_output(alert):
             output += f"\n{time_prop.capitalize()}: {cst_time}"
         except TypeError:
             pass
+    try:
+        zone = alert["properties"]["geocode"]["UGC"][0]
+        output += "\n" + radar_dict.get(zone, "")
+    except TypeError:
+        pass
     output += "\n@here"
     return output
 
