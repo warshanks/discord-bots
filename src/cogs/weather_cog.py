@@ -13,6 +13,7 @@ Imports:
     - commands, tasks (from discord.ext): To create bot commands and background tasks.
     - OWM (from pyowm): To access the OpenWeatherMap API.
     - datetime, timedelta: To work with dates and times.
+    - randint (from random): To generate a random delay.
     - pytz: To handle timezone conversions.
     - owm_token, weather_alert_channel (from config): To access the bot's configuration settings.
 """
@@ -21,6 +22,7 @@ import os
 import urllib.request
 import asyncio
 from datetime import datetime, timedelta
+from random import randint
 import aiohttp
 import discord
 from discord.ext import commands, tasks
@@ -64,8 +66,6 @@ radar_dict = {
     "ALZ023": "https://radar.weather.gov/ridge/standard/KBMX_loop.gif",
 }
 
-WAIT_TIME = 300
-
 SENT_ALERTS_FILE = "./logs/sent_alerts.txt"
 
 
@@ -88,6 +88,13 @@ def log_time():
     # Write the message to the log file
     with open("./logs/kc_stdout.log", "a", encoding="utf-8") as log_file:
         log_file.write("Fetching NWS Alerts @ " + time_str + "\n")
+
+
+def wait_time():
+    """
+    Generate a random number of seconds between 60 and 180.
+    """
+    return randint(60, 180)
 
 
 def api_timestamp_to_cst(api_timestamp):
@@ -415,4 +422,4 @@ class NWSAlertsCog(commands.Cog):
         """
         log_time()
         await fetch_loop(self.bot)
-        await asyncio.sleep(WAIT_TIME)
+        await asyncio.sleep(wait_time())
