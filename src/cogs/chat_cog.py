@@ -150,10 +150,7 @@ async def kc_conversation(message, openai_model):
                                  'content':
                                  'You are a friendly secretary named KC. '}]
 
-            response_content = await generate_response(
-                message,
-                conversation_log,
-                openai_model)
+            response_content = await generate_response(message, conversation_log, openai_model)
             await send_sectioned_response(message, response_content)
     except Exception as error_message:
         await message.reply(f"Error: {error_message}")
