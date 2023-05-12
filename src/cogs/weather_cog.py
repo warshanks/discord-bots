@@ -133,8 +133,9 @@ def build_output(alert):
         except TypeError:
             pass
     try:
-        zone = alert["properties"]["geocode"]["UGC"][0]
-        output += "\n" + radar_dict.get(zone, "")
+        zone_list = alert["properties"]["geocode"]["UGC"]
+        for zone in zone_list:
+            output += "\n" + radar_dict.get(zone, "")
     except TypeError:
         pass
     output += "\n@here"
