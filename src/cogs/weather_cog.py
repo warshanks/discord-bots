@@ -136,7 +136,7 @@ def build_output(alert):
         zone_list = alert["properties"]["geocode"]["UGC"]
         for zone in zone_list:
             output += "\n" + radar_dict.get(zone, "")
-    except TypeError:
+    except KeyError:
         pass
     output += "\n@here"
     return output
