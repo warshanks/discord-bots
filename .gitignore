@@ -1,5 +1,6 @@
 # ignore IDE files
 .idea/
+.vs/
 
 # ignore compiled Python files
 *.pyc

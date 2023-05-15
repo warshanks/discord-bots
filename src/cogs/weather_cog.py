@@ -430,3 +430,12 @@ class NWSAlertsCog(commands.Cog):
         log_time()
         await fetch_loop(self.bot)
         await asyncio.sleep(wait_time())
+
+    @bot.tree.command(name="clear-alerts", description="Clear all NWS alerts.")
+    async def clear_alerts(self, ctx, limit: int = 100):
+        """
+        Clear all NWS alerts.
+        """
+        await ctx.response.defer(thinking=True, ephemeral=True)
+        deleted = await ctx.channel.purge(limit=limit, check=lambda m: m.author.bot)
+        await ctx.followup.send(f"Deleted {len(deleted)} messages.", ephemeral=True)
