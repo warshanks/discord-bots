@@ -139,12 +139,19 @@ def build_output(alert):
             output += f"\n{time_prop.capitalize()}: {cst_time}"
         except TypeError:
             pass
+
     try:
+        # Get the list of affected zones.
         zone_list = alert["properties"]["geocode"]["UGC"]
+
+        # Get the first matching zone from the radar dictionary.
         first_matching_zone = list(set(zone_list) & set(radar_dict))[0]
+
+        # Add the radar loop url for the first matching zone to the output string.
         output += "\n" + radar_dict[first_matching_zone]
     except (KeyError, IndexError):
         pass
+
     output += "\n@here"
     return output
 
