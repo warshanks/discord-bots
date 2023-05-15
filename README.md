@@ -47,7 +47,7 @@
 ### KC also features a music player, weather information, and more!
 
 ## Commands
-### 🏎️F1 Related
+### F1 Related
 ```
 /data-dump - Generates a data dump for a given year, event, session, and optionally a specific lap in .CSV format
 /driver-comparison - Compares two driver's telemetry given a year, event, session, and optionally a specific lap
@@ -60,12 +60,12 @@
 /wcc-standings - Displays the current WCC standings
 /can-win-wdc - Displays the drivers who can still win the WDC
 ```
-### 🖼️Image Generation
+### Image Generation
 ```
 /dall-e - Generates an image using OpenAI's Dall-E API using a given prompt
 /stable - Generates an image using Stability.AI's Stable Diffusion API using a given prompt, and 5 optional parameters
 ```
-### 🎵Music
+### Music
 ```
 /clear - Clears the current queue
 /leave - Leaves the voice channel
@@ -75,23 +75,23 @@
 /resume - Resumes the current song
 /skip - Skips the current song
 ```
-### 🗣️Text-to-Speech Conversations
+### Text-to-Speech Conversations
 ```
 /join - Joins the voice channel
 /tts-kick - Kicks the bot from the voice channel
 ```
-### 💬Text-to-Text Conversations
+### Text-to-Text Conversations
 ```
 /hype - Generates a hype emojipasta about a given prompt
 ```
-### 🌩️Weather
+### Weather
 ```
 /weather - Displays the current weather for a given location
 /outlook - Pulls the Day 1 convective outlook from the Storm Prediction Center
 /radar-loop - Pulls the latest radar loop for the Mississippi Valley from the National Weather Service
 /bmx-radar - Pulls the latest loop from the BMX radar from the National Weather Service
 ```
-### 🔭Astronomy
+### Astronomy
 ```
 /apod - Pulls the Astronomy Picture of the Day from NASA
 ```
