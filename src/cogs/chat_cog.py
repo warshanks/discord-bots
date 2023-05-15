@@ -16,7 +16,7 @@ import re
 import openai
 import discord
 from discord.ext import commands
-from config import openai_token, openai_org, channel_ids, gpt4_channel, lilith_channel
+from config import openai_token, openai_org, channel_ids, gpt4_channels, lilith_channel
 
 
 # Set OpenAI API key and organization
@@ -201,7 +201,7 @@ class GPT4Cog(commands.Cog):
 
         if (message.author.bot or
                 message.author.system or
-                message.channel.id != gpt4_channel or
+                message.channel.id not in gpt4_channels or
                 message.content.startswith('!')):
             return
 

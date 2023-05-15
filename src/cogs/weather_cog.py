@@ -141,9 +141,9 @@ def build_output(alert):
             pass
     try:
         zone_list = alert["properties"]["geocode"]["UGC"]
-        for zone in zone_list:
-            output += "\n" + radar_dict.get(zone, "")
-    except KeyError:
+        first_matching_zone = list(set(zone_list) & set(radar_dict))[0]
+        output += "\n" + radar_dict[first_matching_zone]
+    except (KeyError, IndexError):
         pass
     output += "\n@here"
     return output

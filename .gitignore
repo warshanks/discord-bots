@@ -20,6 +20,9 @@ fastf1_cache/
 # Ignore .gif images (optional)
 *.gif
 
+# Ignore generated images
+/src/images/*.png
+
 # Scratch files
 line_count.py
 update_readme.py
