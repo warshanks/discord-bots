@@ -114,6 +114,39 @@ def api_timestamp_to_cst(api_timestamp):
     return dt_cst.strftime('%m-%d-%Y %I:%M %p')
 
 
+async def download_gif(url, filename):
+    """
+    Asynchronously download a gif from a URL and save it to a specified file.
+
+    This function uses aiohttp to establish a session and retrieve the gif.
+    The gif is then written to the provided filename in chunks.
+
+    Args:
+        url (str): The URL of the gif to download.
+        filename (str): The path and filename where the gif should be saved.
+
+    Raises:
+        aiohttp.ClientError: If an error occurs during the HTTP request.
+        FileNotFoundError: If the specified file cannot be opened for writing.
+    """
+    # Create a new aiohttp session.
+    async with aiohttp.ClientSession() as session:
+        # Send a GET request to the provided URL.
+        async with session.get(url) as resp:
+            # Open the specified file in write-binary mode.
+            with open(filename, 'wb') as f:
+                # Loop until there's no more data to read.
+                while True:
+                    # Read a chunk of data from the response.
+                    chunk = await resp.content.read(1024)
+                    # If the chunk is empty, we're done.
+                    if not chunk:
+                        break
+                    # Write the chunk to the file.
+                    f.write(chunk)
+
+
+
 def build_output(alert):
     """
     Build an output string for a given alert.
@@ -147,8 +180,11 @@ def build_output(alert):
         # Get the first matching zone from the radar dictionary.
         first_matching_zone = list(set(zone_list) & set(radar_dict))[0]
 
-        # Add the radar loop url for the first matching zone to the output string.
-        output += "\n" + radar_dict[first_matching_zone]
+        # Get the radar loop url for the first matching zone.
+        url = radar_dict[first_matching_zone]
+
+        # Download the gif from the URL and save it to disk asynchronously.
+        asyncio.create_task(download_gif(url, './images/nws_loop.gif'))
     except (KeyError, IndexError):
         pass
 
@@ -203,7 +239,10 @@ async def fetch_api_data(bot, url):
                 if alert_id not in sent_alerts:
                     output = build_output(alert)
                     channel = bot.get_channel(weather_alert_channel)
-                    await channel.send(output)
+                    await channel.send(
+                        content=output,
+                        file=discord.File("./images/nws_loop.gif")
+                    )
                     save_sent_alerts(alert_id)
 
 
@@ -216,9 +255,9 @@ async def fetch_loop(bot):
             bot (discord.ext.commands.Bot): The bot instance.
     """
     api_urls = [
-        "https://api.weather.gov/alerts/active?zone=ALC125",  # Tuscaloosa
-        "https://api.weather.gov/alerts/active?zone=ALC089",  # Huntsville
-        "https://api.weather.gov/alerts/active?zone=ALC049",  # Henagar
+        "https://api.weather.gov/alerts?zone=ALC125",  # Tuscaloosa
+        "https://api.weather.gov/alerts?zone=ALC089",  # Huntsville
+        "https://api.weather.gov/alerts?zone=ALC049",  # Henagar
         # Add more URLs as needed
     ]
 
