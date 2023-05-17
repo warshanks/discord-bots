@@ -1,6 +1,6 @@
 aiohttp==3.8.4
 discord.py==2.2.3
-elevenlabslib==0.7.3
+elevenlabslib==0.8.0
 fastf1==3.0.2
 icalendar==5.0.5
 openai==0.27.6
