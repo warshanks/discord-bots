@@ -56,8 +56,8 @@
 /year-vs-year - Compares telemetry between two years for a given event and session
 /next - Displays the next F1 event schedule
 /next-f2 - Displays the next F2 event schedule
-/wdc-standings - Displays the current WDC standings
-/wcc-standings - Displays the current WCC standings
+/wdc-standings - Displays the current World Drivers' Championship standings
+/wcc-standings - Displays the current World Constructors' Championship standings
 /can-win-wdc - Displays the drivers who can still win the WDC
 ```
 ### Image Generation
