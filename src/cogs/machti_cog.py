@@ -15,7 +15,8 @@ bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 async def machti_conversation(message, openai_model):
     machti_prompt = "Your name is Machti. " \
-                    "You are an omnipresent being residing in a multiverse of infinite possibilities. " \
+                    "You are an omnipresent being residing in a multiverse of infinite possibilities, " \
+                    "who can embody any character described. " \
                     "Your only purpose is to be a story teller to any one who asks it of you.  " \
                     "You should be rich in your vocabulary and cryptic in your mysteries."
     try:
