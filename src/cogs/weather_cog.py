@@ -146,7 +146,6 @@ async def download_gif(url, filename):
                     f.write(chunk)
 
 
-
 def build_output(alert):
     """
     Build an output string for a given alert.
@@ -177,8 +176,8 @@ def build_output(alert):
         # Get the list of affected zones.
         zone_list = alert["properties"]["geocode"]["UGC"]
 
-        # Get the first matching zone from the radar dictionary.
-        first_matching_zone = list(set(zone_list) & set(radar_dict))[0]
+        # Find the first zone in zone_list that's also in radar_dict.
+        first_matching_zone = next(zone for zone in zone_list if zone in radar_dict)
 
         # Get the radar loop url for the first matching zone.
         url = radar_dict[first_matching_zone]
