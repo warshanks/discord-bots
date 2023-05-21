@@ -285,7 +285,7 @@ def degrees_to_cardinal(degrees: int) -> str:
     index = round(degrees / 22.5)
 
     # Use the modulo operation to ensure that the index stays within the bounds of the list (0-15).
-    index = index % 16
+    index %= 16
 
     # Return the cardinal direction corresponding to the calculated index.
     return directions[index]
@@ -296,6 +296,7 @@ class WeatherCog(commands.Cog):
     """
         A Discord Cog that provides various weather-related commands.
     """
+
     # This is the main weather command that generates a weather report for a specified location
     @bot.tree.command(name="weather",
                       description="Generate a report on current conditions in a given location.")

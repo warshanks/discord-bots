@@ -93,7 +93,7 @@ async def fetch_apod(ctx, year, month, day):
              f"{explanation}\n\n" \
              f"**Date:** {apod_date}\n" \
              f"**Credits:** {copyrights}\n" \
-             f"{image_url}" \
+             f"{image_url}"
 
     return output
 

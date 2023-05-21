@@ -18,7 +18,6 @@ import discord
 from discord.ext import commands
 from config import openai_token, openai_org, channel_ids, gpt4_channels, lilith_channel
 
-
 # Set OpenAI API key and organization
 openai.api_key = openai_token
 openai.organization = openai_org
@@ -148,7 +147,7 @@ async def kc_conversation(message, openai_model):
         async with message.channel.typing():
             conversation_log = [{'role': 'system',
                                  'content':
-                                 'You are a friendly secretary named KC. '}]
+                                     'You are a friendly secretary named KC. '}]
 
             response_content = await generate_response(message, conversation_log, openai_model)
             await send_sectioned_response(message, response_content)
@@ -232,6 +231,7 @@ class ChatCog(commands.Cog):
             The bot will then listen to messages in the specified channel and
             generate responses using the OpenAI model.
         """
+
     def __init__(self, bot):
         self.bot = bot
 
@@ -362,8 +362,8 @@ class LilithCog(commands.Cog):
             async with message.channel.typing():
                 conversation_log = [{'role': 'system',
                                      'content':
-                                     'Roleplay as Lilith, daughter of Hatred, '
-                                     'from the Diablo universe.'}]
+                                         'Roleplay as Lilith, daughter of Hatred, '
+                                         'from the Diablo universe.'}]
 
                 response_content = await generate_response(message, conversation_log, openai_model)
                 await message.reply(response_content)

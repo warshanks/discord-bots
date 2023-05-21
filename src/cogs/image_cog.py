@@ -47,6 +47,7 @@ stability_api = client.StabilityInference(
 # noinspection PyShadowingNames
 class ImageCog(commands.Cog):
     """A Cog (a collection of commands) for image generation."""
+
     def __init__(self, bot):
         """Initialize the ImageCog with a bot instance.
 
@@ -149,8 +150,7 @@ class ImageCog(commands.Cog):
                                                         f'c.{datetime.datetime.now().year}\n'
                                                         f'Seed: {artifact.seed}',
                                                 file=discord.File(fp=img,
-                                                                  filename=str(artifact.seed)
-                                                                  + ".png"))
+                                                                  filename=str(artifact.seed) + ".png"))
         # Catch any exceptions and send an ephemeral message with the error
         except Exception as error_message:
             await ctx.followup.send(error_message)

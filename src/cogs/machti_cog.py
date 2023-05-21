@@ -1,3 +1,14 @@
+"""
+This module provides a Discord bot named Machti, an omnipresent being who embodies any character described.
+Machti's purpose is to be a storyteller to anyone who asks, with a rich vocabulary and cryptic mysteries.
+
+The bot utilizes OpenAI's GPT-4 model to generate responses in a conversational manner. The interaction
+with the bot is managed by the MachtiCog class, which listens for user messages in a specific Discord
+channel and responds accordingly.
+
+API keys and other configurations for OpenAI are loaded from a separate config module.
+"""
+
 import openai
 import discord
 from discord.ext import commands
@@ -14,6 +25,16 @@ bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
 async def machti_conversation(message, openai_model):
+    """
+    Conduct a conversation as Machti, an omnipresent storytelling entity.
+
+    Args:
+        message (discord.Message): The message that invoked the bot.
+        openai_model (str): The OpenAI model to use for generating responses.
+
+    Raises:
+        Exception: If an error occurs while generating or sending a response.
+    """
     machti_prompt = "Your name is Machti. " \
                     "You are an omnipresent being residing in a multiverse of infinite possibilities, " \
                     "who can embody any character described. " \
@@ -32,16 +53,33 @@ async def machti_conversation(message, openai_model):
 
 # noinspection PyShadowingNames
 class MachtiCog(commands.Cog):
+    """A Cog (a collection of commands) for the storytelling bot Machti."""
+
     def __init__(self, bot):
+        """
+        Initialize the MachtiCog with a bot instance.
+
+        Args:
+            bot (commands.Bot): The bot instance for this cog.
+        """
         self.bot = bot
 
     @commands.Cog.listener()
     async def on_message(self, message):
+        """
+        Respond to a message in the D&D channel as Machti.
+
+        The bot does not respond if the message is from another bot,
+        the system, not in the D&D channel, or starts with an exclamation mark.
+
+        Args:
+            message (discord.Message): The message to respond to.
+        """
         if (
-            message.author.bot or
-            message.author.system or
-            message.channel.id != dnd_channel or
-            message.content.startswith("!")
+                message.author.bot or
+                message.author.system or
+                message.channel.id != dnd_channel or
+                message.content.startswith("!")
         ):
             return
 

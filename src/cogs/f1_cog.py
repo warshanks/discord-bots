@@ -205,6 +205,9 @@ async def event_creator(ctx, event_name, event_start_cst, event_end_cst):
 
     # Define a synchronous function for reading the image file
     def read_image_sync():
+        """
+        Read images for events synchronously.
+        """
         # Open the image file in binary mode for reading
         with open('./images/red-bull-miami-crop.jpg', mode='rb') as file:
             # Read the contents of the file and return the bytes
