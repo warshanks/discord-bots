@@ -15,7 +15,7 @@ from discord.ext import commands
 
 # noinspection PyUnresolvedReferences
 from cogs.chat_cog import generate_response, send_sectioned_response
-from config import dnd_channel, openai_token, openai_org
+from config import dnd_channels, openai_token, openai_org
 
 # Set OpenAI API key and organization
 openai.api_key = openai_token
@@ -78,7 +78,7 @@ class MachtiCog(commands.Cog):
         if (
                 message.author.bot or
                 message.author.system or
-                message.channel.id != dnd_channel or
+                message.channel.id not in dnd_channels or
                 message.content.startswith("!")
         ):
             return
