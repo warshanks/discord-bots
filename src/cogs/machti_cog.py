@@ -8,6 +8,7 @@ channel and responds accordingly.
 
 API keys and other configurations for OpenAI are loaded from a separate config module.
 """
+import random
 
 import openai
 import discord
@@ -86,3 +87,22 @@ class MachtiCog(commands.Cog):
         openai_model = 'gpt-4'
 
         await machti_conversation(message, openai_model)
+
+    @bot.tree.command(name='roll', description="Roll a dice using the Machti bot")
+    async def roll_dice(self, ctx, sides: int, rolls: int = 1):
+        """Rolls a given dice a given number of times.
+
+        Args:
+          ctx: The context in which the command was called.
+          sides: The number of sides on the dice.
+          rolls: The number of times to roll the dice.
+
+        Returns:
+          A list of the results of the rolls.
+        """
+        await ctx.response.defer(thinking=True, ephemeral=False)
+        results = []
+        for roll in range(rolls):
+            results.append(random.randint(1, sides))
+
+        await ctx.followup.send(f"Rolling a d{sides} {rolls} times: {results}")
