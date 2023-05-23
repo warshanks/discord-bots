@@ -105,4 +105,4 @@ class MachtiCog(commands.Cog):
         for roll in range(rolls):
             results.append(random.randint(1, sides))
 
-        await ctx.followup.send(f"Rolling a d{sides} {rolls} times: {results}")
+        await ctx.followup.send(f"Rolling a d{sides} {rolls} times:\n {results}")
