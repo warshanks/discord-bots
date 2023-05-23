@@ -14,11 +14,7 @@ and packages include:
 - pandas: to work with data manipulation and analysis.
 - pytz: to handle timezone conversions.
 - discord.ext.commands: to create and manage Discord bot commands.
-- fastf1.plotting: to plot Formula 1 data.
-- fastf1.utils: to provide utility functions for working with Formula 1 data.
 - icalendar: to parse and generate iCalendar files.
-- matplotlib.cm: to provide colormap functionality for visualizations.
-- matplotlib.collections: to create custom plot elements for visualizations.
 """
 
 from os import makedirs
