@@ -11,6 +11,9 @@
 # ignore configuration file if it contains sensitive information with similar filename 
 config*
 
+# ignore vscode
+.vscode/
+
 # fastf1_cache is specific to my local setup and should not be shared on GitHub.
 fastf1_cache/
 
