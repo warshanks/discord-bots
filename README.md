@@ -1,10 +1,10 @@
 # Discord Bots
 ![python](https://img.shields.io/badge/Python-3.11-blue)
 ![discord.py](https://img.shields.io/badge/discord.py-2.2.3-blue)
-![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.7.3-blue)
-![fastf1](https://img.shields.io/badge/fastf1-3.0.2-blue)
-![icalendar](https://img.shields.io/badge/icalendar-5.0.5-blue)
-![openai](https://img.shields.io/badge/openai-0.27.6-blue)
+![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.8.2-blue)
+![fastf1](https://img.shields.io/badge/fastf1-3.0.3-blue)
+![icalendar](https://img.shields.io/badge/icalendar-5.0.7-blue)
+![openai](https://img.shields.io/badge/openai-0.27.7-blue)
 ![Pillow](https://img.shields.io/badge/Pillow-9.5.0-blue)
 ![pyowm](https://img.shields.io/badge/pyowm-3.3.0-blue)
 ![PyNaCl](https://img.shields.io/badge/PyNaCl-1.5.0-blue)
@@ -103,15 +103,15 @@ To run the KC Discord bot, ensure you have the following packages installed:
 ```
 aiohttp==3.8.4
 discord.py==2.2.3
-elevenlabslib==0.7.3
-fastf1==3.0.2
-icalendar==5.0.5
-openai==0.27.6
+elevenlabslib==0.8.2
+fastf1==3.0.3
+icalendar==5.0.7
+openai==0.27.7
 Pillow==9.5.0
 PyNaCl==1.5.0
 pyowm==3.3.0
-setuptools==67.7.2
-stability_sdk==0.8.0
+setuptools==67.8.0
+stability_sdk==0.8.1
 supervisor==4.2.5
 youtube-dl (from master branch!)
 ```
