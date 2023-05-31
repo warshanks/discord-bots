@@ -659,8 +659,8 @@ def calculate_who_can_win(driver_standings, max_points):
         constructor_emoji = emoji_dict.get(constructor, "")
 
         output += (f"{driver['position']}: {constructor_emoji} {driver['givenName'] + ' ' + driver['familyName']}, "
-                   f"Current points: {driver['points']}, "
-                   f"Max possible: {driver_max_points}, "
+                   f"Current: {driver['points']}, "
+                   f"Max: {driver_max_points}, "
                    f"Can win: {can_win}\n")
 
     return output
