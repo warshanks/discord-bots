@@ -587,6 +587,7 @@ def format_constructors_standings(standings):
         str: The formatted standings.
     """
     output = ""
+    previous_points = None
     for index, row in standings.iterrows():
         position = row["position"]
         constructor = row["constructorName"]
@@ -597,7 +598,11 @@ def format_constructors_standings(standings):
         line = f"{position}. {constructor_emoji} {constructor} - {points} points"
         if wins > 0:
             line += f", {wins} wins"
+        if previous_points is not None:
+            delta_points = previous_points - points
+            line += f", [-{delta_points}]"
         output += line + "\n"
+        previous_points = points
 
     return output
 
