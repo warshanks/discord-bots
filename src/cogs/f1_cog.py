@@ -655,9 +655,12 @@ def calculate_who_can_win(driver_standings, max_points):
         driver_max_points = int(driver["points"]) + max_points
         can_win = 'No' if driver_max_points < leader_points else 'Yes'
 
-        output += (f"{driver['position']}: {driver['givenName'] + ' ' + driver['familyName']}, "
+        constructor = driver["constructorNames"][0]
+        constructor_emoji = emoji_dict.get(constructor, "")
+
+        output += (f"{driver['position']}: {constructor_emoji} {driver['givenName'] + ' ' + driver['familyName']}, "
                    f"Current points: {driver['points']}, "
-                   f"Theoretical max points: {driver_max_points}, "
+                   f"Max possible: {driver_max_points}, "
                    f"Can win: {can_win}\n")
 
     return output
