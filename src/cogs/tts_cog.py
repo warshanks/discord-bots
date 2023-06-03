@@ -4,6 +4,7 @@ import openai
 from elevenlabs import set_api_key, generate, save
 from discord import FFmpegOpusAudio
 from discord.ext import commands
+from chat_cog import generate_response
 from config import openai_token, openai_org, elevenlabs_token, vcs
 
 makedirs("./speech", exist_ok=True)
@@ -44,52 +45,26 @@ class TTSCog(commands.Cog):
 
         # Create a log of the user's message and the bots response
         async with message.channel.typing():
+            openai_model = 'gpt-3.5-turbo'
             conversation_log = [{'role': 'system', 'content':
-                                 'You are a friendly secretary named KC. '
-                                 'Only respond to the latest message.'}]
+                                 'You are a friendly secretary named KC.'}]
 
-            previous_messages = [message async for message in message.channel.history(limit=5)]
-            previous_messages.reverse()
-
-            for previous_message in previous_messages:
-                # Ignore any message that starts with '!'
-                if not previous_message.content.startswith('!'):
-                    # Determine the role based on whether the author of the message is a bot or not
-                    role = 'assistant' if previous_message.author.bot else 'user'
-
-                    # Add log item to conversation_log
-                    conversation_log.append({
-                        'role': role,
-                        'content': previous_message.content
-                    })
-
-            # Send the conversation log to OpenAI to generate a response
-            try:
-                response = await openai.ChatCompletion.acreate(
-                    model='gpt-3.5-turbo',
-                    messages=conversation_log,
-                    max_tokens=1024,
-                    frequency_penalty=2.0
-                )
-            except Exception as e:
-                await message.reply(e)
+            ttt_response = await generate_response(message, conversation_log, openai_model)
 
             try:
                 tts_response = generate(
-                    text=response['choices'][0]['message']['content'],
+                    text=ttt_response,
                     api_key=elevenlabs_token,
                     voice="Rachel",
                     model="eleven_monolingual_v1"
                 )
                 save(tts_response, "./speech/output.mp3")
-
-                # Send the generated text response as a reply
-                await message.reply(response['choices'][0]['message']['content'])
-
                 print('Audio content written to file "./speech/output.mp3"')
+
+                await message.reply(ttt_response)
+
                 tts_output = await FFmpegOpusAudio.from_probe("./speech/output.mp3")
 
-                # Play the synthesized audio in the voice channel
                 vc.play(tts_output)
             except Exception as e:
                 await message.reply(e)
