@@ -11,3 +11,4 @@ pyowm==3.3.0
 setuptools>=67.8.0
 stability-sdk==0.8.1
 supervisor==4.2.5
+ipython>=8.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
