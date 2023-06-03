@@ -4,6 +4,7 @@ from os import makedirs
 import discord
 import elevenlabslib.helpers
 import openai
+from elevenlabs import set_api_key, generate, save
 from elevenlabslib import *
 from discord import FFmpegOpusAudio
 from discord.ext import commands
@@ -17,9 +18,7 @@ openai.organization = openai_org
 
 bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
-tts_user = ElevenLabsUser(elevenlabs_token)
-
-premadeVoice: ElevenLabsVoice = tts_user.get_voices_by_name("Rachel")[0]
+set_api_key(elevenlabs_token)
 
 
 async def run_blocking(func, *args, **kwargs):
@@ -86,14 +85,17 @@ class TTSCog(commands.Cog):
                 await message.reply(e)
 
             try:
-                tts_response = premadeVoice.generate_audio_bytes(response['choices'][0]['message']['content'])
-                elevenlabslib.helpers.save_audio_bytes(tts_response, "./speech/output.mp3", "mp3")
+                tts_response = generate(
+                    text=response['choices'][0]['message']['content'],
+                    api_key=elevenlabs_token,
+                    voice="Rachel",
+                    model="eleven_monolingual_v1"
+                )
+                save(tts_response, "./speech/output.mp3")
 
                 # Send the generated text response as a reply
                 await message.reply(response['choices'][0]['message']['content'])
-
-                # Save the synthesized audio to a file
-                await run_blocking(write_audio_to_file, "./speech/output.mp3", tts_response)
+                
                 print('Audio content written to file "./speech/output.mp3"')
                 tts_output = await FFmpegOpusAudio.from_probe("./speech/output.mp3")
 
