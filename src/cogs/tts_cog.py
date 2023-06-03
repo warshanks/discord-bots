@@ -1,11 +1,7 @@
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
 from os import makedirs
 import discord
-import elevenlabslib.helpers
 import openai
 from elevenlabs import set_api_key, generate, save
-from elevenlabslib import *
 from discord import FFmpegOpusAudio
 from discord.ext import commands
 from config import openai_token, openai_org, elevenlabs_token, vcs
@@ -19,12 +15,6 @@ openai.organization = openai_org
 bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 set_api_key(elevenlabs_token)
-
-
-async def run_blocking(func, *args, **kwargs):
-    loop = asyncio.get_event_loop()
-    with ThreadPoolExecutor() as pool:
-        return await loop.run_in_executor(pool, lambda: func(*args, **kwargs))
 
 
 def write_audio_to_file(filename, tts_response):
@@ -52,7 +42,7 @@ class TTSCog(commands.Cog):
                 message.content.startswith('!')):
             return
 
-        # Create a log of the user's message and the bot's response
+        # Create a log of the user's message and the bots response
         async with message.channel.typing():
             conversation_log = [{'role': 'system', 'content':
                                  'You are a friendly secretary named KC. '
@@ -95,7 +85,7 @@ class TTSCog(commands.Cog):
 
                 # Send the generated text response as a reply
                 await message.reply(response['choices'][0]['message']['content'])
-                
+
                 print('Audio content written to file "./speech/output.mp3"')
                 tts_output = await FFmpegOpusAudio.from_probe("./speech/output.mp3")
 

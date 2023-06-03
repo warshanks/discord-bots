@@ -1,7 +1,7 @@
 # Discord Bots
 ![python](https://img.shields.io/badge/Python-3.11-blue)
 ![discord.py](https://img.shields.io/badge/discord.py-2.2.3-blue)
-![elevenlabslib](https://img.shields.io/badge/elevenlabslib-0.8.2-blue)
+![elevenlabs](https://img.shields.io/badge/elevenlabs-0.2.17-blue)
 ![fastf1](https://img.shields.io/badge/fastf1-3.0.3-blue)
 ![icalendar](https://img.shields.io/badge/icalendar-5.0.7-blue)
 ![openai](https://img.shields.io/badge/openai-0.27.7-blue)
@@ -103,7 +103,7 @@ To run the KC Discord bot, ensure you have the following packages installed:
 ```
 aiohttp==3.8.4
 discord.py==2.2.3
-elevenlabslib==0.8.2
+elevenlabs==0.2.17
 fastf1==3.0.3
 icalendar==5.0.7
 openai==0.27.7
