@@ -4,7 +4,7 @@ import openai
 from elevenlabs import set_api_key, generate, save
 from discord import FFmpegOpusAudio
 from discord.ext import commands
-from chat_cog import generate_response
+from cogs.chat_cog import generate_response
 from config import openai_token, openai_org, elevenlabs_token, vcs
 
 makedirs("./speech", exist_ok=True)
