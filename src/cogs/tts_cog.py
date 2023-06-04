@@ -49,7 +49,11 @@ class TTSCog(commands.Cog):
             conversation_log = [{'role': 'system', 'content':
                                  'You are a friendly secretary named KC.'}]
 
-            ttt_response = await generate_response(message, conversation_log, openai_model)
+            ttt_response = await generate_response(
+                message,
+                conversation_log,
+                openai_model
+            )
 
             try:
                 tts_response = generate(
@@ -69,6 +73,7 @@ class TTSCog(commands.Cog):
             except Exception as e:
                 await message.reply(e)
 
+    # noinspection PyGlobalUndefined
     @bot.tree.command(name='join', description='Join the voice channel')
     async def join(self, ctx):
         global vc
