@@ -43,7 +43,6 @@ class TTSCog(commands.Cog):
                 message.content.startswith('!')):
             return
 
-        # Create a log of the user's message and the bots response
         async with message.channel.typing():
             openai_model = 'gpt-3.5-turbo'
             conversation_log = [{'role': 'system', 'content':
