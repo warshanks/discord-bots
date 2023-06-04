@@ -25,6 +25,48 @@ openai.organization = openai_org
 bot = commands.Bot(command_prefix="~", intents=discord.Intents.all())
 
 
+async def send_sectioned_response(message, response_content, max_length=2000):
+    """
+    This asynchronous function sends a response message
+    in sections if it exceeds the specified maximum length.
+
+    Args:
+        message (discord.Message): The message received from the Discord channel.
+        response_content (str): The response content to be sent as a message.
+        max_length (int, optional): The maximum length of a message. Defaults to 2000.
+
+    Usage:
+        To use this function, pass a Discord message object,
+        the response content to be sent, and the optional max_length.
+        The function will send the response in sections
+        if it exceeds the specified maximum length.
+    """
+
+    # Split the response_content into
+    # sentences using regular expression
+    # The regex pattern looks for sentence-ending punctuation
+    # followed by a whitespace character
+    sentences = re.split(r'(?<=[.!?])\s+', response_content)
+
+    # Initialize an empty section
+    section = ""
+
+    # Iterate through the sentences
+    for sentence in sentences:
+        # If the current section plus the next sentence exceeds the max_length,
+        # send the current section as a message and clear the section
+        if len(section) + len(sentence) + 1 > max_length:
+            await message.reply(section.strip())
+            section = ""
+
+        # Add the sentence to the section
+        section += " " + sentence
+
+    # If there's any content left in the section, send it as a message
+    if section:
+        await message.reply(section.strip())
+
+
 async def generate_response(message, conversation_log, openai_model):
     """
     This asynchronous function generates a response
@@ -78,50 +120,9 @@ async def generate_response(message, conversation_log, openai_model):
     except Exception as error_message:
         return error_message
 
-    # Return the response content
-    return response['choices'][0]['message']['content']
+    response_content = response['choices'][0]['message']['content']
 
-
-async def send_sectioned_response(message, response_content, max_length=2000):
-    """
-    This asynchronous function sends a response message
-    in sections if it exceeds the specified maximum length.
-
-    Args:
-        message (discord.Message): The message received from the Discord channel.
-        response_content (str): The response content to be sent as a message.
-        max_length (int, optional): The maximum length of a message. Defaults to 2000.
-
-    Usage:
-        To use this function, pass a Discord message object,
-        the response content to be sent, and the optional max_length.
-        The function will send the response in sections
-        if it exceeds the specified maximum length.
-    """
-
-    # Split the response_content into
-    # sentences using regular expression
-    # The regex pattern looks for sentence-ending punctuation
-    # followed by a whitespace character
-    sentences = re.split(r'(?<=[.!?])\s+', response_content)
-
-    # Initialize an empty section
-    section = ""
-
-    # Iterate through the sentences
-    for sentence in sentences:
-        # If the current section plus the next sentence exceeds the max_length,
-        # send the current section as a message and clear the section
-        if len(section) + len(sentence) + 1 > max_length:
-            await message.reply(section.strip())
-            section = ""
-
-        # Add the sentence to the section
-        section += " " + sentence
-
-    # If there's any content left in the section, send it as a message
-    if section:
-        await message.reply(section.strip())
+    await send_sectioned_response(message, response_content)
 
 
 # noinspection PyShadowingNames
@@ -148,8 +149,7 @@ async def kc_conversation(message, openai_model):
             conversation_log = [{'role': 'system', 'content':
                                  'You are a friendly secretary named KC.'}]
 
-            response_content = await generate_response(message, conversation_log, openai_model)
-            await send_sectioned_response(message, response_content)
+            await generate_response(message, conversation_log, openai_model)
     except Exception as error_message:
         await message.reply(f"Error: {error_message}")
 
@@ -328,7 +328,6 @@ class LilithCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    # Event handler for when the bot receives a message
     @commands.Cog.listener()
     async def on_message(self, message):
         """
@@ -364,7 +363,6 @@ class LilithCog(commands.Cog):
                                          'Roleplay as Lilith, daughter of Hatred, '
                                          'from the Diablo universe.'}]
 
-                response_content = await generate_response(message, conversation_log, openai_model)
-                await message.reply(response_content)
+                await generate_response(message, conversation_log, openai_model)
         except Exception as error_message:
             await message.reply(f"Error: {error_message}")
