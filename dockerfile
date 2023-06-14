@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y --no-install-recommends ffmpeg git libportaudio2 python3-pyaudio && \
+    apt-get install -y --no-install-recommends ffmpeg git && \
     rm -rf /var/lib/apt/lists/*
 
 COPY ./src/requirements.txt .
