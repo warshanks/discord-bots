@@ -1,7 +1,7 @@
 aiohttp==3.8.4
 discord.py==2.3.0
 elevenlabs==0.2.18
-fastf1==3.0.4
+fastf1==3.0.6
 icalendar==5.0.7
 openai==0.27.8
 Pillow==9.5.0
