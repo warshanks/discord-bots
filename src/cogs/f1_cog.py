@@ -564,7 +564,7 @@ def format_driver_standings(standings):
         points = row["points"]
         wins = row["wins"]
 
-        line = f"{position}. {driver_name} - {constructor_emoji} {constructor} - {points} points"
+        line = f"{position}. {constructor_emoji} {driver_name} - {points} points"
         if wins > 0:
             line += f", {wins} wins"
         if previous_points is not None:
