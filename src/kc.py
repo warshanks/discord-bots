@@ -29,7 +29,7 @@ from discord.ext import commands
 
 from config import command_sync, KC_TOKEN
 from cogs.chat_cog import ChatCog, GPT4Cog
-from cogs.tts_cog import TTSCog
+# from cogs.tts_cog import TTSCog
 from cogs.image_cog import ImageCog
 from cogs.music_cog import MusicCog
 from cogs.weather_cog import WeatherCog, NWSAlertsCog
@@ -64,7 +64,7 @@ async def on_ready():
         await bot.add_cog(MusicCog(bot))
         await bot.add_cog(ChatCog(bot))
         await bot.add_cog(GPT4Cog(bot))
-        await bot.add_cog(TTSCog(bot))
+        # await bot.add_cog(TTSCog(bot))
         await bot.add_cog(ImageCog(bot))
         await bot.add_cog(WeatherCog(bot))
         await bot.add_cog(NWSAlertsCog(bot))

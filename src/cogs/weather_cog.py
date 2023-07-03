@@ -233,6 +233,7 @@ async def fetch_api_data(bot, url):
                 return
 
             sent_alerts = load_sent_alerts()
+
             for alert in alerts:
                 alert_id = alert["properties"]["id"]
                 if alert_id not in sent_alerts:
