@@ -568,7 +568,7 @@ def format_driver_standings(standings):
         driver_name = f"{row['givenName']} {row['familyName']}"
         constructor = row["constructorNames"][0]
         constructor_emoji = emoji_dict.get(constructor, "")
-        points = row["points"]
+        points = check_int_points(row["points"])
         wins = row["wins"]
 
         line = f"{position}. {constructor_emoji} {driver_name} - {points} points"
