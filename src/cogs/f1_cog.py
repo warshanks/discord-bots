@@ -69,6 +69,13 @@ def is_weekend(date):
     return date.weekday() >= 4
 
 
+def check_int_points(points):
+    if points % 1 == 0:  # If the number has no fractional part
+        return int(points)  # Return number as int
+    else:
+        return points  # Else, simply return the number
+
+
 async def read_calendar_data(file_path):
     """
     Read calendar data from a file asynchronously.
@@ -660,7 +667,7 @@ def calculate_who_can_win(driver_standings, max_points):
 
         output += (f"{driver['position']}: {constructor_emoji} "
                    f"{driver['givenName'] + ' ' + driver['familyName']} - "
-                   f"Current/Possible: {driver['points']}/{driver_max_points}, "
+                   f"Current/Possible: {check_int_points(driver['points'])}/{driver_max_points}, "
                    f"Can win: {can_win}\n")
 
     return output
