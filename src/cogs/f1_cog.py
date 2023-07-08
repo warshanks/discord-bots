@@ -660,7 +660,7 @@ def calculate_who_can_win(driver_standings, max_points):
 
         output += (f"{driver['position']}: {constructor_emoji} "
                    f"{driver['givenName'] + ' ' + driver['familyName']} - "
-                   f"Current/Max Possible: {driver['points']}/{driver_max_points}, "
+                   f"Current/Possible: {driver['points']}/{driver_max_points}, "
                    f"Can win: {can_win}\n")
 
     return output
