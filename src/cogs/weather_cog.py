@@ -255,9 +255,9 @@ async def fetch_loop(bot):
             bot (discord.ext.commands.Bot): The bot instance.
     """
     api_urls = [
-        "https://api.weather.gov/alerts?zone=ALC125",  # Tuscaloosa
-        "https://api.weather.gov/alerts?zone=ALC089",  # Huntsville
-        "https://api.weather.gov/alerts?zone=ALC049",  # Henagar
+        "https://api.weather.gov/alerts/active?zone=ALC125",  # Tuscaloosa
+        "https://api.weather.gov/alerts/active?zone=ALC089",  # Huntsville
+        "https://api.weather.gov/alerts/active?zone=ALC049",  # Henagar
         # Add more URLs as needed
     ]
 
