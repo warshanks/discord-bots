@@ -124,7 +124,6 @@ class ImageCog(commands.Cog):
             width=img_width,
             height=img_height,
             samples=1,
-            sampler=generation.SAMPLER_K_DPMPP_2M
         )
 
         # If the adult content classifier is not triggered, send the generated images
