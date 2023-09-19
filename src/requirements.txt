@@ -2,7 +2,7 @@ aiohttp==3.8.5
 discord.py==2.3.2
 elevenlabs==0.2.24
 fastf1==3.1.2
-icalendar==5.0.7
+icalendar==5.0.8
 openai==0.28.0
 Pillow==10.0.0
 PyNaCl==1.5.0
