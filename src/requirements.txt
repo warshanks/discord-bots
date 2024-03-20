@@ -1,12 +1,13 @@
-aiohttp==3.8.6
+aiohttp==3.9.2
 discord.py==2.3.2
 elevenlabs==0.2.26
 fastf1==3.1.4
 icalendar==5.0.10
 openai==0.28.1
-Pillow==10.1.0
+Pillow==10.2.0
 pyowm==3.3.0
 setuptools>=68.0.0
 stability-sdk==0.8.4
 supervisor==4.2.5
 ipython>=8.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+grpcio>=1.53.2 # not directly required, pinned by Snyk to avoid a vulnerability
