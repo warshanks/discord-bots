@@ -6,6 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/src" # Location of package manifests
+    directory: "/" # Location of package manifests
+    target-branch: "2024-rewrite"
     schedule:
       interval: "daily"
