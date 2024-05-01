@@ -3,7 +3,7 @@ discord.py==2.3.2
 elevenlabs==1.1.2
 fastf1==3.3.5
 icalendar==5.0.10
-openai==1.23.6
+openai==1.24.1
 Pillow==10.1.0
 pyowm==3.3.0
 setuptools>=68.0.0
