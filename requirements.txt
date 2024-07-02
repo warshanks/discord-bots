@@ -4,7 +4,7 @@ elevenlabs==1.1.2
 fastf1==3.3.5
 icalendar==5.0.10
 openai==1.23.6
-Pillow==10.1.0
+Pillow==10.4.0
 pyowm==3.3.0
 setuptools>=68.0.0
 stability-sdk==0.8.5
